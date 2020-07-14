@@ -1,0 +1,58 @@
+body {
+    background-color: silver;
+}
+header {
+    font-family: sans-serif;
+    background-color: silver;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    padding-right: 3em;
+    float: right;
+}
+
+.logo td {
+    border: solid;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    font: 1.5em sans-serif;
+    background-color: gold;
+}
+
+.title {
+    padding-top: 1em;
+}
+
+.title h2 {
+    padding-top: 1em;
+}
+
+.title h3 {
+    padding-top: 1.5em;
+}
+
+section {
+    padding-top: 0.5em;
+    font-family: sans-serif;
+}
+
+section td {
+    padding-right: 2em;
+}
+
+.translation {
+    float: right;
+}
+
+.main_container section {
+}
+
+.modale {
+    
+}
+
