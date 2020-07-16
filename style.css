@@ -1,18 +1,70 @@
-body {
-    background-color: silver;
-}
-header {
+
+.main_header {
     font-family: sans-serif;
-    background-color: silver;
+    width: 100%;
 }
+
+
+/* COLORS
+* 
+*/
+.black {
+    background-color: #383838;
+}
+
+.dark, .card {
+    background-color: #586C5E;
+}
+
+.blue {
+    background-color: #488AC7;
+}
+
+.yellow, .article_header, .article_footer {
+    background-color: yellow;
+}
+
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.grenat {
+    background-color: #7D1D31;
+}
+
+.white_smoke {
+    background-color: whitesmoke;
+}
+
+/* BEHAVIORS
+*
+*/
 
 .flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.right {
+    float:right;
+}
+
+/* OTHERS
+*
+*/
+
+.card {
+}
+
 .logo {
-    padding-right: 3em;
-    float: right;
+    position: fixed;
+    padding-top: 5em;
 }
 
 .logo td {
@@ -21,38 +73,130 @@ header {
     height: 1.5em;
     text-align: center;
     font: 1.5em sans-serif;
-    background-color: gold;
 }
+
+.logo a {
+}
+
+
+
+
+.red {
+    background-color: red;
+    margin-left: 5em;
+    font-size: 3em;
+}
+
+.blue a, .green a, .grenat a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.yellow a, .orange a {
+    color: black;
+    text-decoration: none;
+}
+
+
 
 .title {
-    padding-top: 1em;
+    padding-left: 2em;
+    font-family: sans-serif;
 }
 
-.title h2 {
-    padding-top: 1em;
+.title h1, h2, h3 {
+    background-color: antiquewhite;
+    float: right;
 }
 
-.title h3 {
-    padding-top: 1.5em;
-}
-
-section {
+.title h1, h2, h3 {
     padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.5em;
+}
+
+.main_container section {
+    padding-top: 15em;
+    padding-bottom: 15em;
+    padding-left: 20em;
+    padding-right: 5em;
     font-family: sans-serif;
 }
 
 section td {
     padding-right: 2em;
+    padding-left: 2em;
 }
 
 .translation {
-    float: right;
+    padding-top: 17em;
+    padding-right: 1em;
 }
 
-.main_container section {
+.main_container {
+    
 }
 
 .modale {
     
 }
 
+.icon {
+    width: 10em;
+    height: 10em;
+}
+
+.icon_button {
+    width: 2em;
+    height: auto;
+}
+
+.image_button {
+    width: 12em;
+    height: auto;
+}
+
+.image_site {
+    width: 800px;
+    height: auto;
+    
+}
+
+.cart_pro {
+    width: 22.5em;
+    height: auto;
+}
+
+.skill {
+    
+}
+
+.skill li {
+    background-color: antiquewhite;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: block;
+}
+
+.profil label {
+    background-color: red;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}

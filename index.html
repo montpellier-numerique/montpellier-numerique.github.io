@@ -9,111 +9,145 @@
     <script src="script.js"></script>
 </head>
 
-<body>
-    <header>
-        <div class="flex">
-            <div class="logo">
-                <nav>
-                    <table>
-                        <tr><td><a href="#skills">compétences</a></td></tr>
-                        <tr><td><a href="#profil">profil</a></td></tr>
-                        <tr><td><a href="#contact">contact</a></td></tr>
-                        <tr><td><a href="#creations">créations</a></td></tr>
-                        <tr><td><a href="#indices">indices</a></td></tr>
-                    </table>
-                </nav>
+<body class="dark">
+    <section class="main_header, black">
+        <header>
+            <div class="right">
+                
+                <div class="translation">
+                    <button class="yellow">speaks english</button>
+                </div>
             </div>
-            <div class="title">
-                <h1>programmer</h1>
-                <h2>applications web & mobile</h2>
-                <h3>https://programmer_montpellier_numerique</h3>
-            </div>            
-        </div>
-    </header>
-
-    <section class="translation">
-        <button>read in english</button>
-    </section>
+             
+            <div class="flex">
+                <div class="logo">
+                    <nav>
+                        <table>
+                            <tr><td class="blue"><a href="">compétences</a></td></tr>
+                            <tr><td class="yellow"><a href="#profil">profil</a></td></tr>
+                            <tr><td class="green"><a href="#contact">contact</a></td></tr>
+                            <tr><td class="orange"><a href="#creations">créations</a></td></tr>
+                            <tr><td class="grenat"><a href="#indices">indices</a></td></tr>
+                        </table>
+                    </nav>
+                </div>
+                <div class="title">
+                    <h1>programmer</h1>
+                    <h2>applications web & mobile</h2>
+                    <h3>https://programmer_montpellier_numerique</h3>
+                </div>
+            </div>
+        </header>
     
-    <section class="main_container">
+    </section>
+      
+    <section class="blue">
+        <button class="red">Développeuse JAVA Full Stack</button>
+    </section>
 
-        <section>
-            <article id="skills">
-                <header><h1>compétences</h1></header>
-                <ul>
-                    <li>développer des applications web & mobile, des sites web,</li>
-                    <li>coder des programmes JAVA souples, faciles à faire évoluer,</li>
-                    <li>gérer les bases de données,</li>
-                    <li>créer des interfaces simples, agiles, esthétiques.</li>
+    <section class="main_container">
+        
+        <section id="skills" class="blue">
+            <article class="flex">
+                <header><img class="icon" src="icons/wrench.svg"/></header>
+                
+                <ul class="skill">
+                    <li>crée des applications web & mobile</li>
+                    <li>sites web, bases de données</li>
+                    <li>interfaces simples, agiles, esthétiques</li>
                 </ul>
             </article>
         </section>
-        <section>
-            <article id="profil">
-                <header><h1>profil</h1></header>
-                <p>PROGRAMMEUSE: développeuse JAVA Full Stack,
-                <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238">voir @LinkedIn</a>
-                </p>
-                <p>SAVOIR-ÊTRE: ingénieuse -> click: <button>éditer mes cartes professionelles</button></p>
+        <section id="profil" class="yellow">
+            <article class="profil flex">
+                <header><img class="icon" src="icons/young.svg"/></header>
+                <section>
+                    <label>java FULL STACK</label>
+                    <label>savoir-être ingénieuse</label> 
+                    <p class="green"><button>éditer mes cartes professionelles en un click</button></p>
+                
+                
+                </section>
             </article>
         </section>
 
-        <section>
-            <article id="contact">
-                <header><h1>contact</h1></header>
-                <p>email: programmeuse@programmer.fr</p>
+        <section id="contact" class="green">
+            <article>
+                <header><img class="icon" src="icons/information.svg"/></header>
+                <p><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button>@LinkedIn</button></a></p>
+
             </article>
         </section>
-        <section>
-            <article id="creations">
-                <header><h1>créations</h1></header>
-                <table>
-                    <tr>
-                        <th>titre</th>
-                        <th>type</th>
-                        <th>utilité</th>
-                        <th>technologies</th>
-                        <th>en ligne</th>
-                    </tr>
-                    <tr>
-                        <td>MANCHESTER</td>
-                        <td>site web</td>
-                        <td>site vitrine du bar Manchester à Montpellier</td>
-                        <td>HTML/CSS/JavaScript + SDK Facebook</td>
-                        <td><a href="https://barmanchester.000webhostapp.com">voir le site</a></td>
-                    </tr>
-                    <tr>
-                        <td>DEVIS</td>
-                        <td>application web</td>
-                        <td>logiciel pour générer des devis et des factures</td>
-                        <td>JAVA SPRING / ANGULAR</td>
-                        <td><a href="https://gitlab.com/cjanie">voir le code</a></td>
-                    </tr>
-                    <tr>
-                        <td>DIRECT MOLTO</td>
-                        <td>applications web & mobile</td>
-                        <td>logiciel de gestion d'un garage</td>
-                        <td>JAVA SPRING / ANGULAR / ANDROID</td>
-                        <td><a href="https://gitlab.com/voie-de-garage">voir le code</a></td>
-                    </tr>
-                    <tr>
-                        <td>PROGRAMMER</td>
-                        <td>site web + application web</td>
-                        <td>mon port folio éditeur de cartes professionnelles</td>
-                        <td>HTML/CSS/JavaScript</td>
-                        <td>cette page</td>
-                    </tr>
-                </table>
+        <section id="creations" class="orange">
+            <article>
+                <header><h1>mes créations utiles et adaptées en ligne</h1></header>
+                <section class="flex">
+                    <section class="card">
+                        <article class="white_smoke">
+                            <header class="article_header">
+                                <h1>manchester</h1>
+                            </header>
+                            <p>site vitrine</p>
+                            <p>agenda Facebook</p>
+                            <p><a href="https://barmanchester.000webhostapp.com"><button><img class="image_button" src="images/png/manchester_site_detail_img.png"/>
+                                SITE
+                            </button></a></p>
+                            <footer class="article_footer">
+                                <p><a><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    HTML / CSS / SDK FACEBOOK
+                                </button></a></p>
+                            </footer>
+                        </article>
+                    </section>
+                    <section class="card">
+                        <article class="white_smoke">
+                            <header class="article_header"><h1>devis</h1></header>
+                            <p>logiciel de devis et factures</p>
+                            <p>panier boutique item + arrière-boutique de gestion</p>
+                            <footer class="article_footer">
+                                <p><a href="https://gitlab.com/cjanie"><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    JAVA SPRING / ANGULAR
+                                </button></a></p>
+                            </footer>
+                        </article>
+                    </section>
+                    <section class= "card">
+                        <article class="white_smoke">
+                            <header class="article_header"><h1>direct molto</h1></header>
+                            <p>logiciel de gestion d'un garage</p>
+                            <p>accès admin + gérant + tablette du mécanicien</p>
+                            <footer class="article_footer">
+                                <p><a href="https://gitlab.com/voie-de-garage"><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    SPRING / ANGULAR / ANDROID
+                                </button></a></p>
+                            </footer>
+                        </article>
+                    </section>
+                    <section class="card">
+                        <article class="white_smoke">
+                            <header class="article_header">
+                                <h1>programmer_montpellier_numerique</h1>
+                            </header>
+                            <p>mon portfolio</p> 
+                            <p>édite mes cartes pro en un click <button><img class="icon_button" src="icons/pdf.svg"/></button></p>
+                            <p><img class="cart_pro" src="images/png/cart_pro.png"/></p>
+                            <footer class="article_footer">
+                                <p><a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    HTML / CSS / JS</button></a></p>
+                            </footer>
+                        </article>
+                    </section>
+                </section>
             </article>
         </section>
     
-        <section>
-            <article id=indices>
-                <header><h1>indices</h1></header>
+        <section id="indices" class="grenat">
+            <article>
+                <header><img class="icon" src="icons/index.svg"/></header>
                 <table>
                     <tr>
-                        <th>technologies</th>
-                        <th>créations</th>
+                        <th>les technologies</th>
+                        <th>dans les créations</th>
                     </tr>
                     <tr>
                         <td>ANDROID</td>
@@ -128,15 +162,19 @@
                         <td>direct molto</td>
                     </tr>
                     <tr>
-                        <td>HIBERNATE</td>
+                        <td>JAVA</td>
                         <td>devis, direct molto</td>
                     </tr>
                     <tr>
-                        <td>JPA</td>
-                        <td>devis, direct molto</td>
+                        <td>JAVASCRIPT</td>
+                        <td>manchester, programmer</td>
                     </tr>
                     <tr>
-                        <td>SQL</td>
+                        <td>SDK FACEBOOK</td>
+                        <td>manchester</td>
+                    </tr>
+                    <tr>
+                        <td>SPRING</td>
                         <td>devis, direct molto</td>
                     </tr>
                     <tr>
@@ -148,7 +186,7 @@
                         <td>direct molto</td>
                     </tr>
                     <tr>
-                        <td><button>Afficher la liste complète</button></td>
+                        <td><button>afficher la liste complète</button></td>
                     </tr>
                 </table>
             </article>
