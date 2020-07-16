@@ -37,3 +37,20 @@ var indices = [
     "volley",
     "web services"
 ]
+
+/**
+ * BUTTONS
+ */
+
+var buttonMainRed = document.getElementById("button_main_red");
+var logo = document.getElementById("logo");
+buttonMainRed.addEventListener("click", (evenement)=> {
+    logo.style.color = "white";
+    buttonMainRed.style.color = "white";
+});
+
+var buttonMore = document.getElementById("button_more");
+buttonMore.addEventListener("click", (evenement)=> {
+    buttonMore.style.display="none";
+});
+

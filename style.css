@@ -1,18 +1,19 @@
 
-.main_header {
-    font-family: sans-serif;
-    width: 100%;
+/* TAGS
+*
+*/
+button {
+    border-radius: 1.5em;
 }
-
 
 /* COLORS
 * 
 */
-.black {
+.black, .main_header {
     background-color: #383838;
 }
 
-.dark, .card {
+.dark, .card, body {
     background-color: #586C5E;
 }
 
@@ -37,6 +38,10 @@
     background-color: #7D1D31;
 }
 
+.red, .main_red {
+    background-color: red;
+}
+
 .white_smoke {
     background-color: whitesmoke;
 }
@@ -55,9 +60,16 @@
     float:right;
 }
 
+
 /* OTHERS
 *
 */
+
+.main_header {
+    font-family: sans-serif;
+    width: 100%;
+}
+
 
 .card {
 }
@@ -78,11 +90,7 @@
 .logo a {
 }
 
-
-
-
-.red {
-    background-color: red;
+.main_red {
     margin-left: 5em;
     font-size: 3em;
 }
@@ -189,6 +197,9 @@ section td {
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: block;
+}
+.skill a {
+    margin-left: 9em;
 }
 
 .profil label {
