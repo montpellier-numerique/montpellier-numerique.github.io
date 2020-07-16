@@ -15,7 +15,8 @@
 
             <div class="right">
                 <div class="translation">
-                    <button class="yellow">speaks english</button>
+                    <button id="button_speak" class="yellow">speaks english</button>
+                    <button id="button_speak_french" class="yellow, alternative">lire en français</button>
                 </div>
             </div>
              
@@ -23,11 +24,11 @@
                 <div id="logo" class="logo">
                     <nav>
                         <table>
-                            <tr><td class="blue"><a href="">compétences</a></td></tr>
-                            <tr><td class="yellow"><a href="#profil">profil</a></td></tr>
-                            <tr><td class="green"><a href="#contact">contact</a></td></tr>
-                            <tr><td class="orange"><a href="#creations">créations</a></td></tr>
-                            <tr><td class="grenat"><a href="#indices">indices</a></td></tr>
+                            <tr><td class="blue"><a id="nav_skills" href="">compétences</a></td></tr>
+                            <tr><td class="yellow"><a id="nav_profile" href="#profile">profil</a></td></tr>
+                            <tr><td class="green"><a id="nav_contact" href="#contact">contact</a></td></tr>
+                            <tr><td class="orange"><a id="nav_creations" href="#creations">créations</a></td></tr>
+                            <tr><td class="grenat"><a id="nav_indices" href="#indices">indices</a></td></tr>
                         </table>
                     </nav>
                 </div>
@@ -52,18 +53,18 @@
                 <header><img class="icon" src="icons/wrench.svg"/></header>
                 <div class="skill">
                     <ul>
-                        <li>crée des applications web & mobile</li>
-                        <li>sites web, bases de données</li>
-                        <li>interfaces simples, agiles, esthétiques</li>
+                        <li id="skill_1">crée des applications web & mobile</li>
+                        <li id="skill_2">sites web, bases de données</li>
+                        <li id="skill_3">interfaces simples, agiles, esthétiques</li>
                     </ul>
                 
-                    <a href="#profil"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+                    <a href="#profile"><button><img class="icon_button" src="icons/download.svg"/></button></a>
                 </div>
             </article>
             
         </section>
-        <section id="profil" class="yellow">
-            <article class="profil flex">
+        <section id="profile" class="yellow">
+            <article class="profile flex">
                 <header><img class="icon" src="icons/young.svg"/></header>
                 <div>
                     <label>java FULL STACK</label>
