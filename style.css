@@ -22,24 +22,24 @@ h5 {
     background-color: #586C5E;
 }
 
-.blue {
+.blue, #skills {
     background-color: #488AC7;
 }
 
-.yellow {
+.yellow, #profile {
     background-color: yellow;
 }
 
 
-.green {
+.green, #contact {
     background-color: green;
 }
 
-.orange {
+.orange, #creations {
     background-color: orange;
 }
 
-.grenat {
+.grenat, #indices {
     background-color: #7D1D31;
 }
 
@@ -54,6 +54,33 @@ h5 {
 .antique_white, .article_header {
     background-color: antiquewhite;
 }
+
+/*
+* COLOR AND TEXT BEHAVIOR
+*/
+
+.blue a, .green a, .grenat a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.yellow a, .orange a {
+    color: black;
+    text-decoration: none;
+}
+
+/*
+* FONTS
+**/
+
+.main_header {
+    font-family: sans-serif;
+}
+
+.main_container h1 {
+    font-size: 2em;
+}
+
 
 /* BEHAVIORS
 *
@@ -74,24 +101,35 @@ h5 {
     flex-wrap: wrap;
 }
 
-.right {
+.right, .section_footer {
     float:right;
 }
 
 
 
 
-/* OTHERS
+/* FORMAT
 *
 */
+/* tags */
+
+button {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.5em;
+}
+
+/* component classes */
 
 .main_header {
-    font-family: sans-serif;
     width: 100%;
 }
 
 
 .card {
+    width: 100%;
 }
 
 .logo {
@@ -115,15 +153,7 @@ h5 {
     font-size: 3em;
 }
 
-.blue a, .green a, .grenat a {
-    color: antiquewhite;
-    text-decoration: none;
-}
 
-.yellow a, .orange a {
-    color: black;
-    text-decoration: none;
-}
 
 /*
 * TITLES
@@ -163,24 +193,18 @@ h5 {
     
 }
 
-button {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    font-size: 1.5em;
+
+
+.main_container {
+    padding-top: 10em;
+    padding-bottom: 30em;
+    padding-left: 25em;
+    padding-right: 1em;
+    font-family: sans-serif;
+    
 }
 
-.main_container section {
-    padding-top: 15em;
-    padding-bottom: 15em;
-    padding-left: 7em;
-    padding-right: 0em;
-    font-family: sans-serif;
-}
-.main_container h1 {
-    font-size: 2em;
-}
+
 section td {
     padding-right: 2em;
     padding-left: 2em;
@@ -256,16 +280,21 @@ section td {
 }
 
 
+
 /*
 * SPECIAL ID
 */
+
+#article_manchester {
+    max-width: 800px;
+}
 
 #article_devis {
     max-width: 485px;
 }
 
 #article_direct_molto {
-    max-width: 645px;
+    max-width: 650px;
 }
 
 #article_programmer {

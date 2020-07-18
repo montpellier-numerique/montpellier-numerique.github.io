@@ -46,9 +46,9 @@
         <button id="button_main_red" class="red, main_red">Développeuse JAVA Full Stack</button>
     </section>
 
-    <section class="main_container">
+    <section>
         
-        <section id="skills" class="blue">
+        <section id="skills" class="main_container">
             <article class="flex">
                 <header><img class="icon" src="icons/wrench.svg"/></header>
                 <div class="skill">
@@ -60,13 +60,13 @@
                 
                     
                 </div>
-                <footer>
-                    <a href="#profile"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                </footer>
+                
             </article>
-            
+            <footer class="section_footer">
+                <a href="#profile"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer>
         </section>
-        <section id="profile" class="yellow">
+        <section id="profile" class="main_container">
             <article class="profile flex">
                 <header><img class="icon" src="icons/young.svg"/></header>
                 <div>
@@ -77,29 +77,36 @@
                     <p><img id="img_cart_pro" class="alternative" src="images/png/cart_pro.png"/></p>
                     <p class="red"><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button>voir mon profil @LinkedIn</button></a></p>
                 </div>
-                <footer>
-                    <a href="#contact"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                </footer>
+                
             </article>
+            <footer class="section_footer">
+                <a href="#contact"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer>
         </section>
 
-        <section id="contact" class="green">
+        <section id="contact" class="main_container">
             <article class="flex">
                 <header><img class="icon" src="icons/mouse-clicker.svg"/></header>
                 <div>
-                    <p><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button>me contacter ici @LinkedIn</button></a></p>
+                    <p><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button>me contacter @LinkedIn</button></a></p>
                 </div>
-                <footer>
-                    <a href="#creations"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                </footer>
             </article>
+            <footer class="section_footer">
+                <a href="#creations"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer>
         </section>
-        <section id="creations" class="orange">
+        <section id="creations" class="main_container">
             <article>
-                <header><img class="icon" src="icons/see.svg"/></header>
+                <header class="flex, title">
+                    <img class="icon" src="icons/see.svg"/>
+                    <h1>mes créations</h1>
+                    <h2>utiles</h2>
+                    <h3>adaptées</h3>
+                </header>
+                
                 <section class="flex">
                     <section class="card">
-                        <article class="white_smoke">
+                        <article id="article_manchester" class="white_smoke">
                             <header>
                                 <div>
                                     <div class="flex">
@@ -117,7 +124,7 @@
                                 
                             <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/>FACEBOOK developer</button>
                             <h2>site vitrine</h2>
-                            <h3>agenda Facebook</h3>
+                            <h3>agenda</h3>
                             <img src="images/png/manchester_site_detail_img.png"/>
                             <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/>accès site web</button></a>
                             </div>
@@ -208,13 +215,13 @@
                         </article>
                     </section>
                 </section>
-                <footer>
-                    <a href="#indices"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                </footer>
             </article>
+            <footer class="section_footer">
+                <a href="#indices"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer>
         </section>
     
-        <section id="indices" class="grenat">
+        <section id="indices" class="main_container">
             <article>
                 <header><img class="icon" src="icons/index.svg"/></header>
                 <table>
@@ -269,7 +276,7 @@
                 <div id="more">
 
                 </div>
-                <footer>
+                <footer class="section_footer">
                     <a href="/"><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
                 </footer>
             </article>
