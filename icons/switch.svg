@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 490.667 490.667" style="enable-background:new 0 0 490.667 490.667;" xml:space="preserve" width="512px" height="512px" class="hovered-paths"><g><path style="fill:#CFD8DC;" d="M96,0h298.667c53.019,0,96,42.981,96,96v298.667c0,53.019-42.981,96-96,96H96  c-53.019,0-96-42.981-96-96V96C0,42.981,42.981,0,96,0z" data-original="#CFD8DC" class="hovered-path"/><g>
+	<path style="fill:#455A64;" d="M330.667,42.667H160c-53.019,0-96,42.981-96,96s42.981,96,96,96h170.667c53.019,0,96-42.981,96-96   S383.686,42.667,330.667,42.667z" data-original="#455A64"/>
+	<path style="fill:#455A64;" d="M330.667,256H160c-53.019,0-96,42.981-96,96s42.981,96,96,96h170.667c53.019,0,96-42.981,96-96   S383.686,256,330.667,256z" data-original="#455A64"/>
+</g><circle style="fill:#F44336;" cx="160" cy="138.667" r="53.333" data-original="#F44336"/><circle style="fill:#4CAF50" cx="330.667" cy="352" r="53.333" data-original="#4CAF50" class="active-path"/></g> </svg>

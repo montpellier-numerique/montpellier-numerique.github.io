@@ -94,3 +94,39 @@ buttonMore.addEventListener("click", (evenement)=> {
     buttonMore.style.backgroundColor ="green";
 });
 
+/*
+* manipulate DOM
+*/
+var buttonSpecTechProgrammer = document.getElementById("button_spec_tech_programmer");
+var specTechProgrammer = document.getElementById("spec_tech_programmer");
+buttonSpecTechProgrammer.addEventListener("click", (evenement)=> {
+    specTechProgrammer.style.display = "block";
+});
+
+/*
+* alerts
+*/
+var buttonCertifManchester = document.getElementById("button_certif_manchester");
+buttonCertifManchester.addEventListener("click", (evenement)=> {
+    alert("site vitrine pour un bar. l'agenda des évènements est géré depuis Facebook Events.");
+});
+
+var buttonCertifDevis = document.getElementById("button_certif_devis");
+buttonCertifDevis.addEventListener("click", (evenement)=> {
+    alert("interface simple");
+});
+
+var buttonCertifDirectMolto = document.getElementById("button_certif_direct_molto");
+buttonCertifDirectMolto.addEventListener("click", (evenement)=> {
+    alert("BEWEB Fondespierre Montpellier");
+});
+
+var buttonCertifProgrammer = document.getElementById("button_certif_programmer");
+buttonCertifProgrammer.addEventListener("click", (evenement)=> {
+    alert("ceci est une invitation à tester les boutons.");
+});
+
+var buttonSiteProgrammer = document.getElementById("button_site_programmer");
+buttonSiteProgrammer.addEventListener("click", (evenement)=> {
+    alert("vous êtes sur le site vitrine https://programmer_montpellier_numerique");
+});
