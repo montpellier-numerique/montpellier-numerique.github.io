@@ -16,7 +16,7 @@
             <div class="right">
                 <div class="translation">
                     <button id="button_speak" class="yellow">speaks english</button>
-                    <button id="button_speak_french" class="alternative">lire en français</button>
+                    <button id="button_speak_french" class="alternative"><img class="icon_button" src="icons/france.svg"/></button>
                 </div>
             </div>
              
@@ -24,7 +24,7 @@
                 <div id="logo" class="logo">
                     <nav>
                         <table>
-                            <tr><td class="blue"><a id="nav_skills" href="#skills">compétences</a></td></tr>
+                            <tr><td class="blue"><a id="nav_skills" href="">compétences</a></td></tr>
                             <tr><td class="yellow"><a id="nav_profile" href="#profile">profil</a></td></tr>
                             <tr><td class="green"><a id="nav_contact" href="#contact">contact</a></td></tr>
                             <tr><td class="orange"><a id="nav_creations" href="#creations">créations</a></td></tr>
@@ -47,15 +47,19 @@
     </section>
 
     <section>
+        <div class="flags_buttons">
+            <button id="button_english_flag"><img class="icon_button" src="icons/england.svg"/></button>
+            <button id="button_french_flag"><img class="icon_button" src="icons/france.svg"/></button>
+        </div>
         
         <section id="skills" class="main_container">
             <article class="flex">
                 <header><img class="icon" src="icons/wrench.svg"/></header>
-                <div class="skill">
+                <div class="skills">
                     <ul>
-                        <li id="skill_1">crée des applications web & mobile</li>
+                        <li id="skill_1">développe back, front, poo</li>
                         <li id="skill_2">sites web, bases de données</li>
-                        <li id="skill_3">interfaces simples, agiles, esthétiques</li>
+                        <li id="skill_3">interfaces agiles, esthétiques</li>
                     </ul>
                 
                     
@@ -69,13 +73,12 @@
         <section id="profile" class="main_container">
             <article class="profile flex">
                 <header><img class="icon" src="icons/young.svg"/></header>
-                <div>
-                    <label>java FULL STACK</label>
-                    <label id="know_how_to_be">savoir-être INGÉNIEUSE</label>
-                    <label>conception OBJET</label>
-                    <p class="green"><button id="button_edit_card">éditer mes cartes professionelles en un click</button></p>
+                <div class="profile_labels">
+                    <label id="profile_java">java FULL STACK</label>
+                    <label id="know_how_to_be">savoir-être ingénieuse</label>
+                    <p class="green"><button id="button_edit_card">éditer mes cartes de visite en un clic</button></p>
                     <p><img id="img_cart_pro" class="alternative" src="images/png/cart_pro.png"/></p>
-                    <p class="red"><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button>voir mon profil @LinkedIn</button></a></p>
+                    <p class="red"><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">voir mon profil @LinkedIn</button></a></p>
                 </div>
                 
             </article>
@@ -88,7 +91,7 @@
             <article class="flex">
                 <header><img class="icon" src="icons/mouse-clicker.svg"/></header>
                 <div>
-                    <p><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button>me contacter @LinkedIn</button></a></p>
+                    <p><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_contact_linkedin">me contacter @LinkedIn</button></a></p>
                 </div>
             </article>
             <footer class="section_footer">
@@ -99,9 +102,9 @@
             <article>
                 <header class="flex, title">
                     <img class="icon" src="icons/see.svg"/>
-                    <h1>créations</h1>
-                    <h2>utiles</h2>
-                    <h3>adaptées</h3>
+                    <h1 id="creations_title">créations</h1>
+                    <h2 id="creations_useful">utiles</h2>
+                    <h3 id="creations_custom">adaptées</h3>
                 </header>
                 <section class="list_creations">
                     <article>
@@ -116,7 +119,7 @@
                             
                         </div>
                         <footer class="">
-                            <a href="#article_manchester"><button><img class="icon_button" src="icons/download.svg"/>voir</button></a>
+                            <a href="#article_manchester"><button><img class="icon_button" src="icons/download.svg"/><span id="button_creations_view">voir</span></button></a>
                         </footer>
                     </article>
                     
@@ -130,13 +133,13 @@
                             </header>
                             <div>    
                                 <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/>FACEBOOK developer</button>
-                                <h2>site web vitrine</h2>
-                                <h3>agenda</h3>
+                                <h2 id="manchester_showcase">site vitrine</h2>
+                                <h3 id="manchester_agenda">agenda</h3>
                                 <div class="image_site">
                                     <img src="images/png/manchester_site_detail_img.png"/>
                                 </div>
                                 
-                                <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/>voir le site</button></a>
+                                <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_manchester_view_site">voir le site</span></button></a>
                             </div>
                             
                             <footer class="article_footer">
@@ -150,12 +153,12 @@
                         <article id="article_devis" class="white_smoke">
                             <header class="article_header"><h1>devis</h1></header>
                             <div>
-                                <button id="button_certif_devis" class="red"><img class="icon_button" src="icons/medal.svg"/>intuitif</button>
-                                <h2>logiciel de devis et factures</h2>
-                                <h3>panier boutique item + arrière-boutique de gestion</h3>
+                                <button id="button_certif_devis" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="button_devis_intuitive">intuitif</span></button>
+                                <h2 id="devis_invoices">logiciel de devis et factures</h2>
+                                <h3 id="devis_cart_item">panier boutique item + arrière-boutique de gestion</h3>
                             </div>
                             <div class="right">
-                                <button class="green"><img class="icon_button" src="icons/see.svg"/>voir l'interface</button>
+                                <button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_devis_view_interface">voir l'interface</span></button>
                             </div>
                             
                             <footer class="article_footer">
@@ -169,11 +172,11 @@
                         <article id="article_direct_molto" class="white_smoke">
                             <header class="article_header"><h1>direct molto</h1></header>
                             <div>
-                                <button id="button_certif_direct_molto" class="red"><img class="icon_button" src="icons/medal.svg"/>équipe molto agile</button>
-                                <h2>logiciel de gestion d'un garage</h2>
-                                <h3>accès admin + gérant + tablette du mécanicien</h3>
+                                <button id="button_certif_direct_molto" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="molto_agile">équipe molto AGILE</span></button>
+                                <h2 id="direct_molto_garage">logiciel de gestion d'un garage</h2>
+                                <h3 id="direct_molto_management">accès admin + gérant + tablette du mécanicien</h3>
                                 <div class="right">
-                                    <button class="green"><img class="icon_button" src="icons/see.svg"/>voir l'interface</button>
+                                    <button class="green"><img class="icon_button" src="icons/see.svg"/><span id="direct_molto_view_interface">voir l'interface</span></button>
                                 </div>
                                 
                             </div>
@@ -191,19 +194,19 @@
                                 <h1>programmer_montpellier_numerique</h1>
                             </header>
                             <div class="flex">
-                                <div><h2>mon portfolio</h2></div>
-                                <div><button id="button_certif_programmer" class="red"><img class="icon_button" src="icons/medal.svg"/>test button certifié</button></div>
+                                <div><h2 id="programmer_my_portfolio">mon portfolio</h2></div>
+                                <div><button id="button_certif_programmer" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="programmer_test_assert">test button certifié</span></button></div>
                                 
                                 <div>
-                                    <button><img class="icon_button" src="icons/switch.svg"/>français english</button>
-                                    <button class="block"><img class="icon_button" src="icons/linkedin.svg"/>se partage sur RS</button>
+                                    <button><img class="icon_button" src="icons/switch.svg"/><span id="programmer_switch_language">français anglais</span></button>
+                                    <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share">se partage sur in</span></button>
                                     <div>
-                                        <button><img class="icon_button" src="icons/pdf.svg"/>édite mes cartes pro</button>
+                                        <button><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards">édite mes cartes pro</span></button>
                                         <img class="cart_pro" src="images/png/cart_pro.png"/>
                                     </div>
                                     
-                                    <button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/>spécifications techniques</button>
-                                    
+                                    <button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech">spécifications techniques</span></button>
+                                    <button id="button_close_spec_tech_programmer" class="alternative"><img class="icon_button" src="icons/close.svg"/></button>
                                     
 
                                 </div>
@@ -212,11 +215,12 @@
                                     <h4 class="right">conception objet</h4>
                                     <h5>pour l'international</h5>
                                     <p>le texte est disponible en français et en anglais, stocké dans un objet JSON. pour changer de langue, l'application JAVASCRIPT gère les traductions.</p>
+                                    
                                 </div>
                                 
                             </div>
                             <div>
-                                <a class="right"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/>site web</button></a>
+                                <a class="right"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website">site web</span></button></a>
                             </div>
                             <footer class="article_footer">
                                 <p><a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
@@ -235,9 +239,8 @@
             <article>
                 <header class="flex, title">
                     <img class="icon" src="icons/index.svg"/>
-                    <h1>indices</h1>
-                    <h2>les technologies</h2>
-                    <h3>dans les créations</h3>
+                    <h1 id="indices_title">indices</h1>
+                    <h2 id="indices_technologies">technologies</h2>
                 </header>
                 <div class="table">
                     <table id="table_indices" class="antique_white">
@@ -296,7 +299,7 @@
 
     <script src="js/externalizations/string_object_internationalization.js"></script>
     <script src="js/externalizations/indices_string_array.js"></script>
-
+    <script src="js/do_translate.js"></script>
     <script src="js/script.js"></script>
 
 </body>

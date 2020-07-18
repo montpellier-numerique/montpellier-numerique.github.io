@@ -7,73 +7,55 @@
 /*
 * Turn on the light
 */
-var buttonMainRed = document.getElementById("button_main_red");
+
 var logo = document.getElementById("logo");
 buttonMainRed.addEventListener("click", (evenement)=> {
     logo.style.color = "white";
     buttonMainRed.style.color = "white";
 });
 
-/*
- * Translate
- */
+
 var buttonSpeak = document.getElementById("button_speak");
 var buttonSpeakFrench = document.getElementById("button_speak_french");
-// nav elements
-var navSkills = document.getElementById("nav_skills");
-var navProfile = document.getElementById("nav_profile");
-var navContact = document.getElementById("nav_contact");
-var navCreations = document.getElementById("nav_creations");
-var navIndices = document.getElementById("nav_indices");
+var buttonEnglishFlag = document.getElementById("button_english_flag");
+var buttonFrenchFlag = document.getElementById("button_french_flag");
 
-// skills elements
-var skill1 = document.getElementById("skill_1");
-var skill2 = document.getElementById("skill_2");
-var skill3 = document.getElementById("skill_3");
-
-// profile elements
-
+var resetTranslationButtons = function resetTranslationButtons(){
+    if(languageCurrent === 0) {
+        buttonSpeakFrench.style.display = "none";
+        buttonSpeak.style.display = "block";
+    } else if(languageCurrent === 1) {
+        buttonSpeakFrench.style.display = "block";
+        buttonSpeak.style.display ="none";
+    } else {
+        buttonSpeak.style.display = "block";
+        buttonSpeakFrench = "block"
+    }
+}
 
 // translate to English
 buttonSpeak.addEventListener("click", (evenement)=> {
-    // translation
-    buttonMainRed.innerHTML = string.mainRedText[1]; // Index 1 for English Translation
-
-    navSkills.innerHTML = string.skills[1];
-    navProfile.innerHTML = string.profile[1];
-    navContact.innerHTML = string.contact[1];
-    navCreations.innerHTML = string.creations[1];
-    navIndices.innerHTML = string.indices[1];
-
-    skill1.innerHTML = string.skill1[1];
-    skill2.innerHTML = string.skill2[1];
-    skill3.innerHTML = string.skill3[1];
-
+    translateToEnglish();
     // buttons behavior
-    buttonSpeak.style.display = "none";
-    buttonSpeakFrench.style.display = "block";
+    resetTranslationButtons();
+    
 });
 
 // translate to French
 buttonSpeakFrench.addEventListener("click", (evenement)=> {
-    // translation
-    buttonMainRed.innerHTML = string.mainRedText[0]; // Index 0 for French Translation
-
-    navSkills.innerHTML = string.skills[0];
-    navProfile.innerHTML = string.profile[0];
-    navContact.innerHTML = string.contact[0];
-    navCreations.innerHTML = string.creations[0];
-    navIndices.innerHTML = string.indices[0];
-
-    skill1.innerHTML = string.skill1[0];
-    skill2.innerHTML = string.skill2[0];
-    skill3.innerHTML = string.skill3[0];
-
-    profileKnowHowToBe.innerHTML = string.knowHowToBe[0];
-
+    translateToFrench();
     // buttons behavior
-    buttonSpeakFrench.style.display = "none";
-    buttonSpeak.style.display = "block";
+    resetTranslationButtons();
+});
+
+buttonEnglishFlag.addEventListener("click", (evenement)=>{
+    translateToEnglish();
+    resetTranslationButtons();
+});
+
+buttonFrenchFlag.addEventListener("click", (evenement)=>{
+    translateToFrench();
+    resetTranslationButtons();
 });
 
 /*
@@ -127,9 +109,20 @@ buttonHide.addEventListener("click", (evenement)=> {
 */
 var buttonSpecTechProgrammer = document.getElementById("button_spec_tech_programmer");
 var specTechProgrammer = document.getElementById("spec_tech_programmer");
+var buttonCloseSpecTechProgrammer = document.getElementById("button_close_spec_tech_programmer");
 buttonSpecTechProgrammer.addEventListener("click", (evenement)=> {
     specTechProgrammer.style.display = "block";
+    buttonSpecTechProgrammer.style.display = "none";
+    buttonCloseSpecTechProgrammer.style.display = "inline-block";
 });
+
+buttonCloseSpecTechProgrammer.addEventListener("click", (evenement)=>{
+    specTechProgrammer.style.display = "none";
+    buttonCloseSpecTechProgrammer.style.display = "none";
+    buttonSpecTechProgrammer.style.display = "inline-block";
+});
+
+
 
 /*
 * alerts

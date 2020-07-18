@@ -89,6 +89,10 @@ h5 {
     font-size: 2em;
 }
 
+.skills li {
+    font-size: 1.5em;
+}
+
 
 /* BEHAVIORS
 *
@@ -99,8 +103,13 @@ h5 {
     display: none;
 }
 
-.block {
+.block, .flags_buttons button, .skills li, .list_creations li {
     display: block;
+}
+
+.fixed, .flags_buttons {
+    position: fixed;
+    
 }
 
 .flex {
@@ -205,8 +214,8 @@ button {
 
 
 .main_container {
-    padding-top: 10em;
-    padding-bottom: 30em;
+    padding-top: 8em;
+    padding-bottom: 32em;
     padding-left: 25em;
     padding-right: 1em;
     font-family: sans-serif;
@@ -220,19 +229,21 @@ section td {
 }
 
 .translation {
-    padding-top: 17em;
+    padding-top: 15em;
     padding-right: 1em;
-}
-
-
-.modale {
+    
     
 }
+
+
+
 
 .icon {
     width: 10em;
     height: 10em;
+    padding-top: 2em;
 }
+
 
 .icon_button {
     width: 2em;
@@ -256,19 +267,20 @@ section td {
     display: block;
 }
 
-.skill {
-    
+.flags_buttons {
+    padding-top: 9em;
+    padding-left: 5.5em;
 }
 
-.skill li, .list_creations li {
+
+.skills li, .list_creations li {
     background-color: antiquewhite;
-    margin-top: 1em;
+    margin-top: 0em;
     margin-bottom: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    display: block;
 }
 .skill a {
     margin-left: 9em;
@@ -290,6 +302,9 @@ section td {
     font-size: 1.25em;
 }
 
+.profile_labels {
+    padding-top: 2em;
+}
 
 
 /*
