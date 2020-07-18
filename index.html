@@ -24,7 +24,7 @@
                 <div id="logo" class="logo">
                     <nav>
                         <table>
-                            <tr><td class="blue"><a id="nav_skills" href="">compétences</a></td></tr>
+                            <tr><td class="blue"><a id="nav_skills" href="#skills">compétences</a></td></tr>
                             <tr><td class="yellow"><a id="nav_profile" href="#profile">profil</a></td></tr>
                             <tr><td class="green"><a id="nav_contact" href="#contact">contact</a></td></tr>
                             <tr><td class="orange"><a id="nav_creations" href="#creations">créations</a></td></tr>
@@ -118,7 +118,7 @@
                             </ul>
                             
                         </div>
-                        <footer class="">
+                        <footer>
                             <a href="#article_manchester"><button><img class="icon_button" src="icons/download.svg"/><span id="button_creations_view">voir</span></button></a>
                         </footer>
                     </article>
@@ -135,7 +135,7 @@
                                 <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/>FACEBOOK developer</button>
                                 <h2 id="manchester_showcase">site vitrine</h2>
                                 <h3 id="manchester_agenda">agenda</h3>
-                                <div class="image_site">
+                                <div class="image_site_detail">
                                     <img src="images/png/manchester_site_detail_img.png"/>
                                 </div>
                                 
@@ -148,6 +148,9 @@
                                 </button></a></p>
                             </footer>
                         </article>
+                    </section>
+                    <section>
+                        <a href="#article_devis"><button><img class="icon_button" src="icons/download.svg"/></button></a>
                     </section>
                     <section class="card">
                         <article id="article_devis" class="white_smoke">
@@ -167,6 +170,9 @@
                                 </button></a></p>
                             </footer>
                         </article>
+                    </section>
+                    <section>
+                        <a href="#article_direct_molto"><button><img class="icon_button" src="icons/download.svg"/></button></a>
                     </section>
                     <section class= "card">
                         <article id="article_direct_molto" class="white_smoke">
@@ -188,6 +194,9 @@
                             </footer>
                         </article>
                     </section>
+                    <section>
+                        <a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+                    </section>
                     <section class="card">
                         <article id="article_programmer" class="white_smoke">
                             <header class="article_header">
@@ -198,8 +207,8 @@
                                 <div><button id="button_certif_programmer" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="programmer_test_assert">test button certifié</span></button></div>
                                 
                                 <div>
-                                    <button><img class="icon_button" src="icons/switch.svg"/><span id="programmer_switch_language">français anglais</span></button>
-                                    <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share">se partage sur in</span></button>
+                                    <button id="button_programmer_switch_language"><img class="icon_button" src="icons/switch.svg"/><span id="programmer_switch_language">français anglais</span></button>
+                                    <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share">se partage ici @in</span></button>
                                     <div>
                                         <button><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards">édite mes cartes pro</span></button>
                                         <img class="cart_pro" src="images/png/cart_pro.png"/>
@@ -220,7 +229,7 @@
                                 
                             </div>
                             <div>
-                                <a class="right"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website">site web</span></button></a>
+                                <a class="right" href="#indices"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website">site web</span></button></a>
                             </div>
                             <footer class="article_footer">
                                 <p><a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
@@ -244,50 +253,45 @@
                 </header>
                 <div class="table">
                     <table id="table_indices" class="antique_white">
-                    <tr>
-                        <td class="right">ANDROID</td>
-                        <td>direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">ANGULAR</td>
-                        <td>devis, direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">FULLCALENDAR JS</td>
-                        <td>direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">JAVA SPRING</td>
-                        <td>devis, direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">JAVASCRIPT</td>
-                        <td>manchester, programmer</td>
-                    </tr>
-                    <tr>
-                        <td class="right">NODE</td>
-                        <td>programmer, devis, direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">REST</td>
-                        <td>devis, direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">ROOM</td>
-                        <td>direct molto</td>
-                    </tr>
-                    <tr>
-                        <td class="right">
-                            <a href="#table_indices"><button id="button_more">afficher plus</button></a>
-                            <button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button>
-                        </td>
-                    </tr>
-                </table>
-
-                </div>
-                
-                <div id="more">
-
+                        <tr>
+                            <td class="right">ANDROID</td>
+                            <td>direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ANGULAR</td>
+                            <td>devis, direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">FULLCALENDAR JS</td>
+                            <td>direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">JAVA SPRING</td>
+                            <td>devis, direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">JAVASCRIPT</td>
+                            <td>manchester, programmer</td>
+                        </tr>
+                        <tr>
+                            <td class="right">NODE</td>
+                            <td>programmer, devis, direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">REST</td>
+                            <td>devis, direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">ROOM</td>
+                            <td>direct molto</td>
+                        </tr>
+                        <tr>
+                            <td class="right">
+                                <a href="#table_indices"><button id="button_more">afficher plus</button></a>
+                                <button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button>
+                            </td>
+                        </tr>
+                    </table>    
                 </div>
                 <footer class="section_footer">
                     <a href=""><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>

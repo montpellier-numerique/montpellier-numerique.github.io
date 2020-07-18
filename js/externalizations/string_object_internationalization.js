@@ -64,8 +64,8 @@ var string = {
     myPortfolio: ["mon portfolio", "my portfolio"],
     assertTestButton: ["certifié test button", "asserts button tests"],
     switchLanguage: ["français anglais", "french english"],
-    share: ["se partage sur IN", "here to share on"],
-    programmerEditCards: ["édite mes cartes pro", "edits my visit cards"],
+    share: ["se partage ici @in", "to share here @in"],
+    programmerEditCards: ["édite mes cartes pro", "to edit my visit cards"],
     specTech: ["spécifications techniques", "techniques specifications"],
     website: ["site web", "website"]
 }

@@ -19,6 +19,7 @@ var buttonSpeak = document.getElementById("button_speak");
 var buttonSpeakFrench = document.getElementById("button_speak_french");
 var buttonEnglishFlag = document.getElementById("button_english_flag");
 var buttonFrenchFlag = document.getElementById("button_french_flag");
+var buttonProgrammerSwitchLanguage = document.getElementById("button_programmer_switch_language");
 
 var resetTranslationButtons = function resetTranslationButtons(){
     if(languageCurrent === 0) {
@@ -56,6 +57,16 @@ buttonEnglishFlag.addEventListener("click", (evenement)=>{
 buttonFrenchFlag.addEventListener("click", (evenement)=>{
     translateToFrench();
     resetTranslationButtons();
+});
+
+buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
+    if(languageCurrent === 0) {
+        translateToEnglish();
+        resetTranslationButtons();
+    } else if(languageCurrent === 1) {
+        translateToFrench();
+        resetTranslationButtons();
+    }
 });
 
 /*

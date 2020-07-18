@@ -1,15 +1,15 @@
-
-/* TAGS
+h5 {
+    font-size: 1em;
+    background-color: antiquewhite;
+}
+/* DESIGN
 *
 */
 button {
     border-radius: 1.5em;
 }
 
-h5 {
-    font-size: 1em;
-    background-color: antiquewhite;
-}
+
 
 .table table {
     padding-top: 0.5em;
@@ -59,9 +59,10 @@ h5 {
     background-color: whitesmoke;
 }
 
-.antique_white, .article_header {
+.antique_white, .article_header, .article_title h1, h2  {
     background-color: antiquewhite;
 }
+
 
 /*
 * COLOR AND TEXT BEHAVIOR
@@ -84,7 +85,9 @@ h5 {
 .main_header {
     font-family: sans-serif;
 }
-
+.main_red {
+    font-size: 3em;
+}
 .main_container h1 {
     font-size: 2em;
 }
@@ -146,8 +149,9 @@ button {
 
 .card {
     width: 100%;
-    padding-top: 0em;
+    margin-bottom: 2em;
     padding-left: 0em;
+    
 }
 
 .logo {
@@ -157,18 +161,22 @@ button {
 
 .logo td {
     border: solid;
-    width: 1.5em;
+    width: 140px;
     height: 1.5em;
     text-align: center;
     font: 1.5em sans-serif;
 }
 
 .logo a {
+    text-decoration: underline;
+}
+
+.logo a:hover {
+    color: red;
 }
 
 .main_red {
     margin-left: 5em;
-    font-size: 3em;
 }
 
 
@@ -195,10 +203,7 @@ button {
     padding-right: 0.5em;
 }
 
-.article_title h1, h2 {
-    background-color: antiquewhite;
-    
-}
+
 
 
 .article_title h1, h2 {
@@ -221,6 +226,8 @@ button {
     font-family: sans-serif;
     
 }
+
+
 
 
 section td {
@@ -255,7 +262,7 @@ section td {
     height: auto;
 }
 
-.image_site img {
+.image_site_detail img {
     width: 100%;
     height: auto;
     
@@ -268,7 +275,7 @@ section td {
 }
 
 .flags_buttons {
-    padding-top: 9em;
+    margin-top: 9em;
     padding-left: 5.5em;
 }
 
@@ -312,19 +319,18 @@ section td {
 */
 
 #article_manchester {
-    max-width: 600px;
+    max-width: 760px;
 }
 
 #article_devis {
-    max-width: 485px;
 }
 
 #article_direct_molto {
-    max-width: 650px;
+    
 }
 
 #article_programmer {
-    max-width: 850px;
+    
 }
 
 
