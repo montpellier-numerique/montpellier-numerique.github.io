@@ -24,7 +24,7 @@
                 <div id="logo" class="logo">
                     <nav>
                         <table>
-                            <tr><td class="blue"><a id="nav_skills" href="">compétences</a></td></tr>
+                            <tr><td class="blue"><a id="nav_skills" href="#skills">compétences</a></td></tr>
                             <tr><td class="yellow"><a id="nav_profile" href="#profile">profil</a></td></tr>
                             <tr><td class="green"><a id="nav_contact" href="#contact">contact</a></td></tr>
                             <tr><td class="orange"><a id="nav_creations" href="#creations">créations</a></td></tr>
@@ -99,34 +99,44 @@
             <article>
                 <header class="flex, title">
                     <img class="icon" src="icons/see.svg"/>
-                    <h1>mes créations</h1>
+                    <h1>créations</h1>
                     <h2>utiles</h2>
                     <h3>adaptées</h3>
                 </header>
+                <section class="list_creations">
+                    <article>
+                        <header></header>
+                        <div>
+                            <ul>
+                                <li><a href="#article_manchester">manchester</a></li>
+                                <li><a href="#article_devis">devis</a></li>
+                                <li><a href="#article_direct_molto">direct molto</a></li>
+                                <li><a href="#article_programmer">programmer</a></li>
+                            </ul>
+                            
+                        </div>
+                        <footer class="">
+                            <a href="#article_manchester"><button><img class="icon_button" src="icons/download.svg"/>voir</button></a>
+                        </footer>
+                    </article>
+                    
+                </section>
                 
                 <section class="flex">
                     <section class="card">
                         <article id="article_manchester" class="white_smoke">
-                            <header>
-                                <div>
-                                    <div class="flex">
-                                
-                                        <h1>manchester</h1>
-                                        
-                                        
-                                    </div>
-                                    
-                                </div>
+                            <header class="article_header">
+                                <h1>manchester</h1>
                             </header>
-                            <div>
+                            <div>    
+                                <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/>FACEBOOK developer</button>
+                                <h2>site web vitrine</h2>
+                                <h3>agenda</h3>
+                                <div class="image_site">
+                                    <img src="images/png/manchester_site_detail_img.png"/>
+                                </div>
                                 
-                                    
-                                
-                            <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/>FACEBOOK developer</button>
-                            <h2>site vitrine</h2>
-                            <h3>agenda</h3>
-                            <img src="images/png/manchester_site_detail_img.png"/>
-                            <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/>accès site web</button></a>
+                                <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/>voir le site</button></a>
                             </div>
                             
                             <footer class="article_footer">
@@ -223,61 +233,62 @@
     
         <section id="indices" class="main_container">
             <article>
-                <header><img class="icon" src="icons/index.svg"/></header>
-                <table>
+                <header class="flex, title">
+                    <img class="icon" src="icons/index.svg"/>
+                    <h1>indices</h1>
+                    <h2>les technologies</h2>
+                    <h3>dans les créations</h3>
+                </header>
+                <div class="table">
+                    <table class="antique_white">
                     <tr>
-                        <th>les technologies</th>
-                        <th>dans les créations</th>
-                    </tr>
-                    <tr>
-                        <td>ANDROID</td>
+                        <td class="right">ANDROID</td>
                         <td>direct molto</td>
                     </tr>
                     <tr>
-                        <td>ANGULAR</td>
+                        <td class="right">ANGULAR</td>
                         <td>devis, direct molto</td>
                     </tr>
                     <tr>
-                        <td>FULLCALENDAR JS</td>
+                        <td class="right">FULLCALENDAR JS</td>
                         <td>direct molto</td>
                     </tr>
                     <tr>
-                        <td>JAVA</td>
+                        <td class="right">JAVA</td>
                         <td>devis, direct molto</td>
                     </tr>
                     <tr>
-                        <td>JAVASCRIPT</td>
+                        <td class="right">JAVASCRIPT</td>
                         <td>manchester, programmer</td>
                     </tr>
                     <tr>
-                        <td>SDK FACEBOOK</td>
-                        <td>manchester</td>
+                        <td class="right">NODE</td>
+                        <td>programmer, devis, direct molto</td>
                     </tr>
                     <tr>
-                        <td>SEO</td>
-                        <td>programmer</td>
-                    </tr>
-                    <tr>
-                        <td>SPRING</td>
+                        <td class="right">SPRING</td>
                         <td>devis, direct molto</td>
                     </tr>
                     <tr>
-                        <td>REST</td>
+                        <td class="right">REST</td>
                         <td>devis, direct molto</td>
                     </tr>
                     <tr>
-                        <td>ROOM</td>
+                        <td class="right">ROOM</td>
                         <td>direct molto</td>
                     </tr>
                     <tr>
-                        <td><button id="button_more">afficher plus</button></td>
+                        <td class="right"><button id="button_more">afficher plus</button></td>
                     </tr>
                 </table>
+
+                </div>
+                
                 <div id="more">
 
                 </div>
                 <footer class="section_footer">
-                    <a href="/"><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
+                    <a href=""><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
                 </footer>
             </article>
         </section>

@@ -11,6 +11,14 @@ h5 {
     background-color: antiquewhite;
 }
 
+.table table {
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+.table button {
+    margin-top: 1em;
+}
 /* COLORS
 * 
 */
@@ -107,7 +115,6 @@ h5 {
 
 
 
-
 /* FORMAT
 *
 */
@@ -130,6 +137,8 @@ button {
 
 .card {
     width: 100%;
+    padding-top: 0em;
+    padding-left: 0em;
 }
 
 .logo {
@@ -215,9 +224,6 @@ section td {
     padding-right: 1em;
 }
 
-.main_container {
-    
-}
 
 .modale {
     
@@ -238,8 +244,8 @@ section td {
     height: auto;
 }
 
-.image_site {
-    width: 800px;
+.image_site img {
+    width: 100%;
     height: auto;
     
 }
@@ -254,7 +260,7 @@ section td {
     
 }
 
-.skill li {
+.skill li, .list_creations li {
     background-color: antiquewhite;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -266,6 +272,11 @@ section td {
 }
 .skill a {
     margin-left: 9em;
+}
+
+.list_creations a {
+    padding-left: 1.5em;
+    color: blue;
 }
 
 .profile label {
@@ -286,7 +297,7 @@ section td {
 */
 
 #article_manchester {
-    max-width: 800px;
+    max-width: 600px;
 }
 
 #article_devis {
