@@ -90,9 +90,37 @@ buttonEditCard.addEventListener("click", (evenement)=> {
 */
 
 var buttonMore = document.getElementById("button_more");
+var tableIndices = document.getElementById("table_indices");
+var buttonHide = document.getElementById("button_hide");
 buttonMore.addEventListener("click", (evenement)=> {
-    buttonMore.style.backgroundColor ="green";
+    
+    for(var i=0; i<indices.length; i++) {
+        var row = document.createElement("tr");
+        var col = document.createElement("td");
+        col.innerHTML = indices[i].toUpperCase();
+        col.style.float ="right";
+        row.appendChild(col);
+        tableIndices.appendChild(row);
+    }
+
+    buttonMore.style.display = "none";
+    buttonHide.style.display= "inline-block";
+    
 });
+
+buttonHide.addEventListener("click", (evenement)=> {
+
+    // TODO
+    var rows = tableIndices.getElementsByTagName("tr");
+    var originalRows = rows.length - indices.length;
+    for(var i=originalRows; i<rows.length; i++) {
+        rows[i].style.display = "none";
+    }
+
+    buttonHide.style.display = "none";
+    buttonMore.style.display="inline-block";
+});
+
 
 /*
 * manipulate DOM
