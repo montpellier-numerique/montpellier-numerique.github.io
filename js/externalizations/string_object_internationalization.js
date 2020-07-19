@@ -26,7 +26,7 @@ var string = {
     
 
     editCard: ["éditer mes cartes de visite en un clic", "edit my visit cards in a click"],
-    viewProfile: ["voir mon profil @LinkedIn", "view my profile @LinkedIn"],
+    viewProfile: ["profil @LinkedIn", "profile @LinkedIn"],
 
     // CONTACT
     contactMe: ["me contacter @LinkedIn", "contact me @LinkedIn"],

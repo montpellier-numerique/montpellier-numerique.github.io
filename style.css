@@ -279,6 +279,11 @@ section td {
     padding-left: 5.5em;
 }
 
+.share_buttons {
+    padding-right: 0.1em;
+    padding-top: 0.1em;
+}
+
 
 .skills li, .list_creations li {
     background-color: antiquewhite;

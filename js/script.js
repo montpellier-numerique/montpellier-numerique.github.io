@@ -70,12 +70,51 @@ buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
 });
 
 /*
-* edit card
+* edit cards serial
 */
 var buttonEditCard = document.getElementById("button_edit_card");
 var imgCartPro = document.getElementById("img_cart_pro");
 buttonEditCard.addEventListener("click", (evenement)=> {
     imgCartPro.style.display = "block";
+});
+
+/* TODO
+* on click button pdf or card pro image 
+* view pdf
+* option save pdf
+*
+* to make pdf from cardPro (<img/>)
+* format a serial of cards for A4 printing
+* 
+*/
+
+var viewPdfCards = function viewPdfCards() {
+    /* TODO view pdf
+    * first format serial on html
+    * create it with js document.createElement()
+    * 
+    * make pdf from the tag container
+    * */
+
+    // test call fonction is ok
+    alert("view pdf");
+} 
+
+var cardPro = document.getElementById("card_pro");
+cardPro.addEventListener(("click"), (evenement)=> { 
+    /* 
+    * on click on cart pro
+    * view pdf */
+    viewPdfCards();
+
+});
+
+var button_edit_cards_pro_pdf = document.getElementById("button_edit_cards_pro_pdf");
+button_edit_cards_pro_pdf.addEventListener("click", (evenement)=> {
+    /* 
+    * the same on click button pdf
+    */
+    viewPdfCards();
 });
 
 /*

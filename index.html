@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="content">
     <section class="main_header">
 
         <header>
-
+            
             <div class="right">
+                
                 <div class="translation">
                     <button id="button_speak" class="yellow">speaks english</button>
                     <button id="button_speak_french" class="alternative"><img class="icon_button" src="icons/france.svg"/></button>
@@ -47,10 +48,14 @@
     </section>
 
     <section>
+        
         <div class="flags_buttons">
             <button id="button_english_flag"><img class="icon_button" src="icons/england.svg"/></button>
             <button id="button_french_flag"><img class="icon_button" src="icons/france.svg"/></button>
         </div>
+
+        
+
         
         <section id="skills" class="main_container">
             <article class="flex">
@@ -67,6 +72,7 @@
                 
             </article>
             <footer class="section_footer">
+                <button><img class="icon_button" src="icons/like.svg"/><img class="icon_button" src="icons/linkedin.svg"/></button>
                 <a href="#profile"><button><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </section>
@@ -78,7 +84,11 @@
                     <label id="know_how_to_be">savoir-être ingénieuse</label>
                     <p class="green"><button id="button_edit_card">éditer mes cartes de visite en un clic</button></p>
                     <p><img id="img_cart_pro" class="alternative" src="images/png/cart_pro.png"/></p>
-                    <p class="red"><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">voir mon profil @LinkedIn</button></a></p>
+                    <p class="red">
+                        <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">profil@LinkedIn</button></a>
+                        <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
+                        
+                    </p>
                 </div>
                 
             </article>
@@ -129,7 +139,7 @@
                     <section class="card">
                         <article id="article_manchester" class="white_smoke">
                             <header class="article_header">
-                                <h1>manchester</h1>
+                                <h1>manchester 2019</h1>
                             </header>
                             <div>    
                                 <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/>FACEBOOK developer</button>
@@ -154,7 +164,7 @@
                     </section>
                     <section class="card">
                         <article id="article_devis" class="white_smoke">
-                            <header class="article_header"><h1>devis</h1></header>
+                            <header class="article_header"><h1>devis 2020</h1></header>
                             <div>
                                 <button id="button_certif_devis" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="button_devis_intuitive">intuitif</span></button>
                                 <h2 id="devis_invoices">logiciel de devis et factures</h2>
@@ -176,7 +186,7 @@
                     </section>
                     <section class= "card">
                         <article id="article_direct_molto" class="white_smoke">
-                            <header class="article_header"><h1>direct molto</h1></header>
+                            <header class="article_header"><h1>direct molto 2020</h1></header>
                             <div>
                                 <button id="button_certif_direct_molto" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="molto_agile">équipe molto AGILE</span></button>
                                 <h2 id="direct_molto_garage">logiciel de gestion d'un garage</h2>
@@ -200,7 +210,7 @@
                     <section class="card">
                         <article id="article_programmer" class="white_smoke">
                             <header class="article_header">
-                                <h1>programmer_montpellier_numerique</h1>
+                                <h1>programmer_montpellier_numerique 2020</h1>
                             </header>
                             <div class="flex">
                                 <div><h2 id="programmer_my_portfolio">mon portfolio</h2></div>
@@ -209,12 +219,12 @@
                                 <div>
                                     <button id="button_programmer_switch_language"><img class="icon_button" src="icons/switch.svg"/><span id="programmer_switch_language">français anglais</span></button>
                                     <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share">se partage ici @in</span></button>
-                                    <div>
-                                        <button><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards">édite mes cartes pro</span></button>
-                                        <img class="cart_pro" src="images/png/cart_pro.png"/>
+                                    <div id="card_pro_container">
+                                        <button id="button_edit_cards_pro_pdf"><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards">édite mes cartes pro</span></button>
+                                        <img id="card_pro" class="cart_pro" src="images/png/cart_pro.png"/>
                                     </div>
                                     
-                                    <button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech">spécifications techniques</span></button>
+                                    <a href="#card_pro"><button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech">spécifications techniques</span></button></a>
                                     <button id="button_close_spec_tech_programmer" class="alternative"><img class="icon_button" src="icons/close.svg"/></button>
                                     
 
@@ -223,8 +233,11 @@
                                     <h3>spécifications techniques</h3>
                                     <h4 class="right">conception objet</h4>
                                     <h5>pour l'international</h5>
-                                    <p>le texte est disponible en français et en anglais, stocké dans un objet JSON. pour changer de langue, l'application JAVASCRIPT gère les traductions.</p>
-                                    
+                                    <p>le texte est disponible en français et en anglais, stocké dans un objet JSON. l'application JavaScript gère les traductions.</p>
+                                    <h5>pour générer des pdf</h5>
+                                    l'application JavaScript utilise jsPDF CDN Library.
+                                    <h5>provenance des icones</h5>
+                                    <p><a href="https://www.flaticon.com">https://www.flaticon.com</a></p>
                                 </div>
                                 
                             </div>
@@ -233,7 +246,7 @@
                             </div>
                             <footer class="article_footer">
                                 <p><a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                    HTML CSS JS JSON NODE SEO</button></a></p>
+                                    HTML CSS JS JSON SEO</button></a></p>
                             </footer>
                         </article>
                     </section>
@@ -275,7 +288,7 @@
                         </tr>
                         <tr>
                             <td class="right">NODE</td>
-                            <td>programmer, devis, direct molto</td>
+                            <td>devis, direct molto</td>
                         </tr>
                         <tr>
                             <td class="right">REST</td>
@@ -294,7 +307,8 @@
                     </table>    
                 </div>
                 <footer class="section_footer">
-                    <a href=""><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
+                    <button><img class="icon_button" src="icons/like.svg"/><img class="icon_button" src="icons/linkedin.svg"/></button>
+                    <a href="#content"><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
                 </footer>
             </article>
         </section>
