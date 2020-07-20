@@ -121,6 +121,7 @@ button {
     flex-wrap: wrap;
 }
 
+
 .right, .section_footer {
     float:right;
 }
@@ -268,7 +269,7 @@ section td {
     
 }
 
-.cart_pro {
+.visit_card {
     width: 22.5em;
     height: auto;
     display: block;

@@ -80,15 +80,39 @@
             <article class="profile flex">
                 <header><img class="icon" src="icons/young.svg"/></header>
                 <div class="profile_labels">
-                    <label id="profile_java">java FULL STACK</label>
-                    <label id="know_how_to_be">savoir-être ingénieuse</label>
-                    <p class="green"><button id="button_edit_card">éditer mes cartes de visite en un clic</button></p>
-                    <p><img id="img_cart_pro" class="alternative" src="images/png/cart_pro.png"/></p>
-                    <p class="red">
-                        <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">profil@LinkedIn</button></a>
-                        <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
-                        
-                    </p>
+                    <div>
+                        <label id="profile_java">java FULL STACK</label>
+                        <label class= "right" id="know_how_to_be">savoir-être ingénieuse</label>
+                    </div>
+                    
+                    <div>
+                        <p class="green"><button id="button_profile_edit_card">éditer mes cartes de visite en un clic</button></p>
+                        <div class="alternative" id="profile_card_container">
+                            <div class="flex">
+                                <div>
+                                    <img class="visit_card" src="images/png/visit_cards/visit_card_fr_light_off.png"/>
+                                </div>
+                                
+                                <div>
+                                    <div>
+                                        <button id="button_profile_view_pdf"><img class="icon_button" src="icons/pdf.svg"/></button>
+                                    </div>
+                                    <div>
+                                        <button id="button_close_profile_card" class="right"><img class="icon_button" src="icons/close.svg"/></button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+
+                        <p class="red">
+                            <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">profil@LinkedIn</button></a>
+                            <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
+                        </p>
+                    </div>
                 </div>
                 
             </article>
@@ -221,7 +245,7 @@
                                     <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share">se partage ici @in</span></button>
                                     <div id="card_pro_container">
                                         <button id="button_edit_cards_pro_pdf"><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards">édite mes cartes pro</span></button>
-                                        <img id="card_pro" class="cart_pro" src="images/png/cart_pro.png"/>
+                                        <img id="card_pro" class="visit_card" src="images/png/visit_cards/visit_card_en_light_on.png"/>
                                     </div>
                                     
                                     <a href="#card_pro"><button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech">spécifications techniques</span></button></a>

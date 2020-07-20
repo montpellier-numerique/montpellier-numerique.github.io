@@ -14,6 +14,9 @@ buttonMainRed.addEventListener("click", (evenement)=> {
     buttonMainRed.style.color = "white";
 });
 
+/**
+ * Translate
+ */
 
 var buttonSpeak = document.getElementById("button_speak");
 var buttonSpeakFrench = document.getElementById("button_speak_french");
@@ -70,13 +73,37 @@ buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
 });
 
 /*
-* edit cards serial
+* edit visit cards
 */
-var buttonEditCard = document.getElementById("button_edit_card");
-var imgCartPro = document.getElementById("img_cart_pro");
-buttonEditCard.addEventListener("click", (evenement)=> {
-    imgCartPro.style.display = "block";
+/**
+ * @ profile
+ */
+var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
+var profileCardContainer = document.getElementById("profile_card_container");
+var buttonCloseProfileCard = document.getElementById("button_close_profile_card");
+var buttonProfileViewPdf = document.getElementById("button_profile_view_pdf"); 
+
+buttonProfileEditCard.addEventListener("click", (evenement)=> {
+    profileCardContainer.style.display = "block";
 });
+
+buttonCloseProfileCard.addEventListener("click", (evenement)=> {
+    profileCardContainer.style.display = "none";
+});
+
+buttonProfileViewPdf.addEventListener("click", (evenement)=> {
+    /*use jsPdf
+    * pdf view then save
+    */
+    // TODO
+    
+    // then close the edition container
+    profileCardContainer.style.display = "none";
+})
+
+/*
+* @ article programmer
+*/
 
 /* TODO
 * on click button pdf or card pro image 
