@@ -131,6 +131,19 @@ var viewPdf = function viewPdf() {
     var canvas = document.createElement("canvas");
     canvas.width = 85;
     canvas.height = 54;
+    var context = canvas.getContext("2d");
+
+    var image = document.getElementById("visit_card_light_off");
+    
+    // test image
+    profileCardContainer.innerHTML = "";
+    profileCardContainer.appendChild(image);
+
+    // image into canvas into pdf TODO canvas doesnt show image
+    image.onload = function() { // necessary to compile
+        context.drawImage(image, 10, 10, canvas.width, canvas.height);
+    }
+    
     pdf.addImage(canvas, "PNG", margins.top, margins.left, canvas.width, canvas.height); // x, y, width, height
     
     // set output
@@ -159,7 +172,7 @@ buttonProfileMakePdf.addEventListener("click", (evenement)=> {
     //cardPdf.save("card.pdf");
 
     // then close the edition container
-    profileCardContainer.style.display = "none";
+    //profileCardContainer.style.display = "none";
 })
 
 /*
