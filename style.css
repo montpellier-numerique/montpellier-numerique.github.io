@@ -121,6 +121,10 @@ button {
     flex-wrap: wrap;
 }
 
+.left {
+    float: left;
+}
+
 
 .right, .section_footer {
     float:right;

@@ -86,28 +86,31 @@
                     </div>
                     
                     <div>
-                        <p class="green"><button id="button_profile_edit_card">éditer mes cartes de visite en un clic</button></p>
+                        <p class="green"><button id="button_profile_edit_card">mes cartes de visite en un clic</button></p>
                         <div class="alternative" id="profile_card_container">
-                            <div class="flex">
-                                <div>
-                                    <img class="visit_card" src="images/png/visit_cards/visit_card_fr_light_off.png"/>
-                                </div>
-                                
-                                <div>
+                            
+                            <div class="">
+                                <div class="right green">
                                     <div>
-                                        <button id="button_profile_view_pdf"><img class="icon_button" src="icons/pdf.svg"/></button>
+                                        <button id="button_profile_make_pdf"><img class="icon_button" src="icons/pdf.svg"/></button>
                                     </div>
                                     <div>
                                         <button id="button_close_profile_card" class="right"><img class="icon_button" src="icons/close.svg"/></button>
-                                    </div>
-                                    
-                                    
+                                    </div> 
                                 </div>
+                                <div id="pdf_light_off" #pdfLightOff class="left">
+                                    <img id="visit_card_light_off" class="visit_card" src="images/png/visit_cards/visit_card_fr_light_off.png"/>
+                                </div>
+                                
+                                
                                 
                             </div>
                             
                         </div>
 
+                        
+                    </div>
+                    <div>
                         <p class="red">
                             <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">profil@LinkedIn</button></a>
                             <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
@@ -147,7 +150,7 @@
                             <ul>
                                 <li><a href="#article_manchester">manchester</a></li>
                                 <li><a href="#article_devis">devis</a></li>
-                                <li><a href="#article_direct_molto">direct molto</a></li>
+                                <li><a href="#article_direct_molto">direct molto garages</a></li>
                                 <li><a href="#article_programmer">programmer</a></li>
                             </ul>
                             
@@ -210,7 +213,7 @@
                     </section>
                     <section class= "card">
                         <article id="article_direct_molto" class="white_smoke">
-                            <header class="article_header"><h1>direct molto 2020</h1></header>
+                            <header class="article_header"><h1>direct molto garages 2020</h1></header>
                             <div>
                                 <button id="button_certif_direct_molto" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="molto_agile">équipe molto AGILE</span></button>
                                 <h2 id="direct_molto_garage">logiciel de gestion d'un garage</h2>
@@ -234,7 +237,7 @@
                     <section class="card">
                         <article id="article_programmer" class="white_smoke">
                             <header class="article_header">
-                                <h1>programmer_montpellier_numerique 2020</h1>
+                                <h1>programmer montpellier_numerique 2020</h1>
                             </header>
                             <div class="flex">
                                 <div><h2 id="programmer_my_portfolio">mon portfolio</h2></div>
@@ -259,9 +262,9 @@
                                     <h5>pour l'international</h5>
                                     <p>le texte est disponible en français et en anglais, stocké dans un objet JSON. l'application JavaScript gère les traductions.</p>
                                     <h5>pour générer des pdf</h5>
-                                    l'application JavaScript utilise jsPDF CDN Library.
+                                    <p>jsPDF CDN Library <a href="https://cdnjs.com">(https://cdnjs.com)</a>.</p>
                                     <h5>provenance des icones</h5>
-                                    <p><a href="https://www.flaticon.com">https://www.flaticon.com</a></p>
+                                    <p><a href="https://flaticon.com">https://flaticon.com</a></p>
                                 </div>
                                 
                             </div>
@@ -339,9 +342,15 @@
 
     </section>
 
+    <!--EXTERNAL MODULES-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+    <!--APP JS-->
     <script src="js/externalizations/string_object_internationalization.js"></script>
     <script src="js/externalizations/indices_string_array.js"></script>
     <script src="js/do_translate.js"></script>
+    <script src="js/make_pdf.js"></script>
     <script src="js/script.js"></script>
 
 </body>

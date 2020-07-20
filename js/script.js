@@ -81,7 +81,8 @@ buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
 var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
 var profileCardContainer = document.getElementById("profile_card_container");
 var buttonCloseProfileCard = document.getElementById("button_close_profile_card");
-var buttonProfileViewPdf = document.getElementById("button_profile_view_pdf"); 
+var buttonProfileMakePdf = document.getElementById("button_profile_make_pdf");
+var imageVisitCardLightOff = document.getElementById("visit_card_light_off")
 
 buttonProfileEditCard.addEventListener("click", (evenement)=> {
     profileCardContainer.style.display = "block";
@@ -90,13 +91,66 @@ buttonProfileEditCard.addEventListener("click", (evenement)=> {
 buttonCloseProfileCard.addEventListener("click", (evenement)=> {
     profileCardContainer.style.display = "none";
 });
+/*
+var openPdf = function openPdf() {
+    var margins = {
+        top: 20,
+        bottom: 20,
+        left: 20,
+        width:850
+    };
+    var pdf = new jsPDF();
+    
+    pdf.fromHTML(
+        profileCardContainer.innerHTML, // html
+        margins.left, // x
+        margins.top, // y
+        {width: margins.width}
+        );
+    
+    
+    //pdf.output("dataurlnewwindow");
+    pdf.save("pdf.pdf");
+};
+*/
 
-buttonProfileViewPdf.addEventListener("click", (evenement)=> {
+var margin = {
+    top: 20,
+    bottom: 20,
+    left: 20,
+    width: 100
+}
+
+var viewPdf = function viewPdf() {
+    var pdf = new jsPDF("landscape", "mm", "a4");
+    pdf.setFontSize(18);
+    pdf.text("hello", margin.top, margin.left);
+    
+    pdf.output("dataurlnewwindow");
+
+};
+
+
+buttonProfileMakePdf.addEventListener("click", (evenement)=> {
+    viewPdf();
+    //downloadPdf();
+    //openPdf();
     /*use jsPdf
     * pdf view then save
     */
     // TODO
-    
+    //var cardPdf = new jsPDF();
+    //cardPdf.text(3, 3, "hello");
+    //cardPdf.addImage(imageVisitCardLightOff);
+    /*
+    cardPdf.fromHTML(imageVisitCardLightOff, 15, 15, {
+        "width": 180,
+    });
+    cardPdf.autoPrint();
+    cardPdf.output("dataurlnewwindow");
+    */
+    //cardPdf.save("card.pdf");
+
     // then close the edition container
     profileCardContainer.style.display = "none";
 })
