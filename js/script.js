@@ -114,20 +114,27 @@ var openPdf = function openPdf() {
 };
 */
 
-var margin = {
-    top: 20,
-    bottom: 20,
-    left: 20,
-    width: 100
+var margins = {
+    top: 0,
+    bottom: 0,
+    left: 0,
+    width: 200
 }
 
-var viewPdf = function viewPdf() {
-    var pdf = new jsPDF("landscape", "mm", "a4");
-    pdf.setFontSize(18);
-    pdf.text("hello", margin.top, margin.left);
-    
-    pdf.output("dataurlnewwindow");
+var source = document.getElementById("pdf_light_off");
 
+var viewPdf = function viewPdf() {
+    // create pdf
+    var pdf = new jsPDF("portrait", "mm", "a4");
+
+    // create canvas to add image to pdf
+    var canvas = document.createElement("canvas");
+    canvas.width = 85;
+    canvas.height = 54;
+    pdf.addImage(canvas, "PNG", margins.top, margins.left, canvas.width, canvas.height); // x, y, width, height
+    
+    // set output
+    pdf.output("dataurlnewwindow"); // "datauri" in same window
 };
 
 
