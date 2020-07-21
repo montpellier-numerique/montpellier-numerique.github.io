@@ -12,20 +12,11 @@
     <section class="main_header">
 
         <header>
-            
-            <div class="right">
-                
-                <div class="translation">
-                    <button id="button_speak" class="yellow">speaks english</button>
-                    <button id="button_speak_french" class="alternative"><img class="icon_button" src="icons/france.svg"/></button>
-                </div>
-            </div>
-             
             <div class="flex">
                 <div id="logo" class="logo">
                     <nav>
                         <table>
-                            <tr><td class="blue"><a id="nav_skills" href="#skills">compétences</a></td></tr>
+                            <tr><td class="blue"><a id="nav_skills" href="#main_red">compétences</a></td></tr>
                             <tr><td class="yellow"><a id="nav_profile" href="#profile">profil</a></td></tr>
                             <tr><td class="green"><a id="nav_contact" href="#contact">contact</a></td></tr>
                             <tr><td class="orange"><a id="nav_creations" href="#creations">créations</a></td></tr>
@@ -43,7 +34,7 @@
     
     </section>
       
-    <section class="blue">
+    <section id="main_red" class="blue">
         <button id="button_main_red" class="red, main_red">Développeuse JAVA Full Stack</button>
     </section>
 
@@ -57,7 +48,7 @@
         
 
         
-        <section id="skills" class="main_container">
+        <section id="skills" class="main_container_first">
             <article class="flex">
                 <header><img class="icon" src="icons/wrench.svg"/></header>
                 <div class="skills">
@@ -126,9 +117,9 @@
 
         <section id="contact" class="main_container">
             <article class="flex">
-                <header><img class="icon" src="icons/mouse-clicker.svg"/></header>
-                <div>
-                    <p><a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_contact_linkedin">me contacter @LinkedIn</button></a></p>
+                <header><img class="icon icon_contact" src="icons/mouse-clicker.svg"/></header>
+                <div class="contact">
+                    <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_contact_linkedin">me contacter @LinkedIn</button></a>
                 </div>
             </article>
             <footer class="section_footer">
@@ -150,7 +141,7 @@
                             <ul>
                                 <li><a href="#article_manchester">manchester</a></li>
                                 <li><a href="#article_devis">devis</a></li>
-                                <li><a href="#article_direct_molto">direct molto garages</a></li>
+                                <li><a href="#article_direct_molto">direct molto</a></li>
                                 <li><a href="#article_programmer">programmer</a></li>
                             </ul>
                             
@@ -180,60 +171,62 @@
                             </div>
                             
                             <footer class="article_footer">
-                                <p><a><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                    HTML SDK FACEBOOK CSS RESPONSIVE
-                                </button></a></p>
+                                <a><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    HTML SDK FACEBOOK CSS
+                                </button></a>
                             </footer>
                         </article>
                     </section>
-                    <section>
-                        <a href="#article_devis"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                    </section>
+                    <div class="download">
+                        <a href="#next_devis"><button id="next_devis"><img class="icon_button" src="icons/download.svg"/>devis</button></a>
+                    </div>
+                    
                     <section class="card">
+                        
                         <article id="article_devis" class="white_smoke">
                             <header class="article_header"><h1>devis 2020</h1></header>
                             <div>
                                 <button id="button_certif_devis" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="button_devis_intuitive">intuitif</span></button>
                                 <h2 id="devis_invoices">logiciel de devis et factures</h2>
-                                <h3 id="devis_cart_item">panier boutique item + arrière-boutique de gestion</h3>
+                                <h3 id="devis_cart_item">panier boutique item + gestion</h3>
                             </div>
                             <div class="right">
-                                <button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_devis_view_interface">voir l'interface</span></button>
+                                <a href="https://www.linkedin.com/in/janie-chun-hung-kee-0b807238/detail/treasury/education:639285974/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAfXBQwBruiF1ZqnSRMO0SDfxKXRexnkHk0%2C1591097506010)&section=education%3A639285974&treasuryCount=3"><button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_devis_view_interface">voir l'interface</span></button></a>
                             </div>
                             
                             <footer class="article_footer">
-                                <p><a href="https://gitlab.com/cjanie"><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                <a href="https://gitlab.com/cjanie"><button><img class="icon_button" src="icons/git-logo.svg"/>
                                     JAVA SPRING ANGULAR
-                                </button></a></p>
+                                </button></a>
                             </footer>
                         </article>
                     </section>
-                    <section>
-                        <a href="#article_direct_molto"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                    </section>
+                    <div class="download">
+                        <a href="#next_direct_molto"><button id="next_direct_molto"><img class="icon_button" src="icons/download.svg"/>direct molto</button></a>
+                    </div>
                     <section class= "card">
                         <article id="article_direct_molto" class="white_smoke">
-                            <header class="article_header"><h1>direct molto garages 2020</h1></header>
+                            <header class="article_header"><h1>direct molto 2020</h1></header>
                             <div>
                                 <button id="button_certif_direct_molto" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="molto_agile">équipe molto AGILE</span></button>
                                 <h2 id="direct_molto_garage">logiciel de gestion d'un garage</h2>
-                                <h3 id="direct_molto_management">accès admin + gérant + tablette du mécanicien</h3>
+                                <h3 id="direct_molto_management">admin + gérant + tablette du mécanicien</h3>
                                 <div class="right">
-                                    <button class="green"><img class="icon_button" src="icons/see.svg"/><span id="direct_molto_view_interface">voir l'interface</span></button>
+                                    <button class="green" disabled><img class="icon_button" src="icons/see.svg"/><span id="direct_molto_view_interface">voir l'interface</span></button>
                                 </div>
                                 
                             </div>
                             
                             <footer class="article_footer">
-                                <p><a href="https://gitlab.com/voie-de-garage"><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                <a href="https://gitlab.com/voie-de-garage"><button><img class="icon_button" src="icons/git-logo.svg"/>
                                     SPRING ANGULAR ANDROID
-                                </button></a></p>
+                                </button></a>
                             </footer>
                         </article>
                     </section>
-                    <section>
-                        <a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                    </section>
+                    <div class="download">
+                        <a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/>programmer</button></a>
+                    </div>
                     <section class="card">
                         <article id="article_programmer" class="white_smoke">
                             <header class="article_header">
@@ -259,31 +252,30 @@
                                 <div id="spec_tech_programmer" class="alternative">
                                     <h3>spécifications techniques</h3>
                                     <h4 class="right">conception objet</h4>
-                                    <h5>pour l'international</h5>
-                                    <p>le texte est disponible en français et en anglais, stocké dans un objet JSON. l'application JavaScript gère les traductions.</p>
-                                    <h5>pour générer des pdf</h5>
-                                    <p>jsPDF CDN Library <a href="https://cdnjs.com">(https://cdnjs.com)</a>.</p>
-                                    <h5>provenance des icones</h5>
-                                    <p><a href="https://flaticon.com">https://flaticon.com</a></p>
+                                    <h5 class="right">multilingue</h5>
+                                    <p class="right">le texte, disponible en français et en anglais, est stocké dans un objet JSON. l'application JS gère les traductions.</p>
+                                    <a href="https://flaticon.com">https://flaticon.com</a>
                                 </div>
                                 
                             </div>
-                            <div>
-                                <a class="right" href="#indices"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website">site web</span></button></a>
+                            <div class="right">
+                                <a class="" href="#indices"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website">site web</span></button></a>
+                                <a class="" href="#indices"><button><img class="icon_button" src="icons/download.svg"/></button></a>
                             </div>
                             <footer class="article_footer">
-                                <p><a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                    HTML CSS JS JSON SEO</button></a></p>
+                                <a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    HTML CSS JS JSON</button></a>
                             </footer>
                         </article>
                     </section>
                 </section>
             </article>
             <footer class="section_footer">
-                <a href="#indices"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+                <a href="#indices"><button class="undisplay"><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </section>
-    
+
+        
         <section id="indices" class="main_container">
             <article>
                 <header class="flex, title">
@@ -302,7 +294,7 @@
                             <td>devis, direct molto</td>
                         </tr>
                         <tr>
-                            <td class="right">FULLCALENDAR JS</td>
+                            <td class="right">FULLCALENDAR</td>
                             <td>direct molto</td>
                         </tr>
                         <tr>

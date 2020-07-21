@@ -93,144 +93,12 @@ buttonCloseProfileCard.addEventListener("click", (evenement)=> {
     profileCardContainer.style.display = "none";
     buttonProfileEditCard.disabled = false;
 });
-/*
-var openPdf = function openPdf() {
-    var margins = {
-        top: 20,
-        bottom: 20,
-        left: 20,
-        width:850
-    };
-    var pdf = new jsPDF();
-    
-    pdf.fromHTML(
-        profileCardContainer.innerHTML, // html
-        margins.left, // x
-        margins.top, // y
-        {width: margins.width}
-        );
-    
-    
-    //pdf.output("dataurlnewwindow");
-    pdf.save("pdf.pdf");
-};
-*/
-
-var margins = {
-    top: 0,
-    bottom: 0,
-    left: 0,
-    width: 200
-}
-
-var source = document.getElementById("pdf_light_off");
-var image= document.getElementById("visit_card_light_off");
-
-image.style.width = 850;
-image.style.height = 540;
-
-function imageToBase64(image) {
-    // create canvas to draw image within
-    var canvas = document.createElement("canvas");
-    var context = canvas.getContext("2d");
-
-    // set width and height of canvas equals to image size
-    canvas.width = image.style.width;
-    canvas.height = image.style.height;
-
-    //image.crossOrigin = "*";
-
-    context.drawImage(image, 0, 0);
-    return canvas.toDataURL();
-
-};
-
-var getDataUrl = function getDataUrl(image) {
-    // create canvas to draw image within
-    var canvas = document.createElement("canvas");
-    var context = canvas.getContext("2d");
-
-    // set width and height of canvas equals to image size
-    canvas.width = image.style.width;
-    canvas.height = image.style.height;
-
-    // draw within canvas
-    context.drawImage(image, 0, 0);
-
-    // return data url
-    return canvas.toDataURL("image/png");
-};
-/*
-image.addEventListener("load", function(event) {
-    var dataUrl = getDataUrl(event.currentTarget);
-    console.log(dataUrl);
-});
-*/
-var getDataUrlCardLightOff = function getDataUrlCardLightOff() {
-    getDataUrl(image);
-}
-
-var viewPdf = function viewPdf() {
-    // create pdf
-    var pdf = new jsPDF("portrait", "mm", "a4");
-
-    // create canvas to add image to pdf
-    var canvas = document.createElement("canvas");
-    canvas.width = 85;
-    canvas.height = 54;
-    var context = canvas.getContext("2d");
-
-    
-    
-    // test image ok
-    // profileCardContainer.innerHTML = "";
-    // profileCardContainer.appendChild(image);
-
-    // image into canvas into pdf TODO 
-    // show canvas but not image
-    
-    image.onload = function() { // necessary to compile pdf
-        context.drawImage(image, 10, 10, canvas.width, canvas.height);
-    }
-    
-    pdf.addImage(canvas, "PNG", margins.top, margins.left, canvas.width, canvas.height); // x, y, width, height
-    //pdf.addImage(canvas.toDataURL("image/svg", "SVG", margins.top, margins.left, canvas.width, canvas.height));
-
-    // set output
-    pdf.output("dataurlnewwindow"); // "datauri" in same window
-
-    // test canvas with image ok
-    context.drawImage(image, 10, 10, canvas.width, canvas.height); // but pdf doesn' compile
-    profileCardContainer.innerHTML = "";
-    profileCardContainer.appendChild(canvas);
-};
-
 
 buttonProfileMakePdf.addEventListener("click", (evenement)=> {
-    imageToBase64(image);
-    // getDataUrl(image);
-    //getDataUrlCardLightOff();
-    viewPdf();
-    //downloadPdf();
-    //openPdf();
-    /*use jsPdf
-    * pdf view then save
-    */
-    // TODO
-    //var cardPdf = new jsPDF();
-    //cardPdf.text(3, 3, "hello");
-    //cardPdf.addImage(imageVisitCardLightOff);
-    /*
-    cardPdf.fromHTML(imageVisitCardLightOff, 15, 15, {
-        "width": 180,
-    });
-    cardPdf.autoPrint();
-    cardPdf.output("dataurlnewwindow");
-    */
-    //cardPdf.save("card.pdf");
-
+    
+    alert("i use jsPDF CDN Library");
     // then close the edition container
-    // profileCardContainer.style.display = "none";
+    profileCardContainer.style.display = "none";
     buttonProfileEditCard.disabled = false;
 });
 
@@ -238,43 +106,21 @@ buttonProfileMakePdf.addEventListener("click", (evenement)=> {
 * @ article programmer
 */
 
-/* TODO
-* on click button pdf or card pro image 
-* view pdf
-* option save pdf
-*
-* to make pdf from cardPro (<img/>)
-* format a serial of cards for A4 printing
-* 
-*/
-
-var viewPdfCards = function viewPdfCards() {
-    /* TODO view pdf
-    * first format serial on html
-    * create it with js document.createElement()
-    * 
-    * make pdf from the tag container
-    * */
-
-    // test call fonction is ok
-    alert("view pdf");
-} 
-
 var cardPro = document.getElementById("card_pro");
 cardPro.addEventListener(("click"), (evenement)=> { 
     /* 
     * on click on cart pro
-    * view pdf */
-    viewPdfCards();
+    * ? */
+    
 
 });
 
 var button_edit_cards_pro_pdf = document.getElementById("button_edit_cards_pro_pdf");
 button_edit_cards_pro_pdf.addEventListener("click", (evenement)=> {
     /* 
-    * the same on click button pdf
+    * on click button pdf
     */
-    viewPdfCards();
+    alert("base 64 project");
 });
 
 /*
