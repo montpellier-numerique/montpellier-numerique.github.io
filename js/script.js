@@ -86,10 +86,12 @@ var imageVisitCardLightOff = document.getElementById("visit_card_light_off")
 
 buttonProfileEditCard.addEventListener("click", (evenement)=> {
     profileCardContainer.style.display = "block";
+    buttonProfileEditCard.disabled = true;
 });
 
 buttonCloseProfileCard.addEventListener("click", (evenement)=> {
     profileCardContainer.style.display = "none";
+    buttonProfileEditCard.disabled = false;
 });
 /*
 var openPdf = function openPdf() {
@@ -122,6 +124,51 @@ var margins = {
 }
 
 var source = document.getElementById("pdf_light_off");
+var image= document.getElementById("visit_card_light_off");
+
+image.style.width = 850;
+image.style.height = 540;
+
+function imageToBase64(image) {
+    // create canvas to draw image within
+    var canvas = document.createElement("canvas");
+    var context = canvas.getContext("2d");
+
+    // set width and height of canvas equals to image size
+    canvas.width = image.style.width;
+    canvas.height = image.style.height;
+
+    //image.crossOrigin = "*";
+
+    context.drawImage(image, 0, 0);
+    return canvas.toDataURL();
+
+};
+
+var getDataUrl = function getDataUrl(image) {
+    // create canvas to draw image within
+    var canvas = document.createElement("canvas");
+    var context = canvas.getContext("2d");
+
+    // set width and height of canvas equals to image size
+    canvas.width = image.style.width;
+    canvas.height = image.style.height;
+
+    // draw within canvas
+    context.drawImage(image, 0, 0);
+
+    // return data url
+    return canvas.toDataURL("image/png");
+};
+/*
+image.addEventListener("load", function(event) {
+    var dataUrl = getDataUrl(event.currentTarget);
+    console.log(dataUrl);
+});
+*/
+var getDataUrlCardLightOff = function getDataUrlCardLightOff() {
+    getDataUrl(image);
+}
 
 var viewPdf = function viewPdf() {
     // create pdf
@@ -133,25 +180,36 @@ var viewPdf = function viewPdf() {
     canvas.height = 54;
     var context = canvas.getContext("2d");
 
-    var image = document.getElementById("visit_card_light_off");
     
-    // test image
-    profileCardContainer.innerHTML = "";
-    profileCardContainer.appendChild(image);
+    
+    // test image ok
+    // profileCardContainer.innerHTML = "";
+    // profileCardContainer.appendChild(image);
 
-    // image into canvas into pdf TODO canvas doesnt show image
-    image.onload = function() { // necessary to compile
+    // image into canvas into pdf TODO 
+    // show canvas but not image
+    
+    image.onload = function() { // necessary to compile pdf
         context.drawImage(image, 10, 10, canvas.width, canvas.height);
     }
     
     pdf.addImage(canvas, "PNG", margins.top, margins.left, canvas.width, canvas.height); // x, y, width, height
-    
+    //pdf.addImage(canvas.toDataURL("image/svg", "SVG", margins.top, margins.left, canvas.width, canvas.height));
+
     // set output
     pdf.output("dataurlnewwindow"); // "datauri" in same window
+
+    // test canvas with image ok
+    context.drawImage(image, 10, 10, canvas.width, canvas.height); // but pdf doesn' compile
+    profileCardContainer.innerHTML = "";
+    profileCardContainer.appendChild(canvas);
 };
 
 
 buttonProfileMakePdf.addEventListener("click", (evenement)=> {
+    imageToBase64(image);
+    // getDataUrl(image);
+    //getDataUrlCardLightOff();
     viewPdf();
     //downloadPdf();
     //openPdf();
@@ -172,8 +230,9 @@ buttonProfileMakePdf.addEventListener("click", (evenement)=> {
     //cardPdf.save("card.pdf");
 
     // then close the edition container
-    //profileCardContainer.style.display = "none";
-})
+    // profileCardContainer.style.display = "none";
+    buttonProfileEditCard.disabled = false;
+});
 
 /*
 * @ article programmer
