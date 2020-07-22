@@ -132,7 +132,15 @@ button {
     font-size: 1.5em;
 }
 
-h3, h5 {
+.download {
+    font-size: 1.5em;
+}
+
+h3, h4, h5 {
+    font-size: 1.5em;
+}
+
+p {
     font-size: 1.5em;
 }
 
@@ -228,6 +236,11 @@ section td {
     margin-bottom: 1em;
 }
 
+.profile_card_container {
+    margin-top: 1em;
+    width: 22.5em;
+}
+
 .contact button {
     margin-top: 3em;
 }
@@ -243,6 +256,8 @@ section td {
 .download {
     margin-top: 3em;
 }
+
+
 
 /* padding */
 
@@ -273,14 +288,14 @@ section td {
 
 .main_container {
     padding-top: 0.5em;
-    padding-bottom: 80em;
+    padding-bottom: 95em;
     padding-left: 16.5em;
     padding-right: 1em;
 }
 
 .main_container_first {
     padding-top: 0.5em;
-    padding-bottom: 80em;
+    padding-bottom: 70em;
     padding-left: 16.5em;
     padding-right: 1em;
 }
@@ -302,6 +317,10 @@ section td {
 
 .profile_labels {
     padding-top: 4em;
+}
+
+.road {
+    width: 100%;
 }
 
 .list_creations a {
@@ -357,8 +376,12 @@ section td {
     
 }
 
+.visit_card_container {
+    max-width: 22.5em;
+}
+
 .visit_card {
-    width: 22.5em;
+    width: 100%;
     height: auto;
 }
 

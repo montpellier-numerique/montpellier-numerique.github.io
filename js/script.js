@@ -17,58 +17,23 @@ buttonMainRed.addEventListener("click", (evenement)=> {
 /**
  * Translate
  */
-
-var buttonSpeak = document.getElementById("button_speak");
-var buttonSpeakFrench = document.getElementById("button_speak_french");
 var buttonEnglishFlag = document.getElementById("button_english_flag");
 var buttonFrenchFlag = document.getElementById("button_french_flag");
 var buttonProgrammerSwitchLanguage = document.getElementById("button_programmer_switch_language");
 
-var resetTranslationButtons = function resetTranslationButtons(){
-    if(languageCurrent === 0) {
-        buttonSpeakFrench.style.display = "none";
-        buttonSpeak.style.display = "block";
-    } else if(languageCurrent === 1) {
-        buttonSpeakFrench.style.display = "block";
-        buttonSpeak.style.display ="none";
-    } else {
-        buttonSpeak.style.display = "block";
-        buttonSpeakFrench = "block"
-    }
-}
-
-// translate to English
-buttonSpeak.addEventListener("click", (evenement)=> {
-    translateToEnglish();
-    // buttons behavior
-    resetTranslationButtons();
-    
-});
-
-// translate to French
-buttonSpeakFrench.addEventListener("click", (evenement)=> {
-    translateToFrench();
-    // buttons behavior
-    resetTranslationButtons();
-});
-
 buttonEnglishFlag.addEventListener("click", (evenement)=>{
     translateToEnglish();
-    resetTranslationButtons();
 });
 
 buttonFrenchFlag.addEventListener("click", (evenement)=>{
     translateToFrench();
-    resetTranslationButtons();
 });
 
 buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
     if(languageCurrent === 0) {
         translateToEnglish();
-        resetTranslationButtons();
     } else if(languageCurrent === 1) {
         translateToFrench();
-        resetTranslationButtons();
     }
 });
 
@@ -96,7 +61,7 @@ buttonCloseProfileCard.addEventListener("click", (evenement)=> {
 
 buttonProfileMakePdf.addEventListener("click", (evenement)=> {
     
-    alert("i use jsPDF CDN Library");
+    alert("use base 64 and jsPDF CDN Library");
     // then close the edition container
     profileCardContainer.style.display = "none";
     buttonProfileEditCard.disabled = false;

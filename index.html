@@ -50,7 +50,9 @@
         
         <section id="skills" class="main_container_first">
             <article class="flex">
-                <header><img class="icon" src="icons/wrench.svg"/></header>
+                <header>
+                    <img class="icon" src="icons/wrench.svg"/>
+                </header>
                 <div class="skills">
                     <ul>
                         <li id="skill_1">développe back, front, poo</li>
@@ -77,36 +79,44 @@
                     </div>
                     
                     <div>
-                        <p class="green"><button id="button_profile_edit_card">mes cartes de visite en un clic</button></p>
-                        <div class="alternative" id="profile_card_container">
+                        <div class="green">
+                            <button id="button_profile_edit_card">mes cartes de visite en un clic</button>
+                        </div>
+                        <div id="profile_card_container" class="alternative">
                             
-                            <div class="">
-                                <div class="right green">
-                                    <div>
-                                        <button id="button_profile_make_pdf"><img class="icon_button" src="icons/pdf.svg"/></button>
-                                    </div>
-                                    <div>
-                                        <button id="button_close_profile_card" class="right"><img class="icon_button" src="icons/close.svg"/></button>
-                                    </div> 
-                                </div>
-                                <div id="pdf_light_off" #pdfLightOff class="left">
+                            <div class="profile_card_container">
+                                
+                                <div id="pdf_light_off" #pdfLightOff class="visit_card_container left">
                                     <img id="visit_card_light_off" class="visit_card" src="images/png/visit_cards/visit_card_fr_light_off.png"/>
                                 </div>
                                 
-                                
+                                <div class="">
+                                    <div class="left">
+                                        <button id="button_profile_make_pdf"><img class="icon_button" src="icons/pdf.svg"/></button>
+                                    </div>
+                                    <div class="right">
+                                        <button id="button_close_profile_card"><img class="icon_button" src="icons/close.svg"/></button>
+                                    </div> 
+                                </div>
                                 
                             </div>
                             
+                            
                         </div>
-
+                        <div class="flex red left road">
+                            <div>
+                                <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">profil@LinkedIn</button></a>
+                            </div>
+                            <div>
+                                <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
+                            </div>
+    
+                                
+                            
+                        </div>
                         
                     </div>
-                    <div>
-                        <p class="red">
-                            <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin">profil@LinkedIn</button></a>
-                            <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
-                        </p>
-                    </div>
+                    
                 </div>
                 
             </article>
@@ -178,10 +188,10 @@
                         </article>
                     </section>
                     <div class="download">
-                        <a href="#next_devis"><button id="next_devis"><img class="icon_button" src="icons/download.svg"/>devis</button></a>
+                        <a href="#section_devis"><button><img class="icon_button" src="icons/download.svg"/>devis</button></a>
                     </div>
                     
-                    <section class="card">
+                    <section id="section_devis" class="card">
                         
                         <article id="article_devis" class="white_smoke">
                             <header class="article_header"><h1>devis 2020</h1></header>
@@ -202,9 +212,9 @@
                         </article>
                     </section>
                     <div class="download">
-                        <a href="#next_direct_molto"><button id="next_direct_molto"><img class="icon_button" src="icons/download.svg"/>direct molto</button></a>
+                        <a href="#section_direct_molto"><button><img class="icon_button" src="icons/download.svg"/>direct molto</button></a>
                     </div>
-                    <section class= "card">
+                    <section id="section_direct_molto" class= "card">
                         <article id="article_direct_molto" class="white_smoke">
                             <header class="article_header"><h1>direct molto 2020</h1></header>
                             <div>
@@ -241,7 +251,9 @@
                                     <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share">se partage ici @in</span></button>
                                     <div id="card_pro_container">
                                         <button id="button_edit_cards_pro_pdf"><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards">édite mes cartes pro</span></button>
-                                        <img id="card_pro" class="visit_card" src="images/png/visit_cards/visit_card_en_light_on.png"/>
+                                        <div class="visit_card_container">
+                                            <img id="card_pro" class="visit_card" src="images/png/visit_cards/visit_card_en_light_on.png"/>
+                                        </div>
                                     </div>
                                     
                                     <a href="#card_pro"><button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech">spécifications techniques</span></button></a>
@@ -319,8 +331,9 @@
                         </tr>
                         <tr>
                             <td class="right">
-                                <a href="#table_indices"><button id="button_more">afficher plus</button></a>
-                                <button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button>
+                                <a href="#table_indices"><button id="button_more">plus</button></a>
+                                <a href="#indices"><button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button></a>
+                                
                             </td>
                         </tr>
                     </table>    
@@ -334,15 +347,12 @@
 
     </section>
 
-    <!--EXTERNAL MODULES-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
-
+    
     <!--APP JS-->
     <script src="js/externalizations/string_object_internationalization.js"></script>
     <script src="js/externalizations/indices_string_array.js"></script>
     <script src="js/do_translate.js"></script>
-    <script src="js/make_pdf.js"></script>
+    
     <script src="js/script.js"></script>
 
 </body>
