@@ -1,11 +1,14 @@
 
-
 /**
- * BUTTONS
+ * THIS FILE DEALS WITH LISTENERS ON BUTTONS
+ * 1) BUTTONS FOR TRANSLATION
+ * 2) BUTTONS TO SHOW AND HIDE CONTAINERS (DOM MANIPULATION)
+ * 3) ALERTS
+ * 
  */
 
 /*
-* Turn on the light
+* TURN ON THE LIGHT
 */
 
 var logo = document.getElementById("logo");
@@ -15,8 +18,19 @@ buttonMainRed.addEventListener("click", (evenement)=> {
 });
 
 /**
- * Translate
+ * 1) BUTTONS FOR TRANSLATION
+ * 
+ * reference: file do_translate.js
+ * 
+ * functions: 
+ * - translateToEnglish()
+ * - translateToFrench()
+ * 
+ * variables:
+ * - languageCurrent // 0 or 1
  */
+
+
 var buttonEnglishFlag = document.getElementById("button_english_flag");
 var buttonFrenchFlag = document.getElementById("button_french_flag");
 var buttonProgrammerSwitchLanguage = document.getElementById("button_programmer_switch_language");
@@ -38,63 +52,53 @@ buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
 });
 
 /*
-* edit visit cards
+* 2) DOM MANIPULATION
 */
 /**
- * @ profile
+ * @ profile edit card
  */
 var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
 var profileCardContainer = document.getElementById("profile_card_container");
 var buttonCloseProfileCard = document.getElementById("button_close_profile_card");
 var buttonProfileMakePdf = document.getElementById("button_profile_make_pdf");
-var imageVisitCardLightOff = document.getElementById("visit_card_light_off")
 
 buttonProfileEditCard.addEventListener("click", (evenement)=> {
+    // show card container
     profileCardContainer.style.display = "block";
+
+    // desable button_profile_edit_card
     buttonProfileEditCard.disabled = true;
 });
 
 buttonCloseProfileCard.addEventListener("click", (evenement)=> {
+    // hide card container
     profileCardContainer.style.display = "none";
+
+    // enable button_profile_edit_card
     buttonProfileEditCard.disabled = false;
 });
 
 buttonProfileMakePdf.addEventListener("click", (evenement)=> {
-    
-    alert("use base 64 and jsPDF CDN Library");
-    // then close the edition container
+    // alert base64 jspdf
+    alert(string.useBase64AndJsPDF[languageIndex]);
+
+    // then close the card container
     profileCardContainer.style.display = "none";
+
+    // enable button profile_edit_card
     buttonProfileEditCard.disabled = false;
 });
 
-/*
-* @ article programmer
-*/
 
-var cardPro = document.getElementById("card_pro");
-cardPro.addEventListener(("click"), (evenement)=> { 
-    /* 
-    * on click on cart pro
-    * ? */
-    
-
-});
-
-var button_edit_cards_pro_pdf = document.getElementById("button_edit_cards_pro_pdf");
-button_edit_cards_pro_pdf.addEventListener("click", (evenement)=> {
-    /* 
-    * on click button pdf
-    */
-    alert("base 64 project");
-});
 
 /*
-* show more
+* @ indices show more
 */
 
 var buttonMore = document.getElementById("button_more");
 var tableIndices = document.getElementById("table_indices");
 var buttonHide = document.getElementById("button_hide");
+
 buttonMore.addEventListener("click", (evenement)=> {
     
     for(var i=0; i<indices.length; i++) {
@@ -113,7 +117,6 @@ buttonMore.addEventListener("click", (evenement)=> {
 
 buttonHide.addEventListener("click", (evenement)=> {
 
-    // TODO
     var rows = tableIndices.getElementsByTagName("tr");
     var originalRows = rows.length - indices.length;
     for(var i=originalRows; i<rows.length; i++) {
@@ -126,11 +129,12 @@ buttonHide.addEventListener("click", (evenement)=> {
 
 
 /*
-* manipulate DOM
+* @ programmer spec tech
 */
 var buttonSpecTechProgrammer = document.getElementById("button_spec_tech_programmer");
 var specTechProgrammer = document.getElementById("spec_tech_programmer");
 var buttonCloseSpecTechProgrammer = document.getElementById("button_close_spec_tech_programmer");
+
 buttonSpecTechProgrammer.addEventListener("click", (evenement)=> {
     specTechProgrammer.style.display = "block";
     buttonSpecTechProgrammer.style.display = "none";
@@ -146,29 +150,42 @@ buttonCloseSpecTechProgrammer.addEventListener("click", (evenement)=>{
 
 
 /*
-* alerts
+* 3) ALERTS
+* 
+* references: 
+* - file externalisations/string_objet_internationalization.js
+* - file do_translate.js
+* 
+* variables: 
+* - string // JSON object
+* - languageIndex
 */
 var buttonCertifManchester = document.getElementById("button_certif_manchester");
 buttonCertifManchester.addEventListener("click", (evenement)=> {
-    alert("site vitrine pour un bar. l'agenda des évènements est géré depuis Facebook Events.");
+    alert(string.manchesterFacebook[languageIndex]);
 });
 
 var buttonCertifDevis = document.getElementById("button_certif_devis");
 buttonCertifDevis.addEventListener("click", (evenement)=> {
-    alert("interface simple");
+    alert(string.devisSimple[languageIndex]);
 });
 
 var buttonCertifDirectMolto = document.getElementById("button_certif_direct_molto");
 buttonCertifDirectMolto.addEventListener("click", (evenement)=> {
-    alert("BEWEB Fondespierre Montpellier");
+    alert(string.directMoltoTeamName[languageIndex]);
 });
 
 var buttonCertifProgrammer = document.getElementById("button_certif_programmer");
 buttonCertifProgrammer.addEventListener("click", (evenement)=> {
-    alert("ceci est une invitation à tester les boutons.");
+    alert(string.programmerTestButtons[languageIndex]);
+});
+
+var buttonProgrammerEditCard = document.getElementById("button_programmer_edit_card");
+buttonProgrammerEditCard.addEventListener("click", (evenement)=> {
+    alert(string.base64project[languageIndex]);
 });
 
 var buttonSiteProgrammer = document.getElementById("button_site_programmer");
 buttonSiteProgrammer.addEventListener("click", (evenement)=> {
-    alert("vous êtes sur le site vitrine https://programmer_montpellier_numerique");
+    alert(string.programmerOnSite[languageIndex]);
 });

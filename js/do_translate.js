@@ -71,6 +71,7 @@ var programmerWebsite = document.getElementById("programmer_website");
 
 
 var languageIndex;
+languageIndex = 0;
 var translateTo = function translateTo(languageIndex) {
     buttonMainRed.innerHTML = string.mainRedText[languageIndex];
 
@@ -128,6 +129,8 @@ var translateTo = function translateTo(languageIndex) {
     programmerEditCards.innerHTML = string.programmerEditCards[languageIndex];
     programmerSpecTech.innerHTML = string.specTech[languageIndex];
     programmerWebsite.innerHTML = string.website[languageIndex];
+
+    
 }
 
 var languageDefault = 0;
