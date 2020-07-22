@@ -19,7 +19,7 @@ var skill3 = document.getElementById("skill_3");
 var profileJava = document.getElementById("profile_java");
 var knowHowToBe = document.getElementById("know_how_to_be");
 
-var buttonEditCard = document.getElementById("button_edit_card");
+var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
 var buttonProfileLinkedin = document.getElementById("button_profile_linkedin");
 
 var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
@@ -36,6 +36,7 @@ var indicesTechnologies = document.getElementById("indices_technologies");
 var buttonMore = document.getElementById("button_more");
 
 var manchesterShowcase = document.getElementById("manchester_showcase");
+var manchesterFacebookDeveloper = document.getElementById("manchester_facebook_developer");
 var manchesterAgenda = document.getElementById("manchester_agenda");
 
 var buttonManchesterViewSite = document.getElementById("button_manchester_view_site");
@@ -59,6 +60,10 @@ var programmerSwitchLanguage = document.getElementById("programmer_switch_langua
 var programmerShare = document.getElementById("programmer_share");
 var programmerEditCards = document.getElementById("programmer_edit_cards");
 var programmerSpecTech = document.getElementById("programmer_spec_tech");
+var programmerSpecTechTitle = document.getElementById("programmer_spec_tech_title");
+var programmerObjetOriented = document.getElementById("programmer_objet_oriented");
+var programmerMultilingual = document.getElementById("programmer_multilingual");
+var programmerMultilingualText = document.getElementById("programmer_multilingual_text");
 var programmerWebsite = document.getElementById("programmer_website");
 
 /* SPEC
@@ -89,7 +94,7 @@ var translateTo = function translateTo(languageIndex) {
     know_how_to_be.innerHTML = string.knowHowToBe[languageIndex];
     
 
-    buttonEditCard.innerHTML = string.editCard[languageIndex];
+    buttonProfileEditCard.innerHTML = string.editCard[languageIndex];
     buttonProfileLinkedin.innerHTML = string.viewProfile[languageIndex];
 
     buttonContactLinkedIn.innerHTML = string.contactMe[languageIndex];
@@ -107,6 +112,7 @@ var translateTo = function translateTo(languageIndex) {
     buttonMore.innerHTML = string.more[languageIndex];
 
     manchesterShowcase.innerHTML = string.showcaseSite[languageIndex];
+    manchesterFacebookDeveloper.innerHTML = string.facebookDeveloper[languageIndex];
     manchesterAgenda.innerHTML = string.agenda[languageIndex];
     buttonManchesterViewSite.innerHTML = string.viewSite[languageIndex];
 
@@ -128,6 +134,10 @@ var translateTo = function translateTo(languageIndex) {
     programmerShare.innerHTML = string.share[languageIndex];
     programmerEditCards.innerHTML = string.programmerEditCards[languageIndex];
     programmerSpecTech.innerHTML = string.specTech[languageIndex];
+    programmerSpecTechTitle.innerHTML = string.specTech[languageIndex];
+    programmerObjetOriented.innerHTML = string.objectOriented[languageIndex];
+    programmerMultilingual.innerHTML = string.multilingual[languageIndex];
+    programmerMultilingualText.innerHTML = string.programmerMultilingualText[languageIndex];
     programmerWebsite.innerHTML = string.website[languageIndex];
 
     

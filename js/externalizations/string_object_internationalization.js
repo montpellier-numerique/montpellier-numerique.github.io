@@ -25,7 +25,7 @@ var string = {
     knowHowToBe: ["savoir-être ingénieuse", "know-how-to-be ingenious"],
     
 
-    editCard: ["éditer mes cartes de visite en un clic", "edit my visit cards in a click"],
+    editCard: ["mes cartes de visite en un clic", "edit my visit cards in a click"],
     viewProfile: ["profil @LinkedIn", "profile @LinkedIn"],
 
     // CONTACT
@@ -45,28 +45,34 @@ var string = {
 
     // FOR EACH CREATION
     // MANCHESTER
-    showcaseSite: ["site vitrine", "showcase"],
+    showcaseSite: ["site vitrine", "showcase site"],
+    facebookDeveloper: ["FACEBOOK developer", "FACEBOOK developer"],
     agenda: ["agenda", "agenda"],
     viewSite: ["voir le site", "view site"],
 
     // DEVIS
-    devisInvoices: ["logiciel de devis et factures", "invoices & quotes"],
+    devisInvoices: ["logiciel de devis et factures", "invoice & quote"],
     intuitive: ["intuitif", "intuitive"],
-    cartItem: ["panier boutique item + arrière-boutique de gestion", "cart item shop + back office management"],
+    cartItem: ["panier boutique item + gestion", "cart item shop + back office management"],
     viewInterface: ["voir l'interface", "view interface"],
 
     // DIRECT MOLTO
     garage: ["logiciel de gestion d'un garage", "managing a garage"],
     moltoAgile: ["équipe molto AGILE", "molto AGILE team"],
-    moltoManagement: ["accès admin + gérant + tablette du mécanicien", "admin + manager use + tablet for the mechanic"],
+    moltoManagement: ["admin + gérant + tablette du mécanicien", "admin + manager use + tablet for the mechanic"],
 
     // PROGRAMMER
     myPortfolio: ["mon portfolio", "my portfolio"],
-    assertTestButton: ["certifié test button", "asserts button tests"],
+    assertTestButton: ["certifié bouton", "special push-button"],
     switchLanguage: ["français anglais", "french english"],
-    share: ["se partage ici @in", "to share here @in"],
-    programmerEditCards: ["édite mes cartes pro", "to edit my visit cards"],
+    share: ["se partage ici @in", "to share @in here"],
+    programmerEditCards: ["édite mes cartes pro", "edits my visit cards"],
     specTech: ["spécifications techniques", "techniques specifications"],
+    objectOriented: ["conception objet", "object oriented"],
+    multilingual: ["multilingue", "multilingual"],
+    programmerMultilingualText: ["le texte, disponible en français et en anglais, est stocké dans un objet JSON. l'application JS gère les traductions.",
+    "the text is available in english and in french. it is stored into a JSON object. the JS application handles switching between the languages."
+],
     website: ["site web", "website"],
 
     // ALERTS
