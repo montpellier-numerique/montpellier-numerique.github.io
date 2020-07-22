@@ -6,6 +6,7 @@
 
 var string = {
 
+    webMobileApp: ["aplications web & mobile", "web & mobile applications"],
     mainRedText: ["Développeuse JAVA Full Stack", "Full Stack JAVA Developer"],
     
     // NAV
@@ -26,7 +27,8 @@ var string = {
     
 
     editCard: ["mes cartes de visite en un clic", "edit my visit cards in a click"],
-    viewProfile: ["profil @LinkedIn", "profile @LinkedIn"],
+    viewProfile: ["profil@LinkedIn", "profile@LinkedIn"],
+    opensource: ["opensource@Git", "opensource@Git"],
 
     // CONTACT
     contactMe: ["me contacter @LinkedIn", "contact me @LinkedIn"],
@@ -40,7 +42,7 @@ var string = {
     // INDICES
 
     technologies: ["technologies", "technologies"],
-    more: ["afficher plus", "show more"],
+    more: ["plus", "more"],
 
 
     // FOR EACH CREATION

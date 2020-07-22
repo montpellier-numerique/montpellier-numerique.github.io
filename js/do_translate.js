@@ -1,6 +1,8 @@
 /*
  * TAGS THAT NEED TEXT TRANSLATION
  */
+
+var titleWebMobileApp = document.getElementById("title_web_mobile_app");
 var buttonMainRed = document.getElementById("button_main_red");
 
 // nav elements
@@ -21,6 +23,7 @@ var knowHowToBe = document.getElementById("know_how_to_be");
 
 var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
 var buttonProfileLinkedin = document.getElementById("button_profile_linkedin");
+var buttonProfileOpensource = document.getElementById("button_profile_opensource");
 
 var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
 
@@ -66,18 +69,66 @@ var programmerMultilingual = document.getElementById("programmer_multilingual");
 var programmerMultilingualText = document.getElementById("programmer_multilingual_text");
 var programmerWebsite = document.getElementById("programmer_website");
 
-/* SPEC
-* french at index 0, english at index 1 of an array of strings within the string object
+/**
+ * IMAGES THAT NEED TO SWITCH
+ */
+
+var visitCardLightOff = document.getElementById("visit_card_light_off");
+var visitCardLightOn = document.getElementById("visit_card_light_on");
+
+/*
+* switch images functions called further in translateTo(languageIndex)
 */
+
+var switchVisitCardLightOff = function switchVisitCardLightOff(languageIndex) {
+    if(languageIndex === fr) {
+        visitCardLightOff.src = "./images/png/visit_cards/visit_card_fr_light_off.png"
+    } else if(languageIndex === en) {
+        visitCardLightOff.src = "./images/png/visit_cards/visit_card_en_light_off.png"
+    }
+};
+
+var switchVisitCardLightOn = function switchVisitCardLightOn(languageIndex) {
+    if(languageIndex === fr) {
+        visitCardLightOn.src = "./images/png/visit_cards/visit_card_fr_light_on.png"
+    } else if(languageIndex === en) {
+        visitCardLightOn.src = "./images/png/visit_cards/visit_card_en_light_on.png"
+    }
+}
+
+
+/**
+ * BUTTONS TO SWITCH LANGUAGES
+ */
+
+
+var buttonEnglishFlag = document.getElementById("button_english_flag");
+var buttonFrenchFlag = document.getElementById("button_french_flag");
+var buttonProgrammerSwitchLanguage = document.getElementById("button_programmer_switch_language");
+
+var resetButtonsFlags = function resetButtonsFlags() {
+    if(languageCurrent === fr) {
+        buttonFrenchFlag.disabled = true;
+        buttonEnglishFlag.disabled = false;
+    } else if(languageCurrent === en) {
+        buttonFrenchFlag.disabled = false;
+        buttonEnglishFlag.disabled = true;
+    }
+}
 
 
 
 // functions translate
 
+const fr = 0;
+const en = 1;
 
-var languageIndex;
-languageIndex = 0;
+var languageIndex; // = fr OR en 
+var languageCurrent; // = fr OR en
+
 var translateTo = function translateTo(languageIndex) {
+    // switch language
+    titleWebMobileApp.innerHTML = string.webMobileApp[languageIndex];
     buttonMainRed.innerHTML = string.mainRedText[languageIndex];
 
     navSkills.innerHTML = string.skills[languageIndex];
@@ -96,6 +147,7 @@ var translateTo = function translateTo(languageIndex) {
 
     buttonProfileEditCard.innerHTML = string.editCard[languageIndex];
     buttonProfileLinkedin.innerHTML = string.viewProfile[languageIndex];
+    buttonProfileOpensource.innerHTML = string.opensource[languageIndex];
 
     buttonContactLinkedIn.innerHTML = string.contactMe[languageIndex];
 
@@ -140,26 +192,37 @@ var translateTo = function translateTo(languageIndex) {
     programmerMultilingualText.innerHTML = string.programmerMultilingualText[languageIndex];
     programmerWebsite.innerHTML = string.website[languageIndex];
 
+    // switch images
+    languageCurrent = languageIndex;
+    switchVisitCardLightOff(languageIndex);
+    switchVisitCardLightOn(languageIndex);
+
+    // reset buttons
+    resetButtonsFlags();
+}
+
+
+
+/**
+ * LISTENERS ON BUTTONS
+ */
+
+buttonEnglishFlag.addEventListener("click", (evenement)=>{
+    translateTo(en);
     
-}
+});
 
-var languageDefault = 0;
-var languageCurrent = languageDefault;
+buttonFrenchFlag.addEventListener("click", (evenement)=>{
+    translateTo(fr);
+});
 
-var translateToFrench = function translateToFrench() {
-    translateTo(0); // Index 0 for French Translation
-    languageCurrent = 0;
-    
-}
-
-var translateToEnglish = function translateToEnglish() {
-    translateTo(1);
-    languageCurrent = 1;
-}
-
-/*
-* switch functions
-*/
+buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
+    if(languageCurrent === fr) {
+        translateTo(en);
+    } else if(languageCurrent === en) {
+        translateTo(fr);
+    }
+});
 
 
 

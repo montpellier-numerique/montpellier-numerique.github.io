@@ -26,7 +26,7 @@
                 </div>
                 <div class="title">
                     <h1>programmer</h1>
-                    <h2>applications web & mobile</h2>
+                    <h2 id="title_web_mobile_app"></h2>
                     <h3>https://programmer_montpellier_numerique</h3>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                             <div class="profile_card_container">
                                 
                                 <div id="pdf_light_off" #pdfLightOff class="visit_card_container left">
-                                    <img id="visit_card_light_off" class="visit_card" src="images/png/visit_cards/visit_card_fr_light_off.png"/>
+                                    <img id="visit_card_light_off" class="visit_card"/>
                                 </div>
                                 
                                 <div class="">
@@ -108,7 +108,7 @@
                                 <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_profile_linkedin"></button></a>
                             </div>
                             <div>
-                                <a href="https://gitlab.com/cjanie"><button>opensource@Git</button></a>
+                                <a href="https://gitlab.com/cjanie"><button id="button_profile_opensource"></button></a>
                             </div>
     
                                 
@@ -251,7 +251,7 @@
                                     <div id="card_pro_container">
                                         <button id="button_programmer_edit_card"><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards"></span></button>
                                         <div class="visit_card_container">
-                                            <img id="card_pro" class="visit_card" src="images/png/visit_cards/visit_card_en_light_on.png"/>
+                                            <img id="visit_card_light_on" class="visit_card"/>
                                         </div>
                                     </div>
                                     
@@ -291,8 +291,8 @@
             <article>
                 <header class="flex, title">
                     <img class="icon" src="icons/index.svg"/>
-                    <h1 id="indices_title">indices</h1>
-                    <h2 id="indices_technologies">technologies</h2>
+                    <h1 id="indices_title"></h1>
+                    <h2 id="indices_technologies"></h2>
                 </header>
                 <div class="table">
                     <table id="table_indices" class="antique_white">
@@ -330,7 +330,7 @@
                         </tr>
                         <tr>
                             <td class="right">
-                                <a href="#table_indices"><button id="button_more">plus</button></a>
+                                <a href="#table_indices"><button id="button_more"></button></a>
                                 <a href="#indices"><button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button></a>
                                 
                             </td>
@@ -351,7 +351,9 @@
     <script src="js/externalizations/string_object_internationalization.js"></script>
     <script src="js/externalizations/indices_string_array.js"></script>
     <script src="js/do_translate.js"></script>
-    
+    <script src="js/manipulate_dom.js"></script>
+    <script src="js/alert_only.js"></script>
+    <script src="js/initialize.js"></script>
     <script src="js/script.js"></script>
 
 </body>
