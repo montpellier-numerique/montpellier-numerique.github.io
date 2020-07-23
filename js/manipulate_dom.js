@@ -44,7 +44,7 @@ buttonCloseProfileCard.addEventListener("click", (evenement)=> {
 
 buttonProfileMakePdf.addEventListener("click", (evenement)=> {
     // alert base64 jspdf
-    alert(string.useBase64AndJsPDF[languageIndex]);
+    alert(string.useBase64AndJsPDF[getLanguageIndex()]);
 
     // then close the card container
     profileCardContainer.style.display = "none";

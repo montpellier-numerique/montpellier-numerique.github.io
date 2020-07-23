@@ -1,2 +1,2 @@
 
-initialize(); // file reference: initialize.js
+initialize();

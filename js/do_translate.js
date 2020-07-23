@@ -96,7 +96,6 @@ var switchVisitCardLightOn = function switchVisitCardLightOn(languageIndex) {
     }
 }
 
-
 /**
  * BUTTONS TO SWITCH LANGUAGES
  */

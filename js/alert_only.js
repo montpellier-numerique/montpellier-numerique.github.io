@@ -1,42 +1,40 @@
 /*
-* 3) ALERTS
+* ALERTS
 * 
-* references: 
-* - file externalisations/string_objet_internationalization.js
-* - file do_translate.js
 * 
-* variables: 
-* - string // JSON object
-* - languageIndex
 */
+var getLanguageIndex = function getLanguageIndex() {
+    return languageCurrent;
+}
+
 var buttonCertifManchester = document.getElementById("button_certif_manchester");
 buttonCertifManchester.addEventListener("click", (evenement)=> {
-    alert(string.manchesterFacebook[languageIndex]);
+    alert(string.manchesterFacebook[getLanguageIndex()]);
 });
 
 var buttonCertifDevis = document.getElementById("button_certif_devis");
 buttonCertifDevis.addEventListener("click", (evenement)=> {
-    alert(string.devisSimple[languageIndex]);
+    alert(string.devisSimple[getLanguageIndex()]);
 });
 
 var buttonCertifDirectMolto = document.getElementById("button_certif_direct_molto");
 buttonCertifDirectMolto.addEventListener("click", (evenement)=> {
-    alert(string.directMoltoTeamName[languageIndex]);
+    alert(string.directMoltoTeamName[getLanguageIndex()]);
 });
 
 var buttonCertifProgrammer = document.getElementById("button_certif_programmer");
 buttonCertifProgrammer.addEventListener("click", (evenement)=> {
-    alert(string.programmerTestButtons[languageIndex]);
+    alert(string.programmerTestButtons[getLanguageIndex()]);
 });
 
 var buttonProgrammerEditCard = document.getElementById("button_programmer_edit_card");
 buttonProgrammerEditCard.addEventListener("click", (evenement)=> {
-    alert(string.base64project[languageIndex]);
+    alert(string.base64project[getLanguageIndex()]);
 });
 
 var buttonSiteProgrammer = document.getElementById("button_site_programmer");
 buttonSiteProgrammer.addEventListener("click", (evenement)=> {
-    alert(string.programmerOnSite[languageIndex]);
+    alert(string.programmerOnSite[getLanguageIndex()]);
 });
 
 
