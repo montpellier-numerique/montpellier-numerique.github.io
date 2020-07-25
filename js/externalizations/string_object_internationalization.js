@@ -6,7 +6,7 @@
 
 var string = {
 
-    webMobileApp: ["aplications web & mobile", "web & mobile applications"],
+    webMobileApp: ["applications web & mobile", "web & mobile applications"],
     mainRedText: ["Développeuse JAVA Full Stack", "Full Stack JAVA Developer"],
     
     // NAV

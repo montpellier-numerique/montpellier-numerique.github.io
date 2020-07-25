@@ -108,6 +108,10 @@ button {
     text-decoration: none;
 }
 
+.red_text, .form input {
+    color: red;
+}
+
 .logo td {
     text-align: center;
 }
@@ -116,24 +120,18 @@ button {
 * FONTS
 **/
 
-.main_header {
-    font-family: sans-serif;
+
+
+.font_arial, .main_header, .logo td, .title, .main_container  {
+    font-family: helvetica, arial, sans-serif;
 }
 
-.title {
-    font-family: sans-serif;
-}
-
-.form {
-    font-family: sans-serif;
-}
-
-.main_container, .main_container_first {
-    font-family: sans-serif;
+.font_monospace, .form {
+    font-family: monospace;
 }
 
 .logo td {
-    font: 1.5em sans-serif;
+    font: 1.5em
 }
 
 .logo a {
@@ -163,18 +161,31 @@ button {
 /**
 * responsive .title h3
 */
-
-@media screen and (max-width: 860px) { /*800px*/
+@media screen and (max-width: 800px) { /*860px*/
     .title h3 {
-        font-size: 2.2vw;
+        font-size: 2.2vw; 
     }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (max-width: 800px) { /*860px*/
+    .title h3 {
+        font-size: 2.2vw; 
+    }
+}
+
+@media screen and (min-width: 1700px) { /*860px*/
+    .title h3 {
+        font-size: 1.65vw; 
+    }
+}
+
+@media screen and (min-width: 2000px) {
     .title h3 {
         font-size: 1.5em;
     }
 }
+
+
 /*
 * responsive .logo
 */
@@ -213,20 +224,25 @@ button {
 }
 
 /* responsive .main_red 3.5em, 3.8vw*/
-
-@media screen and (max-width: 1200px) {
+/*
+@media screen and (max-width: 1250px) {
     .main_red {
-        font-size: 3.8vw;/*3.8vw;*/
+        font-size: 3.8vw;
     }
 }
 
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
     
     .main_red {
-        font-size: 3.5em;
+        font-size: 3.5vw;
     }
 }
+*/
+
+.main_red {
+    font-size: 3.8vw;
+}
+
 
 .main_container h1 {
     font-size: 2em;
@@ -284,7 +300,7 @@ section td {
     display: block;
 }
 
-.center, .main_red {
+.center, .logo td, .main_red {
     text-align: center;
 }
 
@@ -357,13 +373,14 @@ section td {
 
 .form {
     margin-top: 8em;
-    font-size: 2em;
+    font-size: 2.5em;
     background-color: brown;
 }
 
+
+
 .form input {
     font-size: 1.5em;
-    color: red;
     text-align: right;
 }
 
