@@ -53,6 +53,21 @@ buttonProfileMakePdf.addEventListener("click", (evenement)=> {
     buttonProfileEditCard.disabled = false;
 });
 
+/**
+ * @ profile xp pro
+ */
+var buttonXpPro = document.getElementById("button_xp_pro");
+var profileXpProContainer = document.getElementById("profile_xp_pro_container");
+var buttonCloseProfileXpPro = document.getElementById("button_close_profile_xp_pro");
+buttonXpPro.addEventListener("click", (evenement)=> {
+    buttonXpPro.disabled = true;
+    profileXpProContainer.style.display = "block";
+});
+
+buttonCloseProfileXpPro.addEventListener("click", (evenement)=> {
+    profileXpProContainer.style.display = "none";
+    buttonXpPro.disabled = false;
+});
 
 
 /*

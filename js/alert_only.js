@@ -24,7 +24,7 @@ buttonCertifDirectMolto.addEventListener("click", (evenement)=> {
 
 var buttonCertifProgrammer = document.getElementById("button_certif_programmer");
 buttonCertifProgrammer.addEventListener("click", (evenement)=> {
-    alert(string.programmerTestButtons[getLanguageIndex()]);
+    alert(string.programmerResponsive[getLanguageIndex()]);
 });
 
 var buttonProgrammerEditCard = document.getElementById("button_programmer_edit_card");

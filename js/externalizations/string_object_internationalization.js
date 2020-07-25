@@ -19,29 +19,22 @@ var string = {
     // SKILLS
     skill1: ["développe back, front, poo", "back, front, oop"],
     skill2: ["sites web, bases de données", "websites, databases"],
-    skill3: ["interfaces agiles, esthétiques", "agile, aesthetic interfaces"],
+    skill3: ["interfaces agiles", "agile interfaces"],
 
     // PROFILE
     profileJava: ["java FULL STACK", "full stack JAVA"],
     knowHowToBe: ["savoir-être ingénieuse", "know-how-to-be ingenious"],
-    
+    XpPro: ["XP professionelle sciences & technologies", "professional XP sciences & technologies"],
 
-    editCard: ["mes cartes de visite en un clic", "edit my visit cards in a click"],
-    viewProfile: ["profil@LinkedIn", "profile@LinkedIn"],
-    opensource: ["opensource@Git", "opensource@Git"],
+    editCard: ["ma carte de visite en un clic", "my visit card in a click"],
 
     // CONTACT
     contactMe: ["me contacter @LinkedIn", "contact me @LinkedIn"],
 
     // CREATIONS
-    creationsUsefull: ["utiles", "useful"],
-    creationsCustom: ["adaptées", "custom"],
-
     view: ["voir", "view"],
 
     // INDICES
-
-    technologies: ["technologies", "technologies"],
     more: ["plus", "more"],
 
 
@@ -65,7 +58,7 @@ var string = {
 
     // PROGRAMMER
     myPortfolio: ["mon portfolio", "my portfolio"],
-    assertTestButton: ["certifié bouton", "special push-button"],
+    responsive: ["responsive", "responsive"],
     switchLanguage: ["français anglais", "french english"],
     share: ["se partage ici @in", "to share @in here"],
     programmerEditCards: ["édite mes cartes pro", "edits my visit cards"],
@@ -84,7 +77,7 @@ var string = {
     manchesterFacebook: ["site vitrine pour un bar. l'agenda des évènements est géré depuis Facebook.", "showcase site for a bar. the agenda of events is handled from Facebook."],
     devisSimple: ["interface simple", "simple interface"],
     directMoltoTeamName: ["BEWEB Fondespierre Montpellier", "BEWEB Fondespierre Montpellier"],
-    programmerTestButtons: ["invitation à tester les boutons.", "invitation to test buttons."],
+    programmerResponsive: ["rendu optimisé pour tablette et mobile", "optimized output on tablet and mobile."],
     programmerOnSite: ["vous êtes sur le site https://programmer_montpellier_numerique", "you are on site https://programmer_montpellier_numerique"]
 }
 

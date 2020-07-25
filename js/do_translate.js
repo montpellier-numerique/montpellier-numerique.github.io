@@ -13,31 +13,31 @@ var navCreations = document.getElementById("nav_creations");
 var navIndices = document.getElementById("nav_indices");
 
 // skills elements
+var skillsTitle = document.getElementById("skills_title");
 var skill1 = document.getElementById("skill_1");
 var skill2 = document.getElementById("skill_2");
 var skill3 = document.getElementById("skill_3");
 
 // profile elements
+var profileTitle = document.getElementById("profile_title");
 var profileJava = document.getElementById("profile_java");
 var knowHowToBe = document.getElementById("know_how_to_be");
 
 var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
-var buttonProfileLinkedin = document.getElementById("button_profile_linkedin");
-var buttonProfileOpensource = document.getElementById("button_profile_opensource");
+var profileXpPro = document.getElementById("profile_xp_pro");
 
 var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
 
 // creations elements
 var creationsTitle = document.getElementById("creations_title");
-var creationsUseful = document.getElementById("creations_useful");
-var creationsCustom = document.getElementById("creations_custom");
 
 var buttonCreationsView = document.getElementById("button_creations_view");
 
+// indices elements
 var indicesTitle = document.getElementById("indices_title");
-var indicesTechnologies = document.getElementById("indices_technologies");
 var buttonMore = document.getElementById("button_more");
 
+// creations articles elements
 var manchesterShowcase = document.getElementById("manchester_showcase");
 var manchesterFacebookDeveloper = document.getElementById("manchester_facebook_developer");
 var manchesterAgenda = document.getElementById("manchester_agenda");
@@ -58,7 +58,7 @@ var moltoAgile = document.getElementById("molto_agile");
 var directMoltoViewInterface = document.getElementById("direct_molto_view_interface");
 
 var programmerMyPortfolio = document.getElementById("programmer_my_portfolio");
-var programmerTestAssert = document.getElementById("programmer_test_assert");
+var programmerResponsive = document.getElementById("programmer_responsive");
 var programmerSwitchLanguage = document.getElementById("programmer_switch_language");
 var programmerShare = document.getElementById("programmer_share");
 var programmerEditCards = document.getElementById("programmer_edit_cards");
@@ -136,30 +136,27 @@ var translateTo = function translateTo(languageIndex) {
     navCreations.innerHTML = string.creations[languageIndex];
     navIndices.innerHTML = string.indices[languageIndex];
 
+    skillsTitle.innerHTML = string.skills[languageIndex];
     skill1.innerHTML = string.skill1[languageIndex];
     skill2.innerHTML = string.skill2[languageIndex];
     skill3.innerHTML = string.skill3[languageIndex];
 
+    profileTitle.innerHTML = string.profile[languageIndex];
     profileJava.innerHTML = string.profileJava[languageIndex];
     know_how_to_be.innerHTML = string.knowHowToBe[languageIndex];
     
 
     buttonProfileEditCard.innerHTML = string.editCard[languageIndex];
-    buttonProfileLinkedin.innerHTML = string.viewProfile[languageIndex];
-    buttonProfileOpensource.innerHTML = string.opensource[languageIndex];
+    profileXpPro.innerHTML = string.XpPro[languageIndex];
 
     buttonContactLinkedIn.innerHTML = string.contactMe[languageIndex];
 
     creationsTitle.innerHTML = string.creations[languageIndex];
-    creationsUseful.innerHTML = string.creationsUsefull[languageIndex];
-    creationsCustom.innerHTML = string.creationsCustom[languageIndex];
 
     buttonCreationsView.innerHTML = string.view[languageIndex];
 
 
     indicesTitle.innerHTML = string.indices[languageIndex];
-    indicesTechnologies.innerHTML = string.technologies[languageIndex];
-    
     buttonMore.innerHTML = string.more[languageIndex];
 
     manchesterShowcase.innerHTML = string.showcaseSite[languageIndex];
@@ -180,7 +177,7 @@ var translateTo = function translateTo(languageIndex) {
     directMoltoViewInterface.innerHTML = string.viewInterface[languageIndex];
 
     programmerMyPortfolio.innerHTML = string.myPortfolio[languageIndex];
-    programmerTestAssert.innerHTML = string.assertTestButton[languageIndex];
+    programmerResponsive.innerHTML = string.responsive[languageIndex];
     programmerSwitchLanguage.innerHTML = string.switchLanguage[languageIndex];
     programmerShare.innerHTML = string.share[languageIndex];
     programmerEditCards.innerHTML = string.programmerEditCards[languageIndex];
