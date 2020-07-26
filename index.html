@@ -4,73 +4,75 @@
 
 <head>
     <meta charset="utf-8">
-    <title>programmer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>programmer</title>    
+    <link rel="stylesheet" href="css/960_24_col.css">
+    <link rel="stylesheet" href="css/style.css">   
 </head>
 
 <body id="content">
+    <div class="">
 
-    <section class="main_header">
-        <header>
-            <div id="logo" class="logo">
-                <nav>
-                    <table>
-                        <tr><td class="blue"><a id="nav_skills" href="#skills"></a></td></tr>
-                        <tr><td class="yellow"><a id="nav_profile" href="#profile"></a></td></tr>
-                        <tr><td class="green"><a id="nav_contact" href="#contact"></a></td></tr>
-                        <tr><td class="orange"><a id="nav_creations" href="#creations"></a></td></tr>
-                        <tr><td class="grenat"><a id="nav_indices" href="#indices"></a></td></tr>
-                    </table>
-                </nav>
-            </div>
-
-            <div class="flex">
-                <div class="title">
-                    <h1>programmer</h1>
-                    <h2 id="title_web_mobile_app"></h2>
-                    <h3>https://programmer_montpellier_numerique</h3>
+        <header class="header brown"> <!--responsive-->
+            <div class="">
+                <div id="logo" class="logo">
+                    <nav>
+                        <table>
+                            <tr><td class="pale_green"><a id="nav_skills" href="#skills"></a></td></tr>
+                            <tr><td class="yellow"><a id="nav_profile" href="#profile"></a></td></tr>
+                            <tr><td class="coral"><a id="nav_contact" href="#contact"></a></td></tr>
+                            <tr><td class="orange"><a id="nav_creations" href="#creations"></a></td></tr>
+                            <tr><td class="pool_blue"><a id="nav_indices" href="#indices"></a></td></tr>
+                        </table>
+                    </nav>
+                </div>
+                <div class="flex"><!--flex-->
+                    <div class="right title"><!--title-->
+                        <h1>programmer</h1>
+                        <h2 id="title_web_mobile_app"></h2>
+                        <h3>https://programmer_montpellier_numerique</h3>
+                    </div>
                 </div>
             </div>
-            
         </header>
-        
-        
-    <div>
-        <div class="overflow light_blue">
-            <div class="flags_buttons right">
-                <div>
-                    <button id="button_english_flag"><img class="icon_flag" src="icons/england.svg"/></button>
+
+        <div class="light_blue">
+            <div class="under_header">
+                <div class="overflow">
+                    <div class="right">
+                        <div>
+                            <button id="button_english_flag"><img class="icon_button" src="icons/england.svg"/></button>
+                        </div>
+                        <div class="">
+                            <button id="button_french_flag"><img class="icon_button" src="icons/france.svg"/></button>
+                        </div>        
+                    </div>
                 </div>
-                <div class="">
-                    <button id="button_french_flag"><img class="icon_flag" src="icons/france.svg"/></button>
-                </div>
-                
-                
             </div>
         </div>
-    </div>
-
-    <div id="main_red">
-
         
-        <div class="main_red">
-            <button id="button_main_red"></button>
+        <div id="main_red" class="main_red overflow">
+            <div class="center container">
+                <button id="button_main_red"></button>
+            </div>    
         </div>
         
+    
+        <div class="light_blue">
+            <footer class="center">
+                <a class="" href="#skills"><button id="download_to_skills"><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer>
+        </div>
+
     </div>
 
-    <footer class="center light_blue block">
-        <a class="" href="#skills"><button id="download_to_skills"><img class="icon_button" src="icons/download.svg"/></button></a>
-
-    </footer>
-
-    </section>
+    
       
     
 
-    <section>
+    <section class="pale_green">
+
         <section id="skills">
-            <article class="overflow main_container">
+            <article class="overflow container">
                 <header class="title"><h1 id="skills_title"></h1></header>
                 
                 <div class="form right">
@@ -89,13 +91,13 @@
                     </div>
                 </div>
             </article>
-            <footer class="center blue">
+            <footer class="center pale_green">
                 <a href="#profile"><button><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </section>
 
         <section id="profile">
-            <article class="profile overflow main_container">
+            <article class="profile overflow container">
                 <header class="title"><h1 id="profile_title"></h1></header>
                 <div class="profile_labels right light_blue">
                     <div class="">
@@ -160,9 +162,21 @@
             </footer>
         </section>
 
-        
-        <section id="contact">
-            <article class="contact main_container overflow">
+        <div class="test_801">
+            <p>801px</p>
+        </div>
+        <div class="test_641">
+            <p>641px</p>
+        </div>
+        <div class="test_481">
+            <p>481px</p>
+        </div>
+
+        <div class="test_320">
+            <p>320</p>
+        </div>
+        <section id="contact" class="">
+            <article class="contact coral main_container overflow">
                 <header class="title"><h1>contact</h1></header>
                 <div class="contact right light_blue">
                     <div class="center">
@@ -174,7 +188,7 @@
                     
                 </div>
             </article>
-            <footer class="center green">
+            <footer class="center coral">
                 <a href="#creations"><button><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </section>
