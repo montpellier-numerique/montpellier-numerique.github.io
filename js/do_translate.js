@@ -30,31 +30,12 @@ var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
 // creations elements
 var creationsTitle = document.getElementById("creations_title");
 
-var buttonCreationsView = document.getElementById("button_creations_view");
-
 // indices elements
 var indicesTitle = document.getElementById("indices_title");
 var buttonMore = document.getElementById("button_more");
 
-// creations articles elements
-var manchesterShowcase = document.getElementById("manchester_showcase");
-var manchesterFacebookDeveloper = document.getElementById("manchester_facebook_developer");
-var manchesterAgenda = document.getElementById("manchester_agenda");
+// @creations programmer article not factorized
 
-var buttonManchesterViewSite = document.getElementById("button_manchester_view_site");
-
-var devisInvoices = document.getElementById("devis_invoices");
-var devisCartItem = document.getElementById("devis_cart_item");
-
-var buttonDevisIntuitive = document.getElementById("button_devis_intuitive");
-
-var buttonDevisViewInterface = document.getElementById("button_devis_view_interface");
-
-var directMoltoGarage = document.getElementById("direct_molto_garage");
-var directMoltoManagement = document.getElementById("direct_molto_management");
-var moltoAgile = document.getElementById("molto_agile");
-
-var directMoltoViewInterface = document.getElementById("direct_molto_view_interface");
 
 var programmerMyPortfolio = document.getElementById("programmer_my_portfolio");
 var programmerResponsive = document.getElementById("programmer_responsive");
@@ -143,29 +124,15 @@ var translateTo = function translateTo(languageIndex) {
 
     creationsTitle.innerHTML = string.creations[languageIndex];
 
-    buttonCreationsView.innerHTML = string.view[languageIndex];
+    
 
 
     indicesTitle.innerHTML = string.indices[languageIndex];
     buttonMore.innerHTML = string.more[languageIndex];
 
-    manchesterShowcase.innerHTML = string.showcaseSite[languageIndex];
-    manchesterFacebookDeveloper.innerHTML = string.facebookDeveloper[languageIndex];
-    manchesterAgenda.innerHTML = string.agenda[languageIndex];
-    buttonManchesterViewSite.innerHTML = string.viewSite[languageIndex];
+    
 
-    devisInvoices.innerHTML = string.devisInvoices[languageIndex];
-    devisCartItem.innerHTML = string.cartItem[languageIndex];
-
-    buttonDevisIntuitive.innerHTML = string.intuitive[languageIndex];
-
-    buttonDevisViewInterface.innerHTML = string.viewInterface[languageIndex];
-
-    directMoltoGarage.innerHTML = string.garage[languageIndex];
-    directMoltoManagement.innerHTML = string.moltoManagement[languageIndex];
-    moltoAgile.innerHTML = string.moltoAgile[languageIndex];
-    directMoltoViewInterface.innerHTML = string.viewInterface[languageIndex];
-
+    
     programmerMyPortfolio.innerHTML = string.myPortfolio[languageIndex];
     programmerResponsive.innerHTML = string.responsive[languageIndex];
     programmerSwitchLanguage.innerHTML = string.switchLanguage[languageIndex];
@@ -182,6 +149,9 @@ var translateTo = function translateTo(languageIndex) {
     languageCurrent = languageIndex;
     switchVisitCardLightOn(languageIndex);
 
+    // load templates
+    loadTemplatesCreations(languageIndex);
+
     // reset buttons
     resetButtonsFlags();
 }
@@ -194,7 +164,6 @@ var translateTo = function translateTo(languageIndex) {
 
 buttonEnglishFlag.addEventListener("click", (evenement)=>{
     translateTo(en);
-    
 });
 
 buttonFrenchFlag.addEventListener("click", (evenement)=>{

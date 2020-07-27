@@ -37,10 +37,10 @@ const creations = [
         name: "direct molto",
         href: "#article_direct_molto",
         date: 2020,
-        certificate: string.moltoAgile,
+        certificate: ["équipe molto AGILE", "molto AGILE team"],
         alertCertificate: ["BEWEB Fondespierre Montpellier", "BEWEB Fondespierre Montpellier"],       
         title2: string.garage,
-        title3: string.moltoManagement,
+        title3: ["admin + gérant + tablette du mécanicien", "admin + manager + tablet for the mechanic"],
         srcImage: "",
         type: types[1],
         onLine: false,
@@ -79,78 +79,70 @@ var loadListCreations = function loadListCreations() {
         listCreations.appendChild(creation);
     }
 }
-loadListCreations();
+
 /*
 * make template
 */
 
 
 
-
-var loadTemplatesCreations = function loadTemplatesCreations() {
+function loadTemplatesCreations(languageIndex) {
     var templatesContainer = document.getElementById("creation_templates_container");
     var template = document.getElementById("creation_template");
-    
+    templatesContainer.innerHTML="";
+    for(var i=0; i<creations.length; i++) {
+        if(!(i === 3)) { // excludes programmer which has a special design
+            var clone = document.importNode(template.content, true);
+            clone.id = creations[i].href; 
 
-    
-    for(var i=0; i<3; i++) { // excludes programmer
+            var spanToArticleClone = clone.querySelectorAll("span")[0];
+            spanToArticleClone.textContent = creations[i].name;
 
-        var clone = document.importNode(template.content, true);
+            var articleCreation = clone.querySelectorAll("article")[0];
+            // TODO
+            var linkToArticle = clone.querySelectorAll("a")[0];
+            //TODO
 
-        var buttonTitle = clone.querySelectorAll("span")[0];
-        buttonTitle.textContent = creations[i].name;
-        var linkToArticle = clone.querySelectorAll("a")[0];
-        linkToArticle.href = creations[i].href;
-        
-        var title = clone.querySelectorAll("h1")[0];
-        title.textContent = creations[i].name + " " + creations[i].date;
+            var title = clone.querySelectorAll("h1")[0];
+            title.textContent = creations[i].name + " " + creations[i].date;
 
-        var certificate = clone.querySelectorAll("span")[1];
-        certificate.textContent = creations[i].certificate;
+            var image = clone.querySelectorAll("img")[2];
+            image.src = creations[i].srcImage;
 
-        var buttonCertificate = clone.querySelectorAll("button")[1];
-        buttonCertificate.addEventListener("click", (evenement)=> {
-            alert("bla"); // TODO
-        });
+            var spanCertificate = clone.querySelectorAll("span")[1];
+            spanCertificate.textContent = creations[i].certificate[languageIndex];
 
-        var title2 = clone.querySelectorAll("h2")[0];
-        title2.textContent = creations[i].title2;
+            var title2 = clone.querySelectorAll("h2")[0];
+            var title3 = clone.querySelectorAll("h3")[0];
+            title2.textContent = creations[i].title2[languageIndex];
+            title3.textContent = creations[i].title3[languageIndex];
 
-        var title3 = clone.querySelectorAll("h3")[0];
-        title3.textContent = creations[i].title3;
+            var spanView = clone.querySelectorAll("span")[2];
+            if(creations[i].type === types[0]) {
+                spanView.textContent = string.viewSite[languageIndex];
+            } else {
+                spanView.textContent = string.viewInterface[languageIndex];
+            }
 
-        var image = clone.querySelectorAll("img")[2];
-        image.src = creations[i].srcImage;
+            var buttonView = clone.querySelectorAll("button")[2]
+                if(!creations[i].onLine) {
+                    buttonView.disabled = true;
+                }
 
-        var view = clone.querySelectorAll("span")[2];
+            var siteLink = clone.querySelectorAll("a")[1];
+            siteLink.href = creations[i].siteLink;
 
-        if(creations[i].type === types[0]) {
-            view.textContent = string.viewSite;
-        } else {
-            view.textContent = string.viewInterface;
+            var gitLink = clone.querySelectorAll("a")[2];
+            gitLink.href = creations[i].gitLink; 
+
+            var spanTechnologies = clone.querySelectorAll("span")[3];
+            for(var j=0; j<creations[i].technologies.length; j++) {
+                spanTechnologies.textContent += creations[i].technologies[j] + " ";
+            }
+
+            templatesContainer.appendChild(clone);
         }
-
-        var button_view = clone.querySelectorAll("button")[2]
-        if(!creations[i].onLine) {
-            button_view.disabled = true;
-        }
-
-        var siteLink = clone.querySelectorAll("a")[1];
-        siteLink.href = creations[i].siteLink;
-
-        var gitLink = clone.querySelectorAll("a")[2];
-        gitLink.href = creations[i].gitLink; 
-
-        var technologies = clone.querySelectorAll("span")[3];
-        for(var j=0; j<creations[i].technologies.length; j++) {
-            technologies.textContent += creations[i].technologies[j] + " ";
-        }
-
-        templatesContainer.appendChild(clone);
     }
-
 }
-
-loadTemplatesCreations();
 
 

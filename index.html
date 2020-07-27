@@ -169,54 +169,54 @@
                     </div>
                 </div>
             </article>    
-            <footer class="orange center">
-                <a><button><img class="icon_button" src="icons/download.svg"/><span id="button_creations_view"></span></button></a>
-            </footer>
+            
 
-            <section id="creation_templates_container" class="container">
+            <section id="creation_templates_container">
             </section>
 
             <template id="creation_template">
-                <header>
+                <header class="creation_template_header">
                     <div class="orange center">
                         <a><button><img class="icon_button" src="icons/download.svg"/><span></span></button></a>
                     </div>
                 </header>
-                <section class="card">
-                    <article id="creation_article" class="white_smoke">
-                        <header class="article_header"><h1></h1></header>
-                        <div class="promotion overflow"> 
-                            <button id="button_creation_template_certificate" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="creation_template_certificate"></span></button>
-                            <h2 id="creation_template_title_2"></h2>
-                            <h3 id="creation_template_title_3"></h3>
-                            <div class="image_site_detail">
-                                <img/>
+                <section class="container">
+                    <section class="card">
+                        <article class="article white_smoke">
+                            <header class="article_header"><h1></h1></header>
+                            <div class="promotion overflow"> 
+                                <button class="red"><img class="icon_button" src="icons/medal.svg"/><span></span></button>
+                                <h2></h2>
+                                <h3></h3>
+                                <div class="image_site_detail">
+                                    <img/>
+                                </div>
+                                <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/><span></span></button></a>
                             </div>
-                            <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_manchester_view_site"></span></button></a>
-                        </div>
-                        <footer class="article_footer">
-                            <a><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                <span></span>
-                            </button></a>
-                        </footer>
-                    </article>
+                            <footer class="article_footer">
+                                <a><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                    <span></span>
+                                </button></a>
+                            </footer>
+                        </article>
+                    </section>
                 </section>
+                
             </template>
                 
             
             
                 
             
+            <section>
                 
-            
-            <article class="container">  
-                <section>
-
-                    <div class="download">
-                        <a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/>programmer</button></a>
-                    </div>
+                <div class="orange center">
+                    <header class="creation_template_header"><a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/>programmer</button></a></header>
+                </div>
+                
+                <section class="container">
                     <section class="card">
-                        <article id="article_programmer" class="white_smoke">
+                        <article id="article_programmer" class="article white_smoke">
                             <header class="article_header">
                                 <h1>programmer montpellier_numerique 2020</h1>
                             </header>
@@ -259,10 +259,14 @@
                         </article>
                     </section>
                 </section>
-            </article>
+            
             <footer class="section_footer">
                 <a href="#indices"><button class="undisplay"><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
+            </section>
+            
+              
+                
         </section>
 
         
@@ -352,10 +356,12 @@
     <!--APP JS-->
     <script src="js/externalizations/string_object_internationalization.js"></script>
     <script src="js/externalizations/indices_string_array.js"></script>
+    
     <script src="js/do_translate.js"></script>
     <script src="js/alert_only.js"></script>
-    <script src="js/manipulate_dom.js"></script>
     <script src="js/externalizations/creations_array.js"></script>
+    <script src="js/manipulate_dom.js"></script>
+    
     <script src="js/initialize.js"></script>
     <script src="js/script.js"></script>
 

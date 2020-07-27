@@ -1,16 +1,12 @@
 /**
- * SET LANGUAGE TO INITIALIZE
+ * SET LANGUAGE
+ * CALL TRANSLATION TO INITIALIZE
+ * LOAD THE LIST OF CREATIONS
  */
 
-languageIndex = en;
-
-var setLanguage = function setLanguage(languageIndex) {
-    translateTo(languageIndex);
-    resetButtonsFlags();
-};
-
+languageIndex = fr;
 
 var initialize = function initialize() {
-    setLanguage(languageIndex);
-    
+    translateTo(languageIndex);
+    loadListCreations();
 }

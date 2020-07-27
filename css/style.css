@@ -389,11 +389,23 @@ section td {
 * each article in a card
 */
 
+.creation_template_header {
+    margin-top: 5.5em;
+}
+
+.creation_template_header a {
+    font-size: 1.5em;
+}
+
 .card {
     padding-top: 9em;
     padding-bottom: 0;
     margin-right: 5px;
     background-color: lightcyan;
+}
+
+.article {
+    margin-left: 10px;
 }
 
 .article_header h1 {

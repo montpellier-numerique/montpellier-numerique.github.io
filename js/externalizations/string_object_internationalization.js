@@ -37,23 +37,21 @@ var string = {
     more: ["plus", "more"],
 
 
-    // FOR EACH CREATION
-    // MANCHESTER
+    // REUSABLE VOC FROM CREATIONS TEMPLATES
     showcaseSite: ["site vitrine", "showcase site"],
     facebookDeveloper: ["FACEBOOK developer", "FACEBOOK developer"],
     agenda: ["agenda", "agenda"],
-    viewSite: ["voir le site", "view site"],
 
-    // DEVIS
-    devisInvoices: ["logiciel de devis et factures", "invoice & quote"],
+    devisInvoices: ["devis & factures", "invoice & quote"],
     intuitive: ["intuitif", "intuitive"],
     cartItem: ["panier boutique item + gestion", "cart item shop + back office management"],
+
+    garage: ["gestion d'un garage", "managing a garage"],
+
+
+    viewSite: ["voir le site", "view site"],
     viewInterface: ["voir l'interface", "view interface"],
 
-    // DIRECT MOLTO
-    garage: ["logiciel de gestion d'un garage", "managing a garage"],
-    moltoAgile: ["équipe molto AGILE", "molto AGILE team"],
-    moltoManagement: ["admin + gérant + tablette du mécanicien", "admin + manager + tablet for the mechanic"],
 
     // PROGRAMMER
     myPortfolio: ["mon portfolio", "my portfolio"],
