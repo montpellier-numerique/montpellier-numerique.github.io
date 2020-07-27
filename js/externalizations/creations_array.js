@@ -31,7 +31,7 @@ const creations = [
         onLine: true,
         siteLink: "https://www.linkedin.com/in/janie-chun-hung-kee-0b807238/detail/treasury/education:639285974/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAfXBQwBruiF1ZqnSRMO0SDfxKXRexnkHk0%2C1591097506010)&section=education%3A639285974&treasuryCount=3",
         technologies: ["JAVA", "SPRING", "ANGULAR"],
-        gitLink: gitLinkPersonal
+        gitLink: gitLinkPersonal + "/devis"
     },
     {   
         name: "direct molto",
@@ -61,7 +61,7 @@ const creations = [
         onLine: true,
         siteLink:"https://programmer_montpellier_numerique",
         technologies: ["HTML", "CSS", "JS", "JSON"],
-        gitLink: gitLinkPersonal
+        gitLink: gitLinkPersonal + "/programmer-portfolio"
     }
 ];
 
@@ -82,6 +82,7 @@ var loadListCreations = function loadListCreations() {
 
 /*
 * make template
+* https://javascript.info/template-element !!! getElementById()
 */
 
 
@@ -93,15 +94,11 @@ function loadTemplatesCreations(languageIndex) {
     for(var i=0; i<creations.length; i++) {
         if(!(i === 3)) { // excludes programmer which has a special design
             var clone = document.importNode(template.content, true);
-            clone.id = creations[i].href; 
+            
 
             var spanToArticleClone = clone.querySelectorAll("span")[0];
             spanToArticleClone.textContent = creations[i].name;
 
-            var articleCreation = clone.querySelectorAll("article")[0];
-            // TODO
-            var linkToArticle = clone.querySelectorAll("a")[0];
-            //TODO
 
             var title = clone.querySelectorAll("h1")[0];
             title.textContent = creations[i].name + " " + creations[i].date;
@@ -140,7 +137,27 @@ function loadTemplatesCreations(languageIndex) {
                 spanTechnologies.textContent += creations[i].technologies[j] + " ";
             }
 
+
+            var articleCreation = clone.querySelectorAll("article")[0];
+            //articleCreation.id = creations[i].href;
+            // TODO
+            var linkToArticle = clone.querySelectorAll("a")[0];
+            //linkToArticle.href = articleCreation.id;
+            //TODO
+
+            var buttonHeader = clone.querySelectorAll("button")[0];
+            buttonHeader.addEventListener("click", (evenement)=> {
+               // TODO href
+               window.location.href = "#article_creation";
+            });
+
+
+
+           
+
             templatesContainer.appendChild(clone);
+            
+            
         }
     }
 }
