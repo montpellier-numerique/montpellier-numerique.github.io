@@ -18,56 +18,7 @@ buttonMainRed.addEventListener("click", (evenement)=> {
 /*
 * 2) DOM MANIPULATION
 */
-/**
- * @ profile edit card
- */
-var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
-var profileCardContainer = document.getElementById("profile_card_container");
-var buttonCloseProfileCard = document.getElementById("button_close_profile_card");
-var buttonProfileMakePdf = document.getElementById("button_profile_make_pdf");
 
-buttonProfileEditCard.addEventListener("click", (evenement)=> {
-    // show card container
-    profileCardContainer.style.display = "block";
-
-    // desable button_profile_edit_card
-    buttonProfileEditCard.disabled = true;
-});
-
-buttonCloseProfileCard.addEventListener("click", (evenement)=> {
-    // hide card container
-    profileCardContainer.style.display = "none";
-
-    // enable button_profile_edit_card
-    buttonProfileEditCard.disabled = false;
-});
-
-buttonProfileMakePdf.addEventListener("click", (evenement)=> {
-    // alert base64 jspdf
-    alert(string.useBase64AndJsPDF[getLanguageIndex()]);
-
-    // then close the card container
-    profileCardContainer.style.display = "none";
-
-    // enable button profile_edit_card
-    buttonProfileEditCard.disabled = false;
-});
-
-/**
- * @ profile xp pro
- */
-var buttonXpPro = document.getElementById("button_xp_pro");
-var profileXpProContainer = document.getElementById("profile_xp_pro_container");
-var buttonCloseProfileXpPro = document.getElementById("button_close_profile_xp_pro");
-buttonXpPro.addEventListener("click", (evenement)=> {
-    buttonXpPro.disabled = true;
-    profileXpProContainer.style.display = "block";
-});
-
-buttonCloseProfileXpPro.addEventListener("click", (evenement)=> {
-    profileXpProContainer.style.display = "none";
-    buttonXpPro.disabled = false;
-});
 
 
 /*

@@ -5,8 +5,11 @@
 <head>
     <meta charset="utf-8">
     <title>programmer</title>    
-    <link rel="stylesheet" href="css/960_24_col.css">
-    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/behaviors.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test_responsive.css">
 </head>
 
 <body id="content">
@@ -21,7 +24,7 @@
                             <tr><td class="yellow"><a id="nav_profile" href="#profile"></a></td></tr>
                             <tr><td class="coral"><a id="nav_contact" href="#contact"></a></td></tr>
                             <tr><td class="orange"><a id="nav_creations" href="#creations"></a></td></tr>
-                            <tr><td class="pool_blue"><a id="nav_indices" href="#indices"></a></td></tr>
+                            <tr><td class="light_green"><a id="nav_indices" href="#indices"></a></td></tr>
                         </table>
                     </nav>
                 </div>
@@ -69,9 +72,8 @@
       
     
 
-    <section class="pale_green">
-
-        <section id="skills">
+    <section>
+        <section id="skills" class="skills pale_green">
             <article class="overflow container">
                 <header class="title"><h1 id="skills_title"></h1></header>
                 
@@ -96,62 +98,28 @@
             </footer>
         </section>
 
-        <section id="profile">
-            <article class="profile overflow container">
+        <section id="profile" class="profile yellow">
+            <article class="overflow container">
                 <header class="title"><h1 id="profile_title"></h1></header>
-                <div class="profile_labels right light_blue">
+                <div>
                     <div class="">
-                        <div class=""><img class="icon block" src="icons/young.svg"/></div>
-                        <div class="center">
-                            <label id="profile_java"></label>
+                        <div class="profile_labels">
+                            <label class="" id="know_how_to_be"></label>
                         </div>
-                        <div class="overflow light_green">
-                            <label class="right" id="know_how_to_be"></label>
-                            <button class="left" id="button_profile_edit_card" class=""></button>
-                        </div>   
-                    </div>
-                    
-                    <div>
-                        <div id="profile_card_container" class="alternative">
-                            
-                            <div class="profile_card_container">
-                                
-                                <div id="pdf_light_off" #pdfLightOff class="visit_card_container left">
-                                    <img id="visit_card_light_off" class="visit_card"/>
-                                </div>
-                                
-                                <div class="">
-                                    <div class="left">
-                                        <button id="button_profile_make_pdf"><img class="icon_button" src="icons/pdf.svg"/></button>
-                                    </div>
-                                    <div class="right">
-                                        <button id="button_close_profile_card"><img class="icon_button" src="icons/close.svg"/></button>
-                                    </div> 
-                                </div>
-                                
+                        <div class="form right">
+                            <div class="overflow">
+                                <label>2019-2020 AFPA & Beweb</label>
+                                <input id="profile_java"/>
                             </div>
-                                          
+                            <div>
+                                <label>2019 Digital Services</label>
+                                <input id="profile_web_master"/>
+                            </div>
+                            <div>
+                                <label>2013-2017 Université CNRS</label>
+                                <input id="profile_egyptologist"/>
+                            </div>
                         </div>
-                        <div class="red road">
-                            <div class="center">
-                                <button id="button_xp_pro" class="flash_blue"><span id="profile_xp_pro"></span></button>
-                            </div>
-                            <div id="profile_xp_pro_container" class="overflow alternative"> <!--alternative-->
-                                <div class="light_blue">
-                                    <div class="">
-                                        <p>2019: web master - Digital Services - Montpellier</p>
-                                        <p>2013-2017: égyptologue - Université CNRS</p>
-                                    </div>
-    
-                                    <div class="center">
-                                        <button id="button_close_profile_xp_pro"><img class="icon_button" src="icons/close.svg"/></button>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                        
                     </div>
                     
                 </div>
@@ -162,27 +130,14 @@
             </footer>
         </section>
 
-        <div class="test_801">
-            <p>801px</p>
-        </div>
-        <div class="test_641">
-            <p>641px</p>
-        </div>
-        <div class="test_481">
-            <p>481px</p>
-        </div>
-
-        <div class="test_320">
-            <p>320</p>
-        </div>
-        <section id="contact" class="">
-            <article class="contact coral main_container overflow">
+        <section id="contact" class="coral">
+            <article class="contact container overflow">
                 <header class="title"><h1>contact</h1></header>
-                <div class="contact right light_blue">
-                    <div class="center">
+                <div class="right light_blue">
+                    <div class="contact_sky">
                         <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_contact_linkedin"></button></a>
                     </div>
-                    <div class="contact_pool pool_blue center">
+                    <div class="contact_pool pool_blue">
                         <img class="icon icon_contact" src="icons/mouse-clicker.svg"/>
                     </div>
                     
@@ -192,9 +147,10 @@
                 <a href="#creations"><button><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </section>
+
         
-        <section id="creations">
-            <article class="main_container">
+        <section id="creations" class="orange">
+            <article class="container">
                 <header class="title"><h1 id="creations_title"></h1></header>
                 <div class="overflow creations_main">
                     <div class="right">
@@ -203,11 +159,10 @@
                         </div>
                         <div class="list_creations gold overflow"><!--overflow-->
                             <div class="right"><!--right-->
-                                <ul class="right">
-                                    <li><a href="#article_manchester">manchester</a></li>
-                                    <li><a href="#article_devis">devis</a></li>
-                                    <li><a href="#article_direct_molto">direct molto</a></li>
-                                    <li><a href="#article_programmer">programmer</a></li>
+                                <ul id="list_creations" class="right">
+                                    <!--
+                                    JS externalization
+                                    -->
                                 </ul>
                             </div>
                         </div>
@@ -215,80 +170,48 @@
                 </div>
             </article>    
             <footer class="orange center">
-                <a href="#article_manchester"><button><img class="icon_button" src="icons/download.svg"/><span id="button_creations_view"></span></button></a>
+                <a><button><img class="icon_button" src="icons/download.svg"/><span id="button_creations_view"></span></button></a>
             </footer>
+
+            <section id="creation_templates_container" class="container">
+            </section>
+
+            <template id="creation_template">
+                <header>
+                    <div class="orange center">
+                        <a><button><img class="icon_button" src="icons/download.svg"/><span></span></button></a>
+                    </div>
+                </header>
+                <section class="card">
+                    <article id="creation_article" class="white_smoke">
+                        <header class="article_header"><h1></h1></header>
+                        <div class="promotion overflow"> 
+                            <button id="button_creation_template_certificate" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="creation_template_certificate"></span></button>
+                            <h2 id="creation_template_title_2"></h2>
+                            <h3 id="creation_template_title_3"></h3>
+                            <div class="image_site_detail">
+                                <img/>
+                            </div>
+                            <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_manchester_view_site"></span></button></a>
+                        </div>
+                        <footer class="article_footer">
+                            <a><button><img class="icon_button" src="icons/git-logo.svg"/>
+                                <span></span>
+                            </button></a>
+                        </footer>
+                    </article>
+                </section>
+            </template>
                 
-            <article class="card">  
-                <section class="flex">
-                    <section class="">
-                        <article id="article_manchester" class="white_smoke">
-                            <header class="article_header">
-                                <h1>manchester 2019</h1>
-                            </header>
-                            <div class="promotion">    
-                                <button id="button_certif_manchester" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="manchester_facebook_developer"></span></button>
-                                <h2 id="manchester_showcase"></h2>
-                                <h3 id="manchester_agenda"></h3>
-                                <div class="image_site_detail">
-                                    <img src="images/png/manchester_site_detail_img.png"/>
-                                </div>
-                                
-                                <a class="right" href="https://barmanchester.000webhostapp.com"><button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_manchester_view_site"></span></button></a>
-                            </div>
-                            
-                            <footer class="article_footer">
-                                <a><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                    HTML SDK FACEBOOK CSS
-                                </button></a>
-                            </footer>
-                        </article>
-                    </section>
-                    <div class="download">
-                        <a href="#section_devis"><button><img class="icon_button" src="icons/download.svg"/>devis</button></a>
-                    </div>
-                    
-                    <section id="section_devis" class="card">
-                        
-                        <article id="article_devis" class="white_smoke">
-                            <header class="article_header"><h1>devis 2020</h1></header>
-                            <div class="promotion">
-                                <button id="button_certif_devis" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="button_devis_intuitive"></span></button>
-                                <h2 id="devis_invoices"></h2>
-                                <h3 id="devis_cart_item"></h3>
-                            </div>
-                            <div class="right">
-                                <a href="https://www.linkedin.com/in/janie-chun-hung-kee-0b807238/detail/treasury/education:639285974/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAfXBQwBruiF1ZqnSRMO0SDfxKXRexnkHk0%2C1591097506010)&section=education%3A639285974&treasuryCount=3"><button class="green"><img class="icon_button" src="icons/see.svg"/><span id="button_devis_view_interface"></span></button></a>
-                            </div>
-                            
-                            <footer class="article_footer">
-                                <a href="https://gitlab.com/cjanie"><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                    JAVA SPRING ANGULAR
-                                </button></a>
-                            </footer>
-                        </article>
-                    </section>
-                    <div class="download">
-                        <a href="#section_direct_molto"><button><img class="icon_button" src="icons/download.svg"/>direct molto</button></a>
-                    </div>
-                    <section id="section_direct_molto" class= "card">
-                        <article id="article_direct_molto" class="white_smoke">
-                            <header class="article_header"><h1>direct molto 2020</h1></header>
-                            <div class="promotion">
-                                <button id="button_certif_direct_molto" class="red"><img class="icon_button" src="icons/medal.svg"/><span id="molto_agile"></span></button>
-                                <h2 id="direct_molto_garage"></h2>
-                                <h3 id="direct_molto_management"></h3>
-                            </div>
-                            <div class="right">
-                                <button class="green" disabled><img class="icon_button" src="icons/see.svg"/><span id="direct_molto_view_interface"></span></button>
-                            </div>
-                            
-                            <footer class="article_footer">
-                                <a href="https://gitlab.com/voie-de-garage"><button><img class="icon_button" src="icons/git-logo.svg"/>
-                                    SPRING ANGULAR ANDROID
-                                </button></a>
-                            </footer>
-                        </article>
-                    </section>
+            
+            
+                
+            
+                
+            
+            <article class="container">  
+                <section>
+
                     <div class="download">
                         <a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/>programmer</button></a>
                     </div>
@@ -343,10 +266,9 @@
         </section>
 
         
-        <section id="indices" class="main_container grenat">
-            <article class="">
-                <header class="flex, title">
-                    <img class="icon" src="icons/index.svg"/>
+        <section id="indices" class="light_green">
+            <article class="container">
+                <header class="title">
                     <h1 id="indices_title"></h1>
                 </header>
                 <div class="table">
@@ -399,12 +321,31 @@
     </section>
 
     <footer>
-        <div class="grenat overflow">
+        <div class="light_green overflow">
             <div class="right">
                 <button><img class="icon_button" src="icons/like.svg"/><img class="icon_button" src="icons/linkedin.svg"/></button>
                 <a href="#content"><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
             </div>
         </div>
+    </footer>
+    <footer>
+        <div class="test _960">
+            <p>960px</p>
+        </div>
+        <div class="test _801">
+            <p>801px</p>
+        </div>
+        <div class="test _641">
+            <p>641px</p>
+        </div>
+        <div class="test _481">
+            <p>481px</p>
+        </div>
+
+        <div class="test _320">
+            <p>320px</p>
+        </div>
+        
     </footer>
 
     
@@ -414,6 +355,7 @@
     <script src="js/do_translate.js"></script>
     <script src="js/alert_only.js"></script>
     <script src="js/manipulate_dom.js"></script>
+    <script src="js/externalizations/creations_array.js"></script>
     <script src="js/initialize.js"></script>
     <script src="js/script.js"></script>
 

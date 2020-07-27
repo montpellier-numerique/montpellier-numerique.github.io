@@ -1,39 +1,68 @@
-.test_801 {
-    width: 801px;
-    background-color: plum;
-}
+/* 
+------------------------------------------------------------------------------------------------------------------------
+* GENERAL
+--------------------------------------------------------------------------------------------------------------------------
+*/
 
-.test_641 {
-    width: 641px;
-    background-color: plum;
-}
-
-.test_481 {
-    width: 481px;
-    background-color: plum;
-}
-
-.test_320 {
-    width: 320px;
-    background-color: plum;
-}
 
 body {
     /* min-width in 960_24 TODO*/
     background-color: black;
     max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
-.responsive {
-    width: 100%;
+/*BUTTONS & ICONS*/
+
+button {
+    border-radius: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 1.5em;
 }
+
+
+.icon {
+    width: 5em;
+}
+
+.icon_button {
+    width: 2em;
+    height: auto;
+}
+
+.icon_flag {
+    width: 5em;
+}
+
+.icon_download {
+    width: 5em;
+}
+
+.share_buttons {
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+}
+
+/*
+* TEXT
+*/
+
+p {
+    font-size: 1.5em;
+}
+
 /*
 ---------------------------------------------------------------------------------------------------------------------------
 * HEADER
 -----------------------------------------------------------------------------------------------------------------------------
 * top header with titles and logo
 */
+
 .header {
     /*max-width: 960px;*/
 }
@@ -136,6 +165,7 @@ body {
     text-align: center;
     font-size: 1.1em; /*so! cf. main_red fr en */
     height: 4em;
+    font-family: helvetica, arial, sans-serif;
 }
 
 
@@ -171,11 +201,34 @@ body {
 
 .container {
     padding-left: 115px;
+    font-family: helvetica, arial, sans-serif;
 }
 
 .container h1 {
     margin-top: 5em;
 }
+
+.form {
+    
+    margin-right: 5px;
+    font-size: 2.5vw;
+    background-color: brown;
+    font-family: monospace;
+}
+
+
+
+.form input {
+    font-size: 1.5em;
+    text-align: right;
+    display: block;
+    color: red;
+}
+
+.form label {
+    color: white;
+}
+
 
 
 /*
@@ -186,14 +239,16 @@ body {
 
 .main_red {
     font-size: 2.6vw;
-    
     padding-top: 0.5em;
     padding-right: 5px;
+    text-align: center;
+    background-color: lightcyan;
     
 }
 
 .main_red button {
     float: right; /* so! fr & en & not hidden by fixed nav */
+    background-color: red;
 }
 
 /*
@@ -202,26 +257,10 @@ body {
 ----------------------------------------------------------------------------------------------------------------------
 */
 
-
-
-.form {
-    margin-top: 8em;
-    margin-right: 5px;
-    font-size: 2.5vw;
-    background-color: brown;
+.skills .form {
+    margin-top: 9.5em;
 }
 
-
-
-.form input {
-    font-size: 1.5em;
-    text-align: right;
-    
-}
-
-.form label {
-    color: white;
-}
 
 /*
 ------------------------------------------------------------------------------------------------------------------------------
@@ -229,24 +268,102 @@ body {
 ----------------------------------------------------------------------------------------------------------------------
 */
 
+.profile_labels label {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: red;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 3vw;
+}
+
+.profile_labels {
+    margin-top: 6.5em;
+    margin-bottom: 10em;
+    margin-right: 5px;
+}
+
+
+
+
+
 
 /*
 ------------------------------------------------------------------------------------------------------------------------------
-*
+* CONTACT
 ----------------------------------------------------------------------------------------------------------------------
 */
 
 
-
-/* DESIGN
-*
-*/
-
-
-button {
-    border-radius: 1.5em;
+.contact {
+    padding-top: 10em;
 }
 
+.contact button {
+    background-color: green;
+    color: antiquewhite;
+    margin-right: 2em;
+    margin-top: 3em;
+    font-size: 3vw;
+}
+
+.contact_pool {
+    padding-top: 1em;
+    padding-left: 0;
+}
+
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------------
+* CREATIONS
+----------------------------------------------------------------------------------------------------------------------
+*/
+
+.creations_main {
+    padding-top: 10em;
+}
+
+
+.creations_main div{
+    width: 100%;
+}
+
+
+.list_creations a {
+    color: blue;
+    font-size: 2.5em;
+    padding-left: 1.5em;
+}
+
+.list_creations a:hover {
+    color: green;
+}
+
+.list_creations li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: block;
+}
+
+.download {
+    font-size: 1.5em;
+}
+.download {
+    margin-top: 3em;
+}
+
+
+/*
+------------------------------------------------------------------------------------------------------------------------------
+* INDICES 
+----------------------------------------------------------------------------------------------------------------------
+*/
 
 
 .table table {
@@ -257,125 +374,65 @@ button {
 .table button {
     margin-top: 0.5em;
 }
-/* COLORS
-* 
+
+section td {
+    font-size: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------------
+* CREATIONS DETAILS 
+----------------------------------------------------------------------------------------------------------------------
+* each creation in an article
+* each article in a card
 */
-.black, .main_header {
-    background-color: #383838;
-}
 
-.dark {
-    background-color: #586C5E;
-}
-
-.blue {
-    background-color: #488AC7;
-}
-
-.coral {
-    background-color: coral;
-}
-
-.light_blue, .main_red, .card {
+.card {
+    padding-top: 9em;
+    padding-bottom: 0;
+    margin-right: 5px;
     background-color: lightcyan;
 }
 
-.flash_blue {
-    background-color: blue;
-    color: antiquewhite;
+.article_header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2em;   
 }
 
-.pool_blue, .list_creations li {
-    background-color: aquamarine;
+
+.title h1, .title h2, .title h3 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
-.night_blue {
-    background-color: darkblue;
+.title h1, h2, h3 {
+    float:right;
 }
 
-.brown {
-    background-color: brown;
+.article_title h1, h2 {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
-.yellow, #profile {
-    background-color: yellow;
+.promotion h2 {
+    margin-top: 1.1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
-.gold {
-    background-color: gold;
+.promotion h3 {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 
-.green {
-    background-color: green;
-}
-
-.light_green {
-    background-color: lightseagreen;
-}
-
-.pale_green {
-    background-color: palegreen;
-}
-
-.orange, #creations {
-    background-color: orange;
-}
-
-.grenat, #indices {
-    background-color: #7D1D31;
-}
-
-.red, .main_red button, .profile label, h4, .article_footer {
+h4, .article_footer {
     background-color: red;
 }
 
-.white_smoke {
-    background-color: whitesmoke;
-}
-
-.antique_white, .title h1, .title h2, .title h3, .skills li, .article_header, .article_title h1, h2, h5, .promotion h2, h3 {
-    background-color: antiquewhite;
-}
-
-/*
-* COLOR AND TEXT BEHAVIOR
-*/
-
-.blue a, .green a, .grenat a {
-    color: antiquewhite;
-    text-decoration: none;
-}
-
-.yellow a, .orange a {
-    color: black;
-    text-decoration: none;
-}
-
-.red_text, .form input {
-    color: red;
-}
-
-
-
-/*
-* FONTS
-**/
-
-
-
-.font_arial, .main_header, .logo td, .title, .main_container  {
-    font-family: helvetica, arial, sans-serif;
-}
-
-.font_monospace, .form {
-    font-family: monospace;
-}
-
-
-
-/**
-* title h1
-*/
 
 /**
 * responsive .title h3
@@ -406,292 +463,21 @@ button {
 
 
 
-
-.main_container h1 {
-    font-size: 2em;
-}
-
-.skills li {
-    font-size: 2em;
-}
-
-.profile label {
-    font-size: 2em;
-}
-
-.list_creations a {
-    color: blue;
-    font-size: 2.5em;
-}
-
-.list_creations a:hover {
-    color: green;
-}
-
-.download {
-    font-size: 1.5em;
-}
-
 h3, h4, h5 {
     font-size: 1.5em;
 }
-
-p {
-    font-size: 1.5em;
+.title h1, .title h2, .title h3, .skills li, .article_header, .article_title h1, h2, h5, .promotion h2, h3 {
+    background-color: antiquewhite;
+}
+.title  {
+    font-family: helvetica, arial, sans-serif;
 }
 
-button {
-    font-size: 1.5em;
-}
-
-section td {
-    font-size: 1.5em;
-    
-}
-
-
-/* BEHAVIORS
-*
+/* 
+------------------------------------------------------------------------------------------------------------------------
+* IMAGES 
+--------------------------------------------------------------------------------------------------------------------------
 */
-
-
-.alternative {
-    display: none;
-}
-
-.block,.skills li, .form input,.list_creations li, .visit_card {
-    display: block;
-}
-
-.center, .main_red {
-    text-align: center;
-}
-
-.center_object {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.fixed {
-    position: fixed;
-    
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.left {
-    float: left;
-}
-
-.overflow {
-    overflow: hidden;
-}
-
-
-.right, .title h1, h2, h3, .section_footer {
-    float:right;
-}
-
-.undisplay {
-    display: none;
-}
-
-
-/* FORMAT
-*
-*/
-/* marging */
-
-
-.icon {
-    margin-top: 0em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-}
-
-.icon_contact {
-    margin-right: 0em;
-}
-
-
-
-
-
-.share_buttons {
-    margin-right: 0.1em;
-    margin-top: 0.1em;
-}
-
-
-
-
-.profile label {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.profile_card_container {
-    margin-top: 1em;
-    width: 22.5em;
-}
-
-.contact button {
-    margin-top: 3em;
-}
-.card {
-    margin-top: 0em;
-    margin-bottom: 0em;
-}
-
-.article_header h1 {
-    margin-bottom: 0.5em;    
-}
-
-.download {
-    margin-top: 3em;
-}
-
-
-
-/* padding */
-
-button {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-
-
-section td {
-    padding-right: 2em;
-    padding-left: 2em;
-}
-
-.title h1, .title h2, .title h3 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-
-
-
-.main_container {
-    padding-top: 5em;
-    padding-left: 22em;
-    padding-right: 1em;
-}
-
-.card {
-    margin-left: 22em;
-}
-
-.main_container_first {
-    padding-top: 0.5em;
-    padding-bottom: 70em;
-    padding-left: 16.5em;
-    padding-right: 1em;
-}
-
-.skills li, .list_creations li {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-.profile label {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    
-}
-
-.profile_labels {
-    padding-top: 7em;
-}
-
-.road {
-    width: 100%;
-}
-
-.list_creations {
-    padding-top: 1em;
-}
-
-.list_creations a {
-    padding-left: 1.5em;
-}
-
-.list_creations button {
-    margin-top: 1em;
-}
-
-.card {
-    padding-top: 9em;
-    padding-bottom: 0;
-}
-
-.creations_main {
-    padding-top: 1em;
-}
-
-.article_title h1, h2 {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-.promotion h2 {
-    margin-top: 1.1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-.promotion h3 {
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-}
-
-
-/* size */
-
-
-
-
-
-.creations_main div{
-    width: 100%;
-}
-
-
-.icon {
-    width: 8em;
-    height: 8em;
-}
-
-
-.icon_button {
-    width: 2em;
-    height: auto;
-}
-
-.icon_flag {
-    width: 5em;
-}
-
-.icon_download {
-    width: 5em;
-}
-
 
 .image_site_detail img {
     width: 100%;
@@ -706,44 +492,6 @@ section td {
 .visit_card {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-
-
-/*
-* SPECIAL ID
-*/
-
-#article_manchester {
-    
-}
-
-#article_devis {
-}
-
-#article_direct_molto {
-    
-}
-
-#article_programmer {
-}
-
-
-.xp_pro {
-    width: 100%;
-}
-.contact {
-    padding-top: 8em;
-}
-.contact button {
-    background-color: red;
-    color: antiquewhite;
-    margin-left: 15em;
-    margin-right: 2em;
-
-}
-
-.contact_pool {
-    padding-top: 1em;
-    padding-bottom: 5em;
-}

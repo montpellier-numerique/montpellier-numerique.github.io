@@ -22,9 +22,8 @@ var skill3 = document.getElementById("skill_3");
 var profileTitle = document.getElementById("profile_title");
 var profileJava = document.getElementById("profile_java");
 var knowHowToBe = document.getElementById("know_how_to_be");
-
-var buttonProfileEditCard = document.getElementById("button_profile_edit_card");
-var profileXpPro = document.getElementById("profile_xp_pro");
+var profileWebMaster = document.getElementById("profile_web_master");
+var profileEgyptologist = document.getElementById("profile_egyptologist");
 
 var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
 
@@ -73,20 +72,13 @@ var programmerWebsite = document.getElementById("programmer_website");
  * IMAGES THAT NEED TO SWITCH
  */
 
-var visitCardLightOff = document.getElementById("visit_card_light_off");
+
 var visitCardLightOn = document.getElementById("visit_card_light_on");
 
 /*
 * switch images functions called further in translateTo(languageIndex)
 */
 
-var switchVisitCardLightOff = function switchVisitCardLightOff(languageIndex) {
-    if(languageIndex === fr) {
-        visitCardLightOff.src = "./images/png/visit_cards/visit_card_fr_light_off.png"
-    } else if(languageIndex === en) {
-        visitCardLightOff.src = "./images/png/visit_cards/visit_card_en_light_off.png"
-    }
-};
 
 var switchVisitCardLightOn = function switchVisitCardLightOn(languageIndex) {
     if(languageIndex === fr) {
@@ -142,12 +134,10 @@ var translateTo = function translateTo(languageIndex) {
     skill3.innerHTML = string.skill3[languageIndex];
 
     profileTitle.innerHTML = string.profile[languageIndex];
-    profileJava.innerHTML = string.profileJava[languageIndex];
     know_how_to_be.innerHTML = string.knowHowToBe[languageIndex];
-    
-
-    buttonProfileEditCard.innerHTML = string.editCard[languageIndex];
-    profileXpPro.innerHTML = string.XpPro[languageIndex];
+    profileJava.value = string.profileJava[languageIndex];
+    profileWebMaster.value = string.webMaster[languageIndex];
+    profileEgyptologist.value = string.egyptologist[languageIndex];
 
     buttonContactLinkedIn.innerHTML = string.contactMe[languageIndex];
 
@@ -190,7 +180,6 @@ var translateTo = function translateTo(languageIndex) {
 
     // switch images
     languageCurrent = languageIndex;
-    switchVisitCardLightOff(languageIndex);
     switchVisitCardLightOn(languageIndex);
 
     // reset buttons

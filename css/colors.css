@@ -1,0 +1,91 @@
+
+/*
+------------------------------------------------------------------------------------------------------------------------------ 
+* COLORS
+----------------------------------------------------------------------------------------------------------------------------
+* - background color
+* - color for text
+*/
+.black {
+    background-color: #383838;
+}
+
+.dark {
+    background-color: #586C5E;
+}
+
+.blue {
+    background-color: #488AC7;
+}
+
+.coral {
+    background-color: coral;
+}
+
+.light_blue {
+    background-color: lightcyan;
+}
+
+.flash_blue {
+    background-color: blue;
+    color: antiquewhite;
+}
+
+.pool_blue, .list_creations li {
+    background-color: aquamarine;
+}
+
+.night_blue {
+    background-color: darkblue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.green {
+    background-color: green;
+}
+
+.light_green {
+    background-color: lightseagreen;
+}
+
+.pale_green {
+    background-color: palegreen;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.grenat {
+    background-color: #7D1D31;
+}
+
+.red {
+    background-color: red;
+}
+
+.white_smoke {
+    background-color: whitesmoke;
+}
+
+.antique_white {
+    background-color: antiquewhite;
+}
+
+
+/* TEXT */
+
+.red_text {
+    color: red;
+}

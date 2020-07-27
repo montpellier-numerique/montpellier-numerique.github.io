@@ -12,4 +12,5 @@ var setLanguage = function setLanguage(languageIndex) {
 
 var initialize = function initialize() {
     setLanguage(languageIndex);
+    
 }

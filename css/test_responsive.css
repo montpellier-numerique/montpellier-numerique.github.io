@@ -1,0 +1,25 @@
+.test {
+    background-color: plum;
+    font-family: monospace, helvetica, arial, sans-serif;
+}
+
+._960 {
+    width: 960px;
+}
+
+._801 {
+    width: 801px;
+    
+}
+
+._641 {
+    width: 641px;
+}
+
+._481 {
+    width: 481px;
+}
+
+._320 {
+    width: 320px;
+}

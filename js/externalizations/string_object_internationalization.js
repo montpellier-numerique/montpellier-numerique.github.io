@@ -24,9 +24,8 @@ var string = {
     // PROFILE
     profileJava: ["java FULL STACK", "full stack JAVA"],
     knowHowToBe: ["savoir-être ingénieuse", "know-how-to-be ingenious"],
-    XpPro: ["XP professionelle sciences & technologies", "professional XP sciences & technologies"],
-
-    editCard: ["ma carte de visite en un clic", "my visit card in a click"],
+    webMaster: ["web master", "web master"],
+    egyptologist: ["égyptologue", "egyptologist"],
 
     // CONTACT
     contactMe: ["me contacter @LinkedIn", "contact me @LinkedIn"],
@@ -54,7 +53,7 @@ var string = {
     // DIRECT MOLTO
     garage: ["logiciel de gestion d'un garage", "managing a garage"],
     moltoAgile: ["équipe molto AGILE", "molto AGILE team"],
-    moltoManagement: ["admin + gérant + tablette du mécanicien", "admin + manager use + tablet for the mechanic"],
+    moltoManagement: ["admin + gérant + tablette du mécanicien", "admin + manager + tablet for the mechanic"],
 
     // PROGRAMMER
     myPortfolio: ["mon portfolio", "my portfolio"],

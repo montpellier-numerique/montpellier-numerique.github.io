@@ -1,0 +1,56 @@
+/* 
+------------------------------------------------------------------------------------------------------------------------------
+* BEHAVIORS
+----------------------------------------------------------------------------------------------------------------------------
+* these classes are tools
+*/
+
+
+.alternative {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.center_object {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fixed {
+    position: fixed;
+    
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left {
+    float: left;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.responsive {
+    width: 100%;
+}
+
+.right {
+    float:right;
+}
+
+.undisplay {
+    display: none;
+}
+
