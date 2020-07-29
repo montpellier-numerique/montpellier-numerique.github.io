@@ -5,13 +5,13 @@ const types = ["web site", "application"]
 const creations = [
     {
         name: "manchester",
-        href: "#article_manchester",
+        id: "article_manchester",
         date: 2019,
         certificate: string.facebookDeveloper,
         alertCertificate: ["site vitrine pour un bar. l'agenda des évènements est géré depuis Facebook.", "showcase site for a bar. the agenda of events is handled from Facebook."],
         title2: string.showcaseSite,
         title3: string.agenda,
-        srcImage: "./images/png/manchester_site_detail_img.png",
+        srcImages: ["./images/png/manchester_site_img.png", "./images/png/manchester_site_responsive.png", "./images/png/manchester_site_detail_img.png"],
         type: types[0],
         onLine: true,
         siteLink:"https://barmanchester.000webhostapp.com",
@@ -20,13 +20,13 @@ const creations = [
     },
     {
         name: "devis",
-        href: "#article_devis",
+        id: "article_devis",
         date: 2020,
         certificate: string.intuitive,
         alertCertificate: ["interface simple", "simple interface"],
         title2: string.devisInvoices,
         title3: string.cartItem,
-        srcImage: "",
+        srcImages: ["./images/png/devis_boutique.png", "./images/png/devis_edit.png", "./images/png/devis_facture.png", "./images/png/devis_factures.png"],
         type: types[1],
         onLine: true,
         siteLink: "https://www.linkedin.com/in/janie-chun-hung-kee-0b807238/detail/treasury/education:639285974/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAfXBQwBruiF1ZqnSRMO0SDfxKXRexnkHk0%2C1591097506010)&section=education%3A639285974&treasuryCount=3",
@@ -35,13 +35,13 @@ const creations = [
     },
     {   
         name: "direct molto",
-        href: "#article_direct_molto",
+        id: "article_direct_molto",
         date: 2020,
         certificate: ["équipe molto AGILE", "molto AGILE team"],
         alertCertificate: ["BEWEB Fondespierre Montpellier", "BEWEB Fondespierre Montpellier"],       
         title2: string.garage,
         title3: ["admin + gérant + tablette du mécanicien", "admin + manager + tablet for the mechanic"],
-        srcImage: "",
+        srcImages: ["", ""],
         type: types[1],
         onLine: false,
         siteLink:"",
@@ -50,13 +50,13 @@ const creations = [
     },
     {
         name: "programmer",
-        href: "#article_programmer",
+        id: "article_programmer",
         date: 2020,
         certificate: string.responsive,
         alertCertificate: ["tablette & mobile", "tablet & mobile"],
         title2: string.myPortfolio,
         title3: "",
-        srcImage: "",
+        srcImages: ["", ""],
         type: types[0],
         onLine: true,
         siteLink:"https://programmer_montpellier_numerique",
@@ -68,98 +68,190 @@ const creations = [
 /*
 * script to list creations within html tag
 */
-var listCreations = document.getElementById("list_creations");
+
 var loadListCreations = function loadListCreations() {
+    var listCreations = document.getElementById("list_creations");
     for(var i=0; i<creations.length; i++) {
-        var creation = document.createElement("li");
+        
+        var creation = document.createElement("li");  
+        creation.innerHTML = creations[i].name;
+
         var link = document.createElement("a");
-        link.innerHTML = creations[i].name;
-        link.href = creations[i].href;
-        creation.appendChild(link);
-        listCreations.appendChild(creation);
+        
+        link.href = "#" + creations[i].id;
+
+        link.appendChild(creation);
+        listCreations.appendChild(link);
     }
 }
 
 /*
-* make template
-* https://javascript.info/template-element !!! getElementById()
+* make template: called in set id: called in load data: called in load list creations
+* 
 */
 
 
-
-function loadTemplatesCreations(languageIndex) {
-    var templatesContainer = document.getElementById("creation_templates_container");
+var makeTemplates = function makeTemplates() {
     var template = document.getElementById("creation_template");
-    templatesContainer.innerHTML="";
+    var templatesContainer = document.getElementById("creation_templates_container");
+
     for(var i=0; i<creations.length; i++) {
-        if(!(i === 3)) { // excludes programmer which has a special design
-            var clone = document.importNode(template.content, true);
-            
-
-            var spanToArticleClone = clone.querySelectorAll("span")[0];
-            spanToArticleClone.textContent = creations[i].name;
-
-
-            var title = clone.querySelectorAll("h1")[0];
-            title.textContent = creations[i].name + " " + creations[i].date;
-
-            var image = clone.querySelectorAll("img")[2];
-            image.src = creations[i].srcImage;
-
-            var spanCertificate = clone.querySelectorAll("span")[1];
-            spanCertificate.textContent = creations[i].certificate[languageIndex];
-
-            var title2 = clone.querySelectorAll("h2")[0];
-            var title3 = clone.querySelectorAll("h3")[0];
-            title2.textContent = creations[i].title2[languageIndex];
-            title3.textContent = creations[i].title3[languageIndex];
-
-            var spanView = clone.querySelectorAll("span")[2];
-            if(creations[i].type === types[0]) {
-                spanView.textContent = string.viewSite[languageIndex];
-            } else {
-                spanView.textContent = string.viewInterface[languageIndex];
-            }
-
-            var buttonView = clone.querySelectorAll("button")[2]
-                if(!creations[i].onLine) {
-                    buttonView.disabled = true;
-                }
-
-            var siteLink = clone.querySelectorAll("a")[1];
-            siteLink.href = creations[i].siteLink;
-
-            var gitLink = clone.querySelectorAll("a")[2];
-            gitLink.href = creations[i].gitLink; 
-
-            var spanTechnologies = clone.querySelectorAll("span")[3];
-            for(var j=0; j<creations[i].technologies.length; j++) {
-                spanTechnologies.textContent += creations[i].technologies[j] + " ";
-            }
-
-
-            var articleCreation = clone.querySelectorAll("article")[0];
-            //articleCreation.id = creations[i].href;
-            // TODO
-            var linkToArticle = clone.querySelectorAll("a")[0];
-            //linkToArticle.href = articleCreation.id;
-            //TODO
-
-            var buttonHeader = clone.querySelectorAll("button")[0];
-            buttonHeader.addEventListener("click", (evenement)=> {
-               // TODO href
-               window.location.href = "#article_creation";
-            });
-
-
-
-           
-
-            templatesContainer.appendChild(clone);
-            
-            
-        }
+        
+        var clone = template.cloneNode(true);
+        templatesContainer.appendChild(document.importNode(clone.content, true));
     }
+    return templatesContainer;
 }
 
+var setArticlesId = function setArticlesId() {
+    var templatesContainer = makeTemplates();
 
+    var articles = templatesContainer.querySelectorAll("article");
+    console.log(articles.length.toString());
+    for(var i=0; i<articles.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                articles[i].id = creations[j].id;
+                console.log(articles[i].id);
+            }
+        }
+    }
+    return templatesContainer;
+};
+
+var loadData = function loadData() {
+    var templatesContainer = setArticlesId();
+
+    var headerSpans = templatesContainer.querySelectorAll(".button_header > span");
+    for(var i=0; i<headerSpans.length; i++) {
+        
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                headerSpans[i].textContent = creations[j].name;
+            }
+        }  
+    }
+
+    var headerLinks = templatesContainer.querySelectorAll(".creation_template_header > a");
+    for(var i=0; i<headerLinks.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                headerLinks[i].href = "#" + creations[j].id;
+            }
+        }
+    }
+
+    var titles = templatesContainer.querySelectorAll(".article_header > h1");
+    for(var i=0; i<titles.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                titles[i].textContent = creations[j].name + " " + creations[j].date;
+            }
+        }
+    }
+
+    var subtitles = templatesContainer.querySelectorAll(".promotion > h2");
+    for(var i=0; i<subtitles.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                subtitles[i].textContent = creations[j].title2[languageIndex];
+            }
+        }
+    }
+
+    var thirdTitles = templatesContainer.querySelectorAll(".promotion > h3");
+    for(var i=0; i<thirdTitles.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                thirdTitles[i].textContent = creations[j].title3[languageIndex];
+            }
+        }
+    }
+
+    var certificateSpans = templatesContainer.querySelectorAll(".button_certificate > span");
+    for(var i=0; i<certificateSpans.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                certificateSpans[i].textContent = creations[j].certificate[languageIndex];
+            }
+        }
+    }
+
+    var images = templatesContainer.querySelectorAll(".image > img");
+    for(var i=0; i<images.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                images[i].src = creations[j].srcImages[0];
+            }
+        }
+    }
+
+    var viewSpans = templatesContainer.querySelectorAll(".view_button > span");
+    for(var i=0; i<viewSpans.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                if(creations[j].type === types[0]) {
+                    viewSpans[i].textContent = string.viewSite[getLanguageIndex()];
+                } else if(creations[j].type === types[1]) {
+                    viewSpans[i].textContent = string.viewInterface[getLanguageIndex()];
+                }
+            }
+                
+                    
+        }
+    }
+
+    var viewButtons = templatesContainer.querySelectorAll(".view_link > button");
+    for(var i=0; i<viewButtons.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                if(creations[j].onLine === false) {
+                    viewButtons[i].disabled = true;
+                }
+            }
+        }
+    }
+
+    var viewLinks = templatesContainer.querySelectorAll(".view > a");
+    for(var i=0; i<viewLinks.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                if(creations[j].onLine) {
+                    viewLinks[i].href = creations[j].siteLink;
+                }
+            }
+        }
+    }
+    
+
+    var gitSpans = templatesContainer.querySelectorAll(".git_button > span");
+    for(var i=0; i<gitSpans.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                var stringTechnologies = "";
+                for(var k=0; k<creations[j].technologies.length; k++) {
+                    var technolgy = creations[j].technologies[k];
+                    stringTechnologies += technolgy + " ";
+                }
+                gitSpans[i].textContent = stringTechnologies;
+            }   
+        }
+    }
+
+    var gitLinks = templatesContainer.querySelectorAll(".git > a");
+    for(var i=0; i<gitLinks.length; i++) {
+        for(var j=0; j<creations.length; j++) {
+            if(i === j) {
+                gitLinks[i].href = creations[j].gitLink;
+            }
+        }
+    }
+
+    /**programmer customized */
+    var programmer = templatesContainer.querySelectorAll("article")[3];
+    var programmerCustom = document.getElementById("article_programmer_custom");
+    var clone = programmerCustom.cloneNode(true);
+    programmer.innerHTML="";
+    programmer.appendChild(clone);
+    
+}

@@ -9,4 +9,5 @@ languageIndex = fr;
 var initialize = function initialize() {
     translateTo(languageIndex);
     loadListCreations();
+    loadData();
 }

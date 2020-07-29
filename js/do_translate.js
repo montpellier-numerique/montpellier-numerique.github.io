@@ -150,7 +150,7 @@ var translateTo = function translateTo(languageIndex) {
     switchVisitCardLightOn(languageIndex);
 
     // load templates
-    loadTemplatesCreations(languageIndex);
+    //loadTemplatesCreations(languageIndex);
 
     // reset buttons
     resetButtonsFlags();

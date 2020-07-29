@@ -490,11 +490,23 @@ h3, h4, h5 {
 * IMAGES 
 --------------------------------------------------------------------------------------------------------------------------
 */
+.image_site_detail {
+    
+    overflow: hidden;
+    
+}
 
 .image_site_detail img {
-    width: 100%;
-    height: auto;
     
+    width: auto;
+    max-height: 18em;
+}
+.caroussel {
+}
+
+
+.caroussel .next_icon, .caroussel .back_icon { 
+    margin-top: 6em;
 }
 
 .visit_card_container {
