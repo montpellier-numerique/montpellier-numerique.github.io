@@ -17,6 +17,7 @@ var string = {
     indices: ["indices", "indices"],
 
     // SKILLS
+    knowHowToBeAutonomous: ["savoir-être autonome", "know-how-to-be autonomous"],
     skill1: ["développe back, front, poo", "back, front, oop"],
     skill2: ["sites web, bases de données", "websites, databases"],
     skill3: ["interfaces agiles", "agile interfaces"],
@@ -31,6 +32,7 @@ var string = {
     contactMe: ["me contacter @LinkedIn", "contact me @LinkedIn"],
 
     // CREATIONS
+    creationsTypes: ["applications client-serveur & sites web", "client-server applications & web sites"],
     view: ["voir", "view"],
 
     // INDICES

@@ -14,6 +14,7 @@ var navIndices = document.getElementById("nav_indices");
 
 // skills elements
 var skillsTitle = document.getElementById("skills_title");
+var skillsKnowHowToBe = document.getElementById("skills_know_how_to_be");
 var skill1 = document.getElementById("skill_1");
 var skill2 = document.getElementById("skill_2");
 var skill3 = document.getElementById("skill_3");
@@ -29,6 +30,7 @@ var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
 
 // creations elements
 var creationsTitle = document.getElementById("creations_title");
+var creationsTypes = document.getElementById("creations_types");
 
 // indices elements
 var indicesTitle = document.getElementById("indices_title");
@@ -40,13 +42,9 @@ var buttonMore = document.getElementById("button_more");
 var programmerMyPortfolio = document.getElementById("programmer_my_portfolio");
 var programmerResponsive = document.getElementById("programmer_responsive");
 var programmerSwitchLanguage = document.getElementById("programmer_switch_language");
-var programmerShare = document.getElementById("programmer_share");
-var programmerEditCards = document.getElementById("programmer_edit_cards");
+
 var programmerSpecTech = document.getElementById("programmer_spec_tech");
-var programmerSpecTechTitle = document.getElementById("programmer_spec_tech_title");
-var programmerObjetOriented = document.getElementById("programmer_objet_oriented");
-var programmerMultilingual = document.getElementById("programmer_multilingual");
-var programmerMultilingualText = document.getElementById("programmer_multilingual_text");
+
 var programmerWebsite = document.getElementById("programmer_website");
 
 /**
@@ -110,6 +108,7 @@ var translateTo = function translateTo(languageIndex) {
     navIndices.innerHTML = string.indices[languageIndex];
 
     skillsTitle.innerHTML = string.skills[languageIndex];
+    skillsKnowHowToBe.innerHTML = string.knowHowToBeAutonomous[languageIndex];
     skill1.innerHTML = string.skill1[languageIndex];
     skill2.innerHTML = string.skill2[languageIndex];
     skill3.innerHTML = string.skill3[languageIndex];
@@ -123,7 +122,7 @@ var translateTo = function translateTo(languageIndex) {
     buttonContactLinkedIn.innerHTML = string.contactMe[languageIndex];
 
     creationsTitle.innerHTML = string.creations[languageIndex];
-
+    creationsTypes.innerHTML = string.creationsTypes[languageIndex];
     
 
 
@@ -136,13 +135,8 @@ var translateTo = function translateTo(languageIndex) {
     programmerMyPortfolio.innerHTML = string.myPortfolio[languageIndex];
     programmerResponsive.innerHTML = string.responsive[languageIndex];
     programmerSwitchLanguage.innerHTML = string.switchLanguage[languageIndex];
-    programmerShare.innerHTML = string.share[languageIndex];
-    programmerEditCards.innerHTML = string.programmerEditCards[languageIndex];
+    
     programmerSpecTech.innerHTML = string.specTech[languageIndex];
-    programmerSpecTechTitle.innerHTML = string.specTech[languageIndex];
-    programmerObjetOriented.innerHTML = string.objectOriented[languageIndex];
-    programmerMultilingual.innerHTML = string.multilingual[languageIndex];
-    programmerMultilingualText.innerHTML = string.programmerMultilingualText[languageIndex];
     programmerWebsite.innerHTML = string.website[languageIndex];
 
     // switch images
@@ -150,7 +144,7 @@ var translateTo = function translateTo(languageIndex) {
     switchVisitCardLightOn(languageIndex);
 
     // load templates
-    //loadTemplatesCreations(languageIndex);
+    //loadTemplatesCreations(languageIndex); // !!! TODO
 
     // reset buttons
     resetButtonsFlags();

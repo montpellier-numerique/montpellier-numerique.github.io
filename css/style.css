@@ -7,13 +7,25 @@
 
 body {
     /* min-width in 960_24 TODO*/
-    background-color: black;
+    background-color:  gainsboro;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     
 }
 
+.window {
+    padding-top: 3.5em;
+    height: 41em;
+}
+
+.window_footer {
+    height: 5.5em;
+}
+
+.window_article {
+    height: 47em;
+}
 /*BUTTONS & ICONS*/
 
 button {
@@ -52,9 +64,18 @@ button {
 * TEXT
 */
 
-p {
-    font-size: 1.5em;
+.title h1, .title h2, .title h3 { /*!so*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    float:right;
 }
+
+p {
+    font-size: 1em;
+}
+
 
 /*
 ---------------------------------------------------------------------------------------------------------------------------
@@ -209,7 +230,7 @@ p {
 }
 
 .form {
-    
+    margin-left: 10px;
     margin-right: 5px;
     font-size: 2.5vw;
     background-color: brown;
@@ -226,10 +247,18 @@ p {
 }
 
 .form label {
-    color: white;
+    color: whitesmoke;
+}
+
+.form a {
+    color: whitesmoke;
+    text-decoration: underline;
 }
 
 
+.form button {
+    margin-top: 0.5em;
+}
 
 /*
 ------------------------------------------------------------------------------------------------------------------------------
@@ -257,8 +286,8 @@ p {
 ----------------------------------------------------------------------------------------------------------------------
 */
 
-.skills .form {
-    margin-top: 9.5em;
+.window_main {
+    padding-top: 0em;
 }
 
 
@@ -281,8 +310,8 @@ p {
 }
 
 .profile_labels {
-    margin-top: 6.5em;
-    margin-bottom: 10em;
+    margin-top: 1em;
+    margin-bottom: 5em;
     margin-right: 5px;
 }
 
@@ -297,10 +326,6 @@ p {
 ----------------------------------------------------------------------------------------------------------------------
 */
 
-
-.contact {
-    padding-top: 10em;
-}
 
 .contact button {
     background-color: green;
@@ -323,32 +348,25 @@ p {
 ----------------------------------------------------------------------------------------------------------------------
 */
 
-.creations_main {
-    padding-top: 10em;
+
+
+.creations_main .form {
+    margin-right: 0;
 }
 
-
-.creations_main div{
-    width: 100%;
-}
-
-
-.list_creations a {
-    color: blue;
-    font-size: 2.5em;
-    padding-left: 1.5em;
-}
-
-.list_creations a:hover {
-    color: green;
-}
-
-.list_creations li {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.creations_main .form li {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     display: block;
+    font-size: 1.5em;
+}
+
+.creation_eye {
+    margin-left: 10px;
 }
 
 .download {
@@ -366,19 +384,27 @@ p {
 */
 
 
-.table table {
-    padding-top: 0.5em;
-    margin-top: 0.5em;
+.indices .form {
+    margin-right: 0;
 }
 
-.table button {
-    margin-top: 0.5em;
+.indices .form input {
+    font-size: 1em;
+    display: inline-block;
+    width: auto;
+    background-color: brown;
+    color: whitesmoke;
 }
 
-section td {
-    font-size: 1.5em;
-    padding-right: 2em;
-    padding-left: 2em;
+/*
+------------------------------------------------------------------------------------------------------------------------------
+* FOOTER 
+----------------------------------------------------------------------------------------------------------------------
+*/
+
+.footer {
+    background-color: green;
+    padding-top: 1.5em;
 }
 
 /*
@@ -390,62 +416,65 @@ section td {
 */
 
 .creation_template_header {
-    margin-top: 5.5em;
+    margin-top: 0em;
 }
 
 .creation_template_header a {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .card {
-    padding-top: 9em;
-    padding-bottom: 0;
-    margin-right: 5px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     background-color: lightcyan;
 }
 
 .article {
     margin-left: 10px;
+    margin-right: 5px;
+    
+}
+
+.article_header {
+    background-color: antiquewhite;
 }
 
 .article_header h1 {
+    margin-top: 0;
     margin-bottom: 0.5em;
     font-size: 2em;   
 }
 
 
-.title h1, .title h2, .title h3 {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
 
-.title h1, h2, h3 {
-    float:right;
-}
-
-.article_title h1, h2 {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
 
 .promotion h2 {
     margin-top: 1.1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    background-color: antiquewhite;
+    font-size: 1.5em;
 }
 
 .promotion h3 {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
+    font-size: 1.25em;
+}
+
+.spec_tech {
+    max-width: 440px;
+    padding-left: 10px;
+
 }
 
 h4, .article_footer {
     background-color: red;
 }
 
-
+.article_footer button {
+    
+}
 /**
 * responsive .title h3
 */
@@ -478,7 +507,7 @@ h4, .article_footer {
 h3, h4, h5 {
     font-size: 1.5em;
 }
-.title h1, .title h2, .title h3, .skills li, .article_header, .article_title h1, h2, h5, .promotion h2, h3 {
+.title h1, .title h2, .title h3, .article_title h1, h2, h5, h3 {
     background-color: antiquewhite;
 }
 .title  {
@@ -490,23 +519,27 @@ h3, h4, h5 {
 * IMAGES 
 --------------------------------------------------------------------------------------------------------------------------
 */
-.image_site_detail {
+
+.modal {
+    max-width: 960px;
+}
+
+.modal img {
+    width: 100%;
+}
+
+
+.image_site {
     
     overflow: hidden;
+    min-width: 365px;
     
 }
 
-.image_site_detail img {
+.image_site img {
     
-    width: auto;
-    max-height: 18em;
-}
-.caroussel {
-}
-
-
-.caroussel .next_icon, .caroussel .back_icon { 
-    margin-top: 6em;
+    width: 100%;
+    
 }
 
 .visit_card_container {

@@ -61,8 +61,8 @@
         
     
         <div class="light_blue">
-            <footer class="center">
-                <a class="" href="#skills"><button id="download_to_skills"><img class="icon_button" src="icons/download.svg"/></button></a>
+            <footer class="window_footer center">
+                <a class="" href="#skills"><button class="alternative" id="download_to_skills"><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </div>
 
@@ -73,143 +73,167 @@
     
 
     <section>
-        <section id="skills" class="skills pale_green">
-            <article class="overflow container">
-                <header class="title"><h1 id="skills_title"></h1></header>
+        <section id="skills" class="window pale_green">
+            <section class="skills window_main">
+                <article class="overflow container">
+                    <header class="title">
+                        <h1 id="skills_title"></h1>
+                    </header>
+                    <div class="profile_labels">
+                        <label id="skills_know_how_to_be"></label>
+                    </div>
+                    <div class="form right">
+                        <div>
+                            <label id="skill_1"></label>
+                            <input value = "spring angular"/>
+                        </div>
+                        <div>
+                            <label id="skill_2"></label>
+                            <input value = "html css js sql"/>
+                        </div>
+                        <div>
+                            <label id="skill_3"></label>
+                            <input value = "responsive & android"/>
+                        </div>
+                    </div>
+                </article>
                 
-                <div class="form right">
+            </section>
+            <footer class="window_footer center pale_green">
+                <a href="#profile"><button class="alternative"><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer>
+        </section>
+        
+        <section id="profile" class="window yellow">
+            <section class="profile window_main">
+                <article class="overflow container">
+                    <header class="title">
+                        <h1 id="profile_title"></h1>
+                    </header>
                     
-                    <div>
-                        <label id="skill_1"></label>
-                        <input value = "spring angular"/>
-                    </div>
-                    <div>
-                        <label id="skill_2"></label>
-                        <input value = "html css js sql"/>
-                    </div>
-                    <div>
-                        <label id="skill_3"></label>
-                        <input value = "responsive & android"/>
-                    </div>
-                </div>
-            </article>
-            <footer class="center pale_green">
-                <a href="#profile"><button><img class="icon_button" src="icons/download.svg"/></button></a>
+                            <div class="profile_labels">
+                                <label class="" id="know_how_to_be"></label>
+                            </div>
+                            <div class="form right">
+                                <div class="overflow">
+                                    <label>2019-2020 AFPA & Beweb</label>
+                                    <input id="profile_java"/>
+                                </div>
+                                <div>
+                                    <label>2019 Digital Services</label>
+                                    <input id="profile_web_master"/>
+                                </div>
+                                <div>
+                                    <label>2013-2017 Université CNRS</label>
+                                    <input id="profile_egyptologist"/>
+                                </div>
+                            
+                            </div>
+                </article>
+            </section>
+            <footer class="window_footer center yellow">
+                <a href="#contact"><button class="alternative"><img class="icon_button" src="icons/download.svg"/></button></a>
             </footer>
         </section>
 
-        <section id="profile" class="profile yellow">
-            <article class="overflow container">
-                <header class="title"><h1 id="profile_title"></h1></header>
-                <div>
-                    <div class="">
-                        <div class="profile_labels">
-                            <label class="" id="know_how_to_be"></label>
+        <section id="contact" class="window coral">
+            <section class="contact window_main">
+                <article class="container overflow">
+                    <header class="title"><h1>contact</h1></header>
+                    <div class="picture right">
+                        <div class="contact_sky">
+                            <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_contact_linkedin"></button></a>
                         </div>
-                        <div class="form right">
-                            <div class="overflow">
-                                <label>2019-2020 AFPA & Beweb</label>
-                                <input id="profile_java"/>
-                            </div>
-                            <div>
-                                <label>2019 Digital Services</label>
-                                <input id="profile_web_master"/>
-                            </div>
-                            <div>
-                                <label>2013-2017 Université CNRS</label>
-                                <input id="profile_egyptologist"/>
-                            </div>
+                        <div class="contact_pool">
+                            <img class="icon icon_contact" src="icons/mouse-clicker.svg"/>
                         </div>
+                        
                     </div>
-                    
-                </div>
+                </article>
                 
-            </article>
-            <footer class="center yellow">
-                <a href="#contact"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-            </footer>
-        </section>
-
-        <section id="contact" class="coral">
-            <article class="contact container overflow">
-                <header class="title"><h1>contact</h1></header>
-                <div class="right light_blue">
-                    <div class="contact_sky">
-                        <a href="https://fr.linkedin.com/in/janie-chun-hung-kee-0b807238"><button id="button_contact_linkedin"></button></a>
-                    </div>
-                    <div class="contact_pool pool_blue">
-                        <img class="icon icon_contact" src="icons/mouse-clicker.svg"/>
-                    </div>
-                    
-                </div>
-            </article>
-            <footer class="center coral">
-                <a href="#creations"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-            </footer>
+            </section>
+            <footer class="window_footer center coral">
+                <a href="#creations"><button class="alternative"><img class="icon_button" src="icons/download.svg"/></button></a>
+            </footer> 
         </section>
 
         
-        <section id="creations" class="orange">
-            <article class="container">
-                <header class="title"><h1 id="creations_title"></h1></header>
-                <div class="overflow creations_main">
-                    <div class="right">
-                        <div class="center light_blue">
-                            <img class="icon" src="icons/see.svg"/>
-                        </div>
-                        <div class="list_creations gold overflow"><!--overflow-->
-                            <div class="right"><!--right-->
-                                <ul id="list_creations" class="right">
+        <section id="creations" class="window orange">
+            <section class="window_main">
+                <article class="container">
+                    <header class="title"><h1 id="creations_title"></h1></header>
+                    <div class="profile_labels">
+                        <label class="" id="creations_types"></label>
+                    </div>
+                    <div class="overflow creations_main">
+                        <div class="right">
+                            <div class="creation_eye center light_blue">
+                                <img class="icon" src="icons/see.svg"/>
+                            </div>
+                            <div class=""><!--overflow-->
+                                <div id="list_creations" class="right form">
                                     <!--
                                     JS externalization
                                     -->
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </article>    
-            
+                </article>    
+            </section>   
+        </section>
+        
+        <section class="orange">
+
 
             <section id="creation_templates_container">
             </section>
 
             <template id="creation_template">
-                <header class="">
-                    <div class="creation_template_header orange center">
-                        <a><button class="button_header"><img class="icon_button" src="icons/download.svg"/><span></span></button></a>
-                    </div>
-                </header>
                 <section class="container">
-                    <section class="card">
+                    <section class="card window_article">
                         <article class="article white_smoke">
                             <header class="article_header"><h1></h1></header>
-                            <div class="promotion overflow"> 
-                                <button class="button_certificate red"><img class="icon_button" src="icons/medal.svg"/><span></span></button>
-                                <h2></h2>
-                                <h3></h3>
-                                
-                                
-                            </div>
                             <div class="overflow">
-                                <div class="caroussel flex antique_white right">
-                                    <div class="back_icon">
-                                        <img class="icon" src="icons/back.svg"/>
+                                <div>
+                                    <div class="flex left">
+                                        <div class="promotion"> 
+                                            <h2></h2>
+                                        </div>
+                                        <div class="promotion">
+                                            <button class="button_certificate red"><img class="icon_button" src="icons/medal.svg"/><span></span></button>
+                                        </div>
                                     </div>
+                                </div>
                                 
-                                    <div class="image image_site_detail">
-                                        <img/>
-                                    </div>
-                                    <div class="next_icon">
-                                        <img class="icon" src="icons/next.svg"/>
+                                <div>
+                                    <div class="promotion ">
+                                        <h3 class="right"></h3>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="view right">
-                                <a class="view_link"><button class="view_button green"><img class="icon_button" src="icons/see.svg"/><span></span></button></a>
+                            
+                            
+                            <div class="overflow">
+                                
+                                <div class="antique_white">
+                                    <div class="spec_tech right overflow">
+                                        <p class="right"></p>
+                                    </div>
+                                
+                                    <div class="image_site">
+                                        <div class="image overflow"><img class="left"/></div>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <footer class="git article_footer">
+                            
+                            
+                            <footer class="git article_footer overflow">
+                                <div class="view right">
+                                    <a class="view_link"><button class="view_button green"><img class="icon_button" src="icons/see.svg"/><span></span></button></a>
+                                </div>
                                 <a class="git_link"><button class="git_button"><img class="icon_button" src="icons/git-logo.svg"/>
                                     <span></span>
                                 </button></a>
@@ -225,16 +249,11 @@
                 
             
             <section class="alternative">
-                
-                <div class="orange center">
-                    <header class="creation_template_header"><a href="#article_programmer"><button><img class="icon_button" src="icons/download.svg"/>programmer</button></a></header>
-                </div>
-                
                 <section class="container">
-                    <section class="card">
+                    <section class="card window_article">
                         <article id="article_programmer_custom" class="article white_smoke">
                             <header class="article_header">
-                                <h1>programmer montpellier_numerique 2020</h1>
+                                <h1>programmer 2020</h1>
                             </header>
                             <div class="flex">
                                 <div class="promotion"><h2 id="programmer_my_portfolio"></h2></div>
@@ -242,15 +261,15 @@
                                 
                                 <div>
                                     <button id="button_programmer_switch_language"><img class="icon_button" src="icons/switch.svg"/><span id="programmer_switch_language"></span></button>
-                                    <button class="block"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share"></span></button>
-                                    <div id="card_pro_container">
+                                    <button class="alternative"><img class="icon_button" src="icons/linkedin.svg"/><span id="programmer_share"></span></button>
+                                    <div id="card_pro_container" class="alternative">
                                         <button id="button_programmer_edit_card"><img class="icon_button" src="icons/pdf.svg"/><span id="programmer_edit_cards"></span></button>
                                         <div class="visit_card_container">
                                             <img id="visit_card_light_on" class="visit_card"/>
                                         </div>
                                     </div>
                                     
-                                    <a href="#visit_card_light_on"><button id="button_spec_tech_programmer"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech"></span></button></a>
+                                    <button id="button_spec_tech_programmer" class="block"><img class="icon_button" src="icons/more.svg"/><span id="programmer_spec_tech"></span></button>
                                     <button id="button_close_spec_tech_programmer" class="alternative"><img class="icon_button" src="icons/close.svg"/></button>
                                     
 
@@ -264,11 +283,13 @@
                                 </div>
                                 
                             </div>
-                            <div class="right">
-                                <a class="" href="#indices"><button id="button_site_programmer" class="green"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website"></span></button></a>
-                                <a class="" href="#indices"><button><img class="icon_button" src="icons/download.svg"/></button></a>
-                            </div>
-                            <footer class="article_footer">
+                            
+                            <footer class="article_footer overflow">
+                                <div class="right">
+                                    <a class="" href="#indices"><button id="button_site_programmer" class="green right"><img class="icon_button" src="icons/see.svg"/><span id="programmer_website"></span></button></a>
+                                </div>
+                                
+                            
                                 <a href="https://gitlab.com/cjanie/programmer-portfolio"><button><img class="icon_button" src="icons/git-logo.svg"/>
                                     HTML CSS JS JSON</button></a>
                             </footer>
@@ -276,79 +297,81 @@
                     </section>
                 </section>
             
-            <footer class="section_footer">
-                <a href="#indices"><button class="undisplay"><img class="icon_button" src="icons/download.svg"/></button></a>
-            </footer>
+            
             </section>
             
-              
+            <footer class="window_footer">
+
+            </footer>
                 
         </section>
 
-        
-        <section id="indices" class="light_green">
-            <article class="container">
-                <header class="title">
-                    <h1 id="indices_title"></h1>
-                </header>
-                <div class="table">
-                    <table id="table_indices" class="antique_white">
-                        <tr>
-                            <td class="right">ANDROID</td>
-                            <td>direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">ANGULAR</td>
-                            <td>devis, direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">FULLCALENDAR</td>
-                            <td>direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">JAVA SPRING</td>
-                            <td>devis, direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">JAVASCRIPT</td>
-                            <td>manchester, programmer</td>
-                        </tr>
-                        <tr>
-                            <td class="right">NODE</td>
-                            <td>devis, direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">REST</td>
-                            <td>devis, direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">ROOM</td>
-                            <td>direct molto</td>
-                        </tr>
-                        <tr>
-                            <td class="right">
-                                <a href="#table_indices"><button id="button_more"></button></a>
-                                <a href="#indices"><button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button></a>
-                                
-                            </td>
-                        </tr>
-                    </table>    
+        <section id="indices" class="window light_green">
+            <section class="window_main">
+                <article class="container">
+                    <header class="title">
+                        <h1 id="indices_title"></h1>
+                    </header>
+                    <div class="overflow indices">
+                        <div class="form right">
+                            <div id="table_indices" class="">
+                                <div class="right">
+                                    <label>ANDROID</label>
+                                    <input value="direct molto"/>
+                                </div>
+                                <div class="right">
+                                    <label>ANGULAR</label>
+                                    <input value="devis, direct molto"/>
+                                </div>
+                                <div class="right">
+                                    <label>FULLCALENDAR</label>
+                                    <input value="direct molto"/>
+                                </div>
+                                <div class="right">
+                                    <label>JAVA SPRING</label>
+                                    <input value="devis, direct molto"/>
+                                </div>
+                                <div class="right">
+                                    <label>JAVASCRIPT</label>
+                                    <input value="manchester, programmer"/>
+                                </div>
+                                <div class="right">
+                                    <label>NODE</label>
+                                    <input value="devis, direct molto"/>
+                                </div>
+                                <div class="right">
+                                    <label>REST</label>
+                                    <input value="devis, direct molto"/>
+                                </div>
+                                <div class="right">
+                                    <label>ROOM</label>
+                                    <input value="direct molto"/>
+                                </div>
+                                <div>
+                                    <div class="right">
+                                        <a href="#table_indices"><button id="button_more"></button></a>
+                                        <a href="#indices"><button class="alternative" id="button_hide"><img class="icon_button" src="icons/close.svg"/></button></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    
+                </article>   
+            </section>
+            <footer class="window_footer">
+                <div class="light_green overflow">
+                    <div class="right">
+                        <button><img class="icon_button" src="icons/like.svg"/><img class="icon_button" src="icons/linkedin.svg"/></button>
+                        <a href="#content"><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
+                    </div>
                 </div>
-                
-            </article>
-            
+            </footer>    
         </section>
     </section>
-
-    <footer>
-        <div class="light_green overflow">
-            <div class="right">
-                <button><img class="icon_button" src="icons/like.svg"/><img class="icon_button" src="icons/linkedin.svg"/></button>
-                <a href="#content"><button><img class="icon_button" src="icons/up-arrow.svg"/></button></a>
-            </div>
-        </div>
-    </footer>
-    <footer class="brown">
+    <footer class="footer green">
         <div class="test _960">
             <p>960px</p>
         </div>
