@@ -73,7 +73,11 @@ var loadData = function loadData(languageIndex) {
     for(var i=0; i<spectTechs.length; i++) {
         for(var j=0; j<creations.length; j++) {
             if(i === j) {
-                spectTechs[i].textContent = creations[j].specTech[languageIndex];
+                if(!(creations[j].specTech === "")) {
+                    spectTechs[i].textContent = creations[j].specTech[languageIndex];
+                } else {
+                    spectTechs[i].style.display = "none";
+                }
             }
         }
     }
@@ -86,6 +90,37 @@ var loadData = function loadData(languageIndex) {
             }
         }
     }
+
+    // TODO to separate from loadData to not have alert twice when switch languages
+    var certificateButtons = templatesContainer.querySelectorAll(".button_certificate");
+    for(var i=0; i<certificateButtons.length; i++) {
+        
+                if(i === 0) {
+                    certificateButtons[i].addEventListener("click", (evenement)=> {
+                        alert(creations[0].alertCertificate[getLanguageIndex()]);
+                    });
+                }
+                if(i === 1) {
+                    certificateButtons[i].addEventListener("click", (evenement)=> {
+                        alert(creations[1].alertCertificate[getLanguageIndex()]);
+                    });
+                }
+
+                if(i === 2) {
+                    certificateButtons[i].addEventListener("click", (evenement)=> {
+                        alert(creations[2].alertCertificate[getLanguageIndex()]);
+                    });
+                }
+
+                if(i === 3) {
+                    certificateButtons[i].addEventListener("click", (evenement)=> {
+                        alert(creations[3].alertCertificate[getLanguageIndex()]);
+                    });
+                }
+    }
+    
+    
+    
 
     var images = templatesContainer.querySelectorAll(".image > img");
     for(var i=0; i<images.length; i++) {

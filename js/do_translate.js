@@ -71,6 +71,12 @@ const en = 1;
 var languageIndex; // = fr OR en 
 var languageCurrent; // = fr OR en
 
+
+var getLanguageIndex = function getLanguageIndex() {
+    return languageCurrent;
+}
+
+
 var translateTo = function translateTo(languageIndex) {
     // switch language
     titleWebMobileApp.innerHTML = string.webMobileApp[languageIndex];
@@ -111,6 +117,7 @@ var translateTo = function translateTo(languageIndex) {
     
     // set languageCurrent for switchLanguages and reset buttonsFlags;
     languageCurrent = languageIndex;
+    
     
     // load templates
     loadData(languageIndex);

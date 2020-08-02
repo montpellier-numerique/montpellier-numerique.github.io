@@ -15,8 +15,8 @@ body {
 }
 
 .window {
-    padding-top: 3.5em;
-    height: 41em;
+    padding-top: 4em;
+    height: 40em;
 }
 
 .window_footer {
@@ -409,7 +409,7 @@ p {
 
 .footer {
     background-color: green;
-    padding-top: 1.5em;
+    padding-top: 6em;
 }
 
 .footer a {

@@ -32,7 +32,7 @@ var string = {
     contactMe: ["me contacter @LinkedIn", "contact me @LinkedIn"],
 
     // CREATIONS
-    creationsTypes: ["applications client-serveur & sites web", "client-server applications & web sites"],
+    creationsTypes: ["app client-serveur & sites web", "client-server app & web sites"],
     view: ["voir", "view"],
 
     // INDICES
