@@ -3,7 +3,6 @@
 /**
  * ADD LISTENERS ON BUTTONS
  * SHOW AND HIDE CONTAINERS
- * ALERTS
  */
 
 /*
@@ -26,20 +25,24 @@ buttonMainRed.addEventListener("click", (evenement)=> {
 /*
 * @ indices show more
 */
-
+var indicesWindow = document.getElementById("indices");
+var originalWindowHeight = indicesWindow.style.height;
 var buttonMore = document.getElementById("button_more");
-var tableIndices = document.getElementById("table_indices");
+var technologiesAll = document.getElementById("technologies_all");
 var buttonHide = document.getElementById("button_hide");
 
 buttonMore.addEventListener("click", (evenement)=> {
     
     for(var i=0; i<indices.length; i++) {
-        var row = document.createElement("tr");
-        var col = document.createElement("td");
-        col.innerHTML = indices[i].toUpperCase();
-        col.style.float ="right";
-        row.appendChild(col);
-        tableIndices.appendChild(row);
+        var div = document.createElement("div");
+        //div.style.float = "right";
+        div.style.display = "block";
+        div.style.overflow;
+        indicesWindow.style.height = "auto";
+        var label = document.createElement("label");
+        label.innerHTML = indices[i].toUpperCase();
+        div.appendChild(label);
+        technologiesAll.appendChild(div);
     }
 
     buttonMore.style.display = "none";
@@ -49,35 +52,14 @@ buttonMore.addEventListener("click", (evenement)=> {
 
 buttonHide.addEventListener("click", (evenement)=> {
 
-    var rows = tableIndices.getElementsByTagName("tr");
-    var originalRows = rows.length - indices.length;
-    for(var i=originalRows; i<rows.length; i++) {
-        rows[i].style.display = "none";
+    var labels = technologiesAll.getElementsByTagName("label");
+    for(var i=0; i<labels.length; i++) {
+        labels[i].style.display = "none";
+        
     }
-
+    indicesWindow.style.height = originalWindowHeight;
     buttonHide.style.display = "none";
     buttonMore.style.display="inline-block";
 });
-
-
-/*
-* @ programmer spec tech
-*/
-var buttonSpecTechProgrammer = document.getElementById("button_spec_tech_programmer");
-var specTechProgrammer = document.getElementById("spec_tech_programmer");
-var buttonCloseSpecTechProgrammer = document.getElementById("button_close_spec_tech_programmer");
-
-buttonSpecTechProgrammer.addEventListener("click", (evenement)=> {
-    specTechProgrammer.style.display = "block";
-    buttonSpecTechProgrammer.style.display = "none";
-    buttonCloseSpecTechProgrammer.style.display = "inline-block";
-});
-
-buttonCloseSpecTechProgrammer.addEventListener("click", (evenement)=>{
-    specTechProgrammer.style.display = "none";
-    buttonCloseSpecTechProgrammer.style.display = "none";
-    buttonSpecTechProgrammer.style.display = "inline-block";
-});
-
 
 

@@ -36,36 +36,11 @@ var creationsTypes = document.getElementById("creations_types");
 var indicesTitle = document.getElementById("indices_title");
 var buttonMore = document.getElementById("button_more");
 
-// @creations programmer article not factorized
 
 
-var programmerMyPortfolio = document.getElementById("programmer_my_portfolio");
-var programmerResponsive = document.getElementById("programmer_responsive");
-var programmerSwitchLanguage = document.getElementById("programmer_switch_language");
-
-var programmerSpecTech = document.getElementById("programmer_spec_tech");
-
-var programmerWebsite = document.getElementById("programmer_website");
-
-/**
- * IMAGES THAT NEED TO SWITCH
- */
 
 
-var visitCardLightOn = document.getElementById("visit_card_light_on");
 
-/*
-* switch images functions called further in translateTo(languageIndex)
-*/
-
-
-var switchVisitCardLightOn = function switchVisitCardLightOn(languageIndex) {
-    if(languageIndex === fr) {
-        visitCardLightOn.src = "./images/png/visit_cards/visit_card_fr_light_on.png"
-    } else if(languageIndex === en) {
-        visitCardLightOn.src = "./images/png/visit_cards/visit_card_en_light_on.png"
-    }
-}
 
 /**
  * BUTTONS TO SWITCH LANGUAGES
@@ -74,7 +49,7 @@ var switchVisitCardLightOn = function switchVisitCardLightOn(languageIndex) {
 
 var buttonEnglishFlag = document.getElementById("button_english_flag");
 var buttonFrenchFlag = document.getElementById("button_french_flag");
-var buttonProgrammerSwitchLanguage = document.getElementById("button_programmer_switch_language");
+
 
 var resetButtonsFlags = function resetButtonsFlags() {
     if(languageCurrent === fr) {
@@ -132,19 +107,15 @@ var translateTo = function translateTo(languageIndex) {
     
 
     
-    programmerMyPortfolio.innerHTML = string.myPortfolio[languageIndex];
-    programmerResponsive.innerHTML = string.responsive[languageIndex];
-    programmerSwitchLanguage.innerHTML = string.switchLanguage[languageIndex];
     
-    programmerSpecTech.innerHTML = string.specTech[languageIndex];
-    programmerWebsite.innerHTML = string.website[languageIndex];
-
-    // switch images
+    
+    // set languageCurrent for switchLanguages and reset buttonsFlags;
     languageCurrent = languageIndex;
-    switchVisitCardLightOn(languageIndex);
-
+    
     // load templates
-    //loadTemplatesCreations(languageIndex); // !!! TODO
+    loadData(languageIndex);
+
+    
 
     // reset buttons
     resetButtonsFlags();
@@ -164,13 +135,14 @@ buttonFrenchFlag.addEventListener("click", (evenement)=>{
     translateTo(fr);
 });
 
-buttonProgrammerSwitchLanguage.addEventListener("click", (evenement)=>{
+var switchLanguages = function switchLanguages() {
     if(languageCurrent === fr) {
         translateTo(en);
     } else if(languageCurrent === en) {
         translateTo(fr);
     }
-});
+}
+
 
 
 
