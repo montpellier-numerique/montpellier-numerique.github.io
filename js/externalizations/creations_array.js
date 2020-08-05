@@ -40,7 +40,7 @@ const creations = [
         id: "article_direct_molto",
         date: 2020,
         certificate: ["équipe molto AGILE", "molto AGILE team"],
-        alertCertificate: ["projet conducteur de la formation java à BEWEB Fondespierre Montpellier (2019-2020)", "guideline project of the java course at BEWEB Fondespierre Montpellier (2019-2020"],       
+        alertCertificate: ["projet conducteur de la formation java à BEWEB Fondespierre Montpellier (2019-2020)", "guideline project of the java course at BEWEB Fondespierre Montpellier (2019-2020)"],       
         title2: string.garage,
         title3: ["gérant + tablette du mécanicien", "manager + tablet for the mechanic"],
         specTech: "",

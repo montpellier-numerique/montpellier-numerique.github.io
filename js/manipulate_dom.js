@@ -11,8 +11,7 @@
 
 var logo = document.getElementById("logo");
 buttonMainRed.addEventListener("click", (evenement)=> {
-    logo.style.color = "white";
-    buttonMainRed.style.color = "white";
+    logo.style.color = "whiteSmoke";
 });
 
 

@@ -212,9 +212,9 @@ var loadData = function loadData(languageIndex) {
     }
 
     /**programmer customized */
-    var programmerCustom = templatesContainer.querySelectorAll(".test > div");
+    var programmerCustom = templatesContainer.querySelectorAll(".language");
     var buttonProgrammerSwitchLanguages = document.createElement("button");
-    buttonProgrammerSwitchLanguages.id = "button_programmer_switch_language"
+    buttonProgrammerSwitchLanguages.id = "button_programmer_switch_language";
     var switchImage = document.createElement("img");
     switchImage.className = "icon_button";
     switchImage.src="icons/switch.svg"

@@ -15,12 +15,15 @@ body {
 }
 
 .window {
+    
     padding-top: 4em;
     height: 40em;
+    background-image: url(./../images/jpeg/binary-code-4512291_1920.jpg);
 }
 
 .window_footer {
     height: 5.5em;
+    
 }
 
 .window_article {
@@ -86,6 +89,7 @@ p {
 
 .header {
     /*max-width: 960px;*/
+    background-color: red;
 }
 
 .header .title h1, .header .title h2, .header .title h3 {
@@ -187,16 +191,18 @@ p {
     font-size: 1.1em; /*so! cf. main_red fr en */
     height: 4em;
     font-family: helvetica, arial, sans-serif;
+    background-color: greenyellow;
 }
 
 
 
 .logo a {
     text-decoration: underline;
+    color: black;
 }
 
 .logo a:hover {
-    color: red;
+    color: blue;
 }
 
 
@@ -209,8 +215,15 @@ p {
 */
 
 .under_header {
-    padding-top: 13em;
+    padding-top: 0em;
     margin-right: 5px;
+    margin-left: 5px;
+    
+    
+}
+
+.flags {
+    padding-top: 12em;
 }
 
 /*
@@ -223,6 +236,7 @@ p {
 .container {
     padding-left: 115px;
     font-family: helvetica, arial, sans-serif;
+    
 }
 
 .container h1 {
@@ -233,7 +247,7 @@ p {
     margin-left: 10px;
     margin-right: 5px;
     font-size: 2.5vw;
-    background-color: brown;
+    background-color: #383838;
     font-family: monospace;
 }
 
@@ -271,13 +285,13 @@ p {
     padding-top: 0.5em;
     padding-right: 5px;
     text-align: center;
-    background-color: lightcyan;
+    
     
 }
 
 .main_red button {
     float: right; /* so! fr & en & not hidden by fixed nav */
-    background-color: red;
+    background-color: greenyellow;
 }
 
 /*
@@ -302,7 +316,7 @@ p {
     padding-bottom: 0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: red;
+    background-color: green;
     color: white;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -392,7 +406,7 @@ p {
     font-size: 1em;
     display: inline-block;
     width: auto;
-    background-color: brown;
+    background-color: #383838;
     color: whitesmoke;
 }
 
@@ -408,8 +422,8 @@ p {
 */
 
 .footer {
-    background-color: green;
     padding-top: 6em;
+    background-color: red;
 }
 
 .footer a {
@@ -425,6 +439,10 @@ p {
 * each article in a card
 */
 
+.creations_templates {
+    background-image: url(./../images/jpeg/binary-code-4512291_1920.jpg);
+}
+
 .creation_template_header {
     margin-top: 0em;
 }
@@ -436,7 +454,8 @@ p {
 .card {
     padding-top: 0.2em;
     padding-bottom: 0.2em;
-    background-color: lightcyan;
+    background-color: #383838;
+    
 }
 
 .article {
@@ -467,9 +486,11 @@ p {
 }
 
 .promotion h3 {
+    margin-top: 2em;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
     font-size: 1.25em;
+    background-color: antiquewhite;
 }
 
 .spec_tech {
@@ -478,13 +499,15 @@ p {
 
 }
 
-h4, .article_footer {
+.article_footer {
     background-color: red;
 }
 
-.article_footer button {
-    
+.test {
+    background-color: whitesmoke;
 }
+
+
 /**
 * responsive .title h3
 */
@@ -514,10 +537,8 @@ h4, .article_footer {
 
 
 
-h3, h4, h5 {
-    font-size: 1.5em;
-}
-.title h1, .title h2, .title h3, .article_title h1, h2, h5, h3 {
+
+.title h1, .title h2, .title h3 {
     background-color: antiquewhite;
 }
 .title  {
@@ -529,16 +550,6 @@ h3, h4, h5 {
 * IMAGES 
 --------------------------------------------------------------------------------------------------------------------------
 */
-
-.modal {
-    max-width: 960px;
-}
-
-.modal img {
-    width: 100%;
-}
-
-
 .image_site {
     
     overflow: hidden;
@@ -552,13 +563,4 @@ h3, h4, h5 {
     
 }
 
-.visit_card_container {
-    max-width: 22.5em;
-}
-
-.visit_card {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
