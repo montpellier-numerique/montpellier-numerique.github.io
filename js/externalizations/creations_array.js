@@ -1,5 +1,6 @@
 const gitLinkPersonal = "https://gitlab.com/cjanie";
 const gitLinkGarage = "https://gitlab.com/voie-de-garage";
+const gitLinkMontpellierNumerique = "https://github.com/montpellier-numerique/montpellier-numerique.github.io";
 const types = ["web site", "application"]
 
 const creations = [
@@ -65,6 +66,6 @@ const creations = [
         onLine: true,
         siteLink:"https://programmer_montpellier_numerique",
         technologies: ["HTML", "CSS", "JS", "JSON"],
-        gitLink: gitLinkPersonal + "/programmer-portfolio"
+        gitLink: gitLinkMontpellierNumerique
     }
 ];
