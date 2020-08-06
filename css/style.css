@@ -554,6 +554,7 @@ p {
     
     overflow: hidden;
     min-width: 365px;
+    height: auto;
     
 }
 
