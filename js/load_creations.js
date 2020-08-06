@@ -1,5 +1,5 @@
 /*
-* script to list creations within html tag
+* function to list creations within html tag
 */
 
 var loadListCreations = function loadListCreations() {
@@ -10,7 +10,6 @@ var loadListCreations = function loadListCreations() {
         creation.innerHTML = creations[i].name;
 
         var link = document.createElement("a");
-        
         link.href = "#" + creations[i].id;
 
         link.appendChild(creation);
