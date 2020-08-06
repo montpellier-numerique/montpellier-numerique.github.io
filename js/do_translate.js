@@ -26,6 +26,7 @@ var knowHowToBe = document.getElementById("know_how_to_be");
 var profileWebMaster = document.getElementById("profile_web_master");
 var profileEgyptologist = document.getElementById("profile_egyptologist");
 
+// contact element
 var buttonContactLinkedIn = document.getElementById("button_contact_linkedin");
 
 // creations elements
@@ -39,7 +40,17 @@ var buttonMore = document.getElementById("button_more");
 
 
 
+/* STATUS LANGUAGES */
+const fr = 0;
+const en = 1;
 
+var languageIndex; // = fr OR en 
+var languageCurrent; // = fr OR en
+
+
+var getLanguageIndex = function getLanguageIndex() {
+    return languageCurrent;
+}
 
 
 /**
@@ -64,18 +75,6 @@ var resetButtonsFlags = function resetButtonsFlags() {
 
 
 // functions translate
-
-const fr = 0;
-const en = 1;
-
-var languageIndex; // = fr OR en 
-var languageCurrent; // = fr OR en
-
-
-var getLanguageIndex = function getLanguageIndex() {
-    return languageCurrent;
-}
-
 
 var translateTo = function translateTo(languageIndex) {
     // switch language
@@ -104,17 +103,10 @@ var translateTo = function translateTo(languageIndex) {
 
     creationsTitle.innerHTML = string.creations[languageIndex];
     creationsTypes.innerHTML = string.creationsTypes[languageIndex];
-    
-
 
     indicesTitle.innerHTML = string.indices[languageIndex];
     buttonMore.innerHTML = string.more[languageIndex];
 
-    
-
-    
-    
-    
     // set languageCurrent for switchLanguages and reset buttonsFlags;
     languageCurrent = languageIndex;
     
