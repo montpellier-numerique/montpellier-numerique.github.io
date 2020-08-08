@@ -191,6 +191,21 @@ p {
     /*cf grid 960 px 24 col **/
 }
 
+
+@media(max-width: 481px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media(min-width: 481px) {
+    .logo {
+        display: block;
+    }
+}
+
+
+
 @media(max-width: 801px) {
     .logo {
         margin-top: 10em;
@@ -208,10 +223,29 @@ p {
     border: solid;
     text-align: center;
     font-size: 1.1em; /*so! cf. main_red fr en */
-    height: 4em;
     font-family: helvetica, arial, sans-serif;
     background-color: greenyellow;
 }
+
+@media(max-width: 801px) {
+    .logo {
+        margin-top: 7em;
+    }
+    .logo td {
+        height: 1.5em;
+    }
+}
+
+@media(min-width: 801px) {
+    .logo {
+        margin-top: 5em; /*5em so! to be over main red button*/
+        
+    }
+    .logo td {
+        height: 4em;
+    }
+}
+
 
 
 
@@ -256,10 +290,23 @@ p {
 */
 
 .container {
-    padding-left: 115px;
     font-family: helvetica, arial, sans-serif;
     
 }
+
+
+@media(max-width: 481px) {
+    .container {
+        padding-left: 0px;
+    }
+}
+
+@media(min-width: 481px) {
+    .container {
+        padding-left: 115px;
+    }
+}
+
 
 .container h1 {
     margin-top: 5em;
