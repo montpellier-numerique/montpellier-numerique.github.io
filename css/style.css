@@ -208,13 +208,13 @@ p {
 
 @media(max-width: 801px) {
     .logo {
-        margin-top: 10em;
+        margin-top: 7em;
     }
 }
 
 @media(min-width: 801px) {
     .logo {
-        margin-top: 5em; /*5em so! to be over main red button*/
+        margin-top: 3em; /*5em so! to be over main red button*/
     }
 }
 
@@ -228,19 +228,12 @@ p {
 }
 
 @media(max-width: 801px) {
-    .logo {
-        margin-top: 7em;
-    }
     .logo td {
         height: 1.5em;
     }
 }
 
 @media(min-width: 801px) {
-    .logo {
-        margin-top: 5em; /*5em so! to be over main red button*/
-        
-    }
     .logo td {
         height: 4em;
     }
