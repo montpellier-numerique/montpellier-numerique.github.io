@@ -214,7 +214,7 @@ p {
 
 @media(min-width: 801px) {
     .logo {
-        margin-top: 3em; /*5em so! to be over main red button*/
+        margin-top: 5em;
     }
 }
 
