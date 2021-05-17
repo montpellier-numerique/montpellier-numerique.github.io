@@ -32,7 +32,7 @@ const creations = [
         srcImages: ["./images/png/devis_boutique.png"],
         type: types[1],
         onLine: true,
-        siteLink: "https://www.linkedin.com/in/janie-chun-hung-kee-0b807238/detail/treasury/education:639285974/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAfXBQwBruiF1ZqnSRMO0SDfxKXRexnkHk0%2C1591097506010)&section=education%3A639285974&treasuryCount=3",
+        siteLink: "https://docs.google.com/presentation/d/1TvCWuxieDKs2p0vnsCmtQDcZ0QcpFH9z936s0B1IySA/edit?usp=sharing",
         technologies: ["JAVA", "SPRING", "ANGULAR"],
         gitLink: gitLinkPersonal + "/devis"
     },
